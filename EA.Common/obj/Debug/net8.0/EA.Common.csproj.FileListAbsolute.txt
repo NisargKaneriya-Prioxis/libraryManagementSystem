@@ -1,0 +1,13 @@
+/Users/nisargkaneriya/Documents/Nisarg/dotnet_projects/WebApplication1/EA.Common/bin/Debug/net8.0/EA.Common.deps.json
+/Users/nisargkaneriya/Documents/Nisarg/dotnet_projects/WebApplication1/EA.Common/bin/Debug/net8.0/EA.Common.dll
+/Users/nisargkaneriya/Documents/Nisarg/dotnet_projects/WebApplication1/EA.Common/bin/Debug/net8.0/EA.Common.pdb
+/Users/nisargkaneriya/Documents/Nisarg/dotnet_projects/WebApplication1/EA.Common/obj/Debug/net8.0/EA.Common.csproj.AssemblyReference.cache
+/Users/nisargkaneriya/Documents/Nisarg/dotnet_projects/WebApplication1/EA.Common/obj/Debug/net8.0/EA.Common.GeneratedMSBuildEditorConfig.editorconfig
+/Users/nisargkaneriya/Documents/Nisarg/dotnet_projects/WebApplication1/EA.Common/obj/Debug/net8.0/EA.Common.AssemblyInfoInputs.cache
+/Users/nisargkaneriya/Documents/Nisarg/dotnet_projects/WebApplication1/EA.Common/obj/Debug/net8.0/EA.Common.AssemblyInfo.cs
+/Users/nisargkaneriya/Documents/Nisarg/dotnet_projects/WebApplication1/EA.Common/obj/Debug/net8.0/EA.Common.csproj.CoreCompileInputs.cache
+/Users/nisargkaneriya/Documents/Nisarg/dotnet_projects/WebApplication1/EA.Common/obj/Debug/net8.0/EA.Common.sourcelink.json
+/Users/nisargkaneriya/Documents/Nisarg/dotnet_projects/WebApplication1/EA.Common/obj/Debug/net8.0/EA.Common.dll
+/Users/nisargkaneriya/Documents/Nisarg/dotnet_projects/WebApplication1/EA.Common/obj/Debug/net8.0/refint/EA.Common.dll
+/Users/nisargkaneriya/Documents/Nisarg/dotnet_projects/WebApplication1/EA.Common/obj/Debug/net8.0/EA.Common.pdb
+/Users/nisargkaneriya/Documents/Nisarg/dotnet_projects/WebApplication1/EA.Common/obj/Debug/net8.0/ref/EA.Common.dll

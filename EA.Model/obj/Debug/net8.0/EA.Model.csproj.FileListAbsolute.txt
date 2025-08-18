@@ -1,0 +1,15 @@
+/Users/nisargkaneriya/Documents/Nisarg/dotnet_projects/WebApplication1/EA.Model/bin/Debug/net8.0/EA.Model.deps.json
+/Users/nisargkaneriya/Documents/Nisarg/dotnet_projects/WebApplication1/EA.Model/bin/Debug/net8.0/EA.Model.dll
+/Users/nisargkaneriya/Documents/Nisarg/dotnet_projects/WebApplication1/EA.Model/bin/Debug/net8.0/EA.Model.pdb
+/Users/nisargkaneriya/Documents/Nisarg/dotnet_projects/WebApplication1/EA.Model/obj/Debug/net8.0/EA.Model.csproj.AssemblyReference.cache
+/Users/nisargkaneriya/Documents/Nisarg/dotnet_projects/WebApplication1/EA.Model/obj/Debug/net8.0/EA.Model.GeneratedMSBuildEditorConfig.editorconfig
+/Users/nisargkaneriya/Documents/Nisarg/dotnet_projects/WebApplication1/EA.Model/obj/Debug/net8.0/EA.Model.AssemblyInfoInputs.cache
+/Users/nisargkaneriya/Documents/Nisarg/dotnet_projects/WebApplication1/EA.Model/obj/Debug/net8.0/EA.Model.AssemblyInfo.cs
+/Users/nisargkaneriya/Documents/Nisarg/dotnet_projects/WebApplication1/EA.Model/obj/Debug/net8.0/EA.Model.csproj.CoreCompileInputs.cache
+/Users/nisargkaneriya/Documents/Nisarg/dotnet_projects/WebApplication1/EA.Model/obj/Debug/net8.0/EA.Model.sourcelink.json
+/Users/nisargkaneriya/Documents/Nisarg/dotnet_projects/WebApplication1/EA.Model/obj/Debug/net8.0/EA.Model.dll
+/Users/nisargkaneriya/Documents/Nisarg/dotnet_projects/WebApplication1/EA.Model/obj/Debug/net8.0/refint/EA.Model.dll
+/Users/nisargkaneriya/Documents/Nisarg/dotnet_projects/WebApplication1/EA.Model/obj/Debug/net8.0/EA.Model.pdb
+/Users/nisargkaneriya/Documents/Nisarg/dotnet_projects/WebApplication1/EA.Model/obj/Debug/net8.0/ref/EA.Model.dll
+/Users/nisargkaneriya/Documents/Nisarg/dotnet_projects/WebApplication1/EA.Model/bin/Debug/net8.0/EA.Model.runtimeconfig.json
+/Users/nisargkaneriya/Documents/Nisarg/dotnet_projects/WebApplication1/EA.Model/obj/Debug/net8.0/EA.Model.genruntimeconfig.cache

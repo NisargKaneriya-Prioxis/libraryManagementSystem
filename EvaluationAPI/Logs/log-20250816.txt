@@ -1,0 +1,183 @@
+2025-08-16 21:20:20.247 +05:30 [INF] Now listening on: http://localhost:5188
+2025-08-16 21:20:20.282 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-16 21:20:20.283 +05:30 [INF] Hosting environment: Development
+2025-08-16 21:20:20.283 +05:30 [INF] Content root path: /Users/nisargkaneriya/Documents/Nisarg/dotnet_projects/WebApplication1/EvaluationAPI
+2025-08-16 21:20:22.427 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5188/swagger/v1/swagger.json - null null
+2025-08-16 21:20:22.526 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5188/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 99.3977ms
+2025-08-16 21:21:18.410 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5188/api/Book/borrow/LIB001/9780747532743 - null 0
+2025-08-16 21:21:18.417 +05:30 [WRN] Failed to determine the https port for redirect.
+2025-08-16 21:21:18.422 +05:30 [INF] Request: POST /api/Book/borrow/LIB001/9780747532743 at "2025-08-16T15:51:18.4218800Z"
+2025-08-16 21:21:18.424 +05:30 [INF] Executing endpoint 'EvaluationAPI.Controllers.BookController.BorrowBook (EvaluationAPI)'
+2025-08-16 21:21:18.439 +05:30 [INF] Route matched with {action = "BorrowBook", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] BorrowBook(System.String, System.String) on controller EvaluationAPI.Controllers.BookController (EvaluationAPI).
+2025-08-16 21:21:18.549 +05:30 [INF] Executing action method EvaluationAPI.Controllers.BookController.BorrowBook (EvaluationAPI) - Validation state: "Valid"
+2025-08-16 21:21:18.550 +05:30 [INF] Borrow request received for Book SID: LIB001, ISBN: 9780747532743
+2025-08-16 21:21:18.551 +05:30 [INF] Borrowing book with SID and : LIB001 and ISBN : 9780747532743
+2025-08-16 21:21:18.810 +05:30 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2025-08-16 21:21:19.304 +05:30 [INF] Executed DbCommand (32ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[BookID], [b].[Author], [b].[BookSID], [b].[BorrowedStatus], [b].[ISBN], [b].[PublishedYear], [b].[Status], [b].[Title]
+FROM [Book] AS [b]
+2025-08-16 21:21:19.499 +05:30 [INF] Executed DbCommand (47ms) [Parameters=[@p7='41', @p0='J.K. Rowling' (Size = 50), @p1='LIB001' (Nullable = false) (Size = 50), @p2='2', @p3='9780747532743' (Size = 50), @p4='1997' (Nullable = true), @p5='4', @p6='Harry Potter and the Sorcerer's Stone' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Book] SET [Author] = @p0, [BookSID] = @p1, [BorrowedStatus] = @p2, [ISBN] = @p3, [PublishedYear] = @p4, [Status] = @p5, [Title] = @p6
+OUTPUT 1
+WHERE [BookID] = @p7;
+2025-08-16 21:21:19.508 +05:30 [INF] Book with SID: LIB001 and ISBN : 9780747532743 Succesfully Borrowed 
+2025-08-16 21:21:19.511 +05:30 [INF] Executed action method EvaluationAPI.Controllers.BookController.BorrowBook (EvaluationAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 959.1619ms.
+2025-08-16 21:21:19.519 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`2[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-08-16 21:21:19.625 +05:30 [INF] Executed action EvaluationAPI.Controllers.BookController.BorrowBook (EvaluationAPI) in 1182.6067ms
+2025-08-16 21:21:19.625 +05:30 [INF] Executed endpoint 'EvaluationAPI.Controllers.BookController.BorrowBook (EvaluationAPI)'
+2025-08-16 21:21:19.626 +05:30 [INF] Finished: POST /api/Book/borrow/LIB001/9780747532743 in 1204ms
+2025-08-16 21:21:19.638 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5188/api/Book/borrow/LIB001/9780747532743 - 200 null application/json; charset=utf-8 1228.5435ms
+2025-08-16 21:21:59.936 +05:30 [INF] Application is shutting down...
+2025-08-16 21:48:03.082 +05:30 [INF] Now listening on: http://localhost:5188
+2025-08-16 21:48:03.133 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-16 21:48:03.134 +05:30 [INF] Hosting environment: Development
+2025-08-16 21:48:03.134 +05:30 [INF] Content root path: /Users/nisargkaneriya/Documents/Nisarg/dotnet_projects/WebApplication1/EvaluationAPI
+2025-08-16 21:48:03.707 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5188/swagger/v1/swagger.json - null null
+2025-08-16 21:48:03.822 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5188/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 117.49ms
+2025-08-16 21:48:35.826 +05:30 [INF] Application is shutting down...
+2025-08-16 21:48:52.413 +05:30 [INF] Now listening on: http://localhost:5188
+2025-08-16 21:48:52.448 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-16 21:48:52.448 +05:30 [INF] Hosting environment: Development
+2025-08-16 21:48:52.448 +05:30 [INF] Content root path: /Users/nisargkaneriya/Documents/Nisarg/dotnet_projects/WebApplication1/EvaluationAPI
+2025-08-16 21:48:52.948 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5188/swagger/v1/swagger.json - null null
+2025-08-16 21:48:53.051 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5188/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 103.295ms
+2025-08-16 21:49:13.099 +05:30 [INF] Request starting HTTP/1.1 DELETE http://localhost:5188/api/Book/dynamicdelete/LIB002 - null 0
+2025-08-16 21:49:13.107 +05:30 [WRN] Failed to determine the https port for redirect.
+2025-08-16 21:49:13.111 +05:30 [INF] Request: DELETE /api/Book/dynamicdelete/LIB002 at "2025-08-16T16:19:13.1103080Z"
+2025-08-16 21:49:13.113 +05:30 [INF] Executing endpoint 'EvaluationAPI.Controllers.BookController.DeleteBook (EvaluationAPI)'
+2025-08-16 21:49:13.125 +05:30 [INF] Route matched with {action = "DeleteBook", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] DeleteBook(System.String) on controller EvaluationAPI.Controllers.BookController (EvaluationAPI).
+2025-08-16 21:49:13.228 +05:30 [INF] Executing action method EvaluationAPI.Controllers.BookController.DeleteBook (EvaluationAPI) - Validation state: "Valid"
+2025-08-16 21:49:13.229 +05:30 [INF] Request to delete book with SID: LIB002
+2025-08-16 21:49:13.230 +05:30 [INF] Deleting (marking as unavailable) book with SID: LIB002
+2025-08-16 21:49:13.474 +05:30 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2025-08-16 21:49:13.946 +05:30 [INF] Executed DbCommand (33ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[BookID], [b].[Author], [b].[BookSID], [b].[BorrowedStatus], [b].[ISBN], [b].[PublishedYear], [b].[Status], [b].[Title]
+FROM [Book] AS [b]
+2025-08-16 21:49:14.108 +05:30 [INF] Executed DbCommand (17ms) [Parameters=[@p7='42', @p0='J.K. Rowling' (Size = 50), @p1='LIB002' (Nullable = false) (Size = 50), @p2='1', @p3='9780747538493' (Size = 50), @p4='1998' (Nullable = true), @p5='3', @p6='Harry Potter and the Chamber of Secrets' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Book] SET [Author] = @p0, [BookSID] = @p1, [BorrowedStatus] = @p2, [ISBN] = @p3, [PublishedYear] = @p4, [Status] = @p5, [Title] = @p6
+OUTPUT 1
+WHERE [BookID] = @p7;
+2025-08-16 21:49:14.116 +05:30 [INF] Book successfully marked as unavailable. SID: LIB002
+2025-08-16 21:49:14.117 +05:30 [INF] Successfully deleted book with SID: LIB002
+2025-08-16 21:49:14.120 +05:30 [INF] Executed action method EvaluationAPI.Controllers.BookController.DeleteBook (EvaluationAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 888.6462ms.
+2025-08-16 21:49:14.127 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2025-08-16 21:49:14.131 +05:30 [INF] Executed action EvaluationAPI.Controllers.BookController.DeleteBook (EvaluationAPI) in 1003.0953ms
+2025-08-16 21:49:14.131 +05:30 [INF] Executed endpoint 'EvaluationAPI.Controllers.BookController.DeleteBook (EvaluationAPI)'
+2025-08-16 21:49:14.132 +05:30 [INF] Finished: DELETE /api/Book/dynamicdelete/LIB002 in 1022ms
+2025-08-16 21:49:14.144 +05:30 [INF] Request finished HTTP/1.1 DELETE http://localhost:5188/api/Book/dynamicdelete/LIB002 - 200 null text/plain; charset=utf-8 1044.6329ms
+2025-08-16 21:53:23.192 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5188/api/Book/InsertBook - application/json 162
+2025-08-16 21:53:23.200 +05:30 [INF] Request: POST /api/Book/InsertBook at "2025-08-16T16:23:23.1999610Z"
+2025-08-16 21:53:23.201 +05:30 [INF] Executing endpoint 'EvaluationAPI.Controllers.BookController.InsertBook (EvaluationAPI)'
+2025-08-16 21:53:23.206 +05:30 [INF] Route matched with {action = "InsertBook", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[EA.Model.ResponseModel.BookResponseModel]]] InsertBook(System.Collections.Generic.List`1[EA.Model.RequestModel.BookRequestWithouSidModel]) on controller EvaluationAPI.Controllers.BookController (EvaluationAPI).
+2025-08-16 21:53:23.287 +05:30 [INF] Executing action method EvaluationAPI.Controllers.BookController.InsertBook (EvaluationAPI) - Validation state: "Valid"
+2025-08-16 21:53:23.346 +05:30 [INF] Executed DbCommand (22ms) [Parameters=[@p0='string' (Size = 50), @p1='LIB14542fb3-1c13-4dd1-b19a-ebe4980e1b17' (Nullable = false) (Size = 50), @p2='1', @p3='string' (Size = 50), @p4='0' (Nullable = true), @p5='string' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Book] ([Author], [BookSID], [BorrowedStatus], [ISBN], [PublishedYear], [Title])
+OUTPUT INSERTED.[BookID], INSERTED.[Status]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+2025-08-16 21:53:23.359 +05:30 [INF] Book created successfully with SID:
+2025-08-16 21:53:23.359 +05:30 [INF] Executed action method EvaluationAPI.Controllers.BookController.InsertBook (EvaluationAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 72.4116ms.
+2025-08-16 21:53:23.360 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[EA.Model.ResponseModel.BookResponseModel, EA.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-08-16 21:53:23.384 +05:30 [INF] Executed action EvaluationAPI.Controllers.BookController.InsertBook (EvaluationAPI) in 178.2866ms
+2025-08-16 21:53:23.385 +05:30 [INF] Executed endpoint 'EvaluationAPI.Controllers.BookController.InsertBook (EvaluationAPI)'
+2025-08-16 21:53:23.385 +05:30 [INF] Finished: POST /api/Book/InsertBook in 185ms
+2025-08-16 21:53:23.385 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5188/api/Book/InsertBook - 200 null application/json; charset=utf-8 193.9447ms
+2025-08-16 21:53:36.395 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5188/api/Book/InsertBook - application/json 154
+2025-08-16 21:53:36.396 +05:30 [INF] Request: POST /api/Book/InsertBook at "2025-08-16T16:23:36.3962880Z"
+2025-08-16 21:53:36.396 +05:30 [INF] Executing endpoint 'EvaluationAPI.Controllers.BookController.InsertBook (EvaluationAPI)'
+2025-08-16 21:53:36.396 +05:30 [INF] Route matched with {action = "InsertBook", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[EA.Model.ResponseModel.BookResponseModel]]] InsertBook(System.Collections.Generic.List`1[EA.Model.RequestModel.BookRequestWithouSidModel]) on controller EvaluationAPI.Controllers.BookController (EvaluationAPI).
+2025-08-16 21:53:36.401 +05:30 [INF] Executing action method EvaluationAPI.Controllers.BookController.InsertBook (EvaluationAPI) - Validation state: "Valid"
+2025-08-16 21:53:36.411 +05:30 [INF] Executed DbCommand (9ms) [Parameters=[@p0='Nisarg' (Size = 50), @p1='LIBd53e1b37-4179-4d61-b4cc-819c975260b9' (Nullable = false) (Size = 50), @p2='1', @p3='123456789' (Size = 50), @p4='2025' (Nullable = true), @p5='hobbitThe' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Book] ([Author], [BookSID], [BorrowedStatus], [ISBN], [PublishedYear], [Title])
+OUTPUT INSERTED.[BookID], INSERTED.[Status]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+2025-08-16 21:53:36.411 +05:30 [INF] Book created successfully with SID:
+2025-08-16 21:53:36.411 +05:30 [INF] Executed action method EvaluationAPI.Controllers.BookController.InsertBook (EvaluationAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 10.294ms.
+2025-08-16 21:53:36.412 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[EA.Model.ResponseModel.BookResponseModel, EA.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-08-16 21:53:36.412 +05:30 [INF] Executed action EvaluationAPI.Controllers.BookController.InsertBook (EvaluationAPI) in 15.8029ms
+2025-08-16 21:53:36.412 +05:30 [INF] Executed endpoint 'EvaluationAPI.Controllers.BookController.InsertBook (EvaluationAPI)'
+2025-08-16 21:53:36.412 +05:30 [INF] Finished: POST /api/Book/InsertBook in 16ms
+2025-08-16 21:53:36.412 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5188/api/Book/InsertBook - 200 null application/json; charset=utf-8 16.8443ms
+2025-08-16 21:55:39.056 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5188/api/Book/InsertBook - application/json 309
+2025-08-16 21:55:39.058 +05:30 [INF] Request: POST /api/Book/InsertBook at "2025-08-16T16:25:39.0580260Z"
+2025-08-16 21:55:39.058 +05:30 [INF] Executing endpoint 'EvaluationAPI.Controllers.BookController.InsertBook (EvaluationAPI)'
+2025-08-16 21:55:39.059 +05:30 [INF] Route matched with {action = "InsertBook", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[EA.Model.ResponseModel.BookResponseModel]]] InsertBook(System.Collections.Generic.List`1[EA.Model.RequestModel.BookRequestWithouSidModel]) on controller EvaluationAPI.Controllers.BookController (EvaluationAPI).
+2025-08-16 21:55:39.060 +05:30 [INF] Executing action method EvaluationAPI.Controllers.BookController.InsertBook (EvaluationAPI) - Validation state: "Valid"
+2025-08-16 21:55:39.118 +05:30 [INF] Executed DbCommand (43ms) [Parameters=[@p0='Niasdsadsarg' (Size = 50), @p1='LIB4c5ef0ef-fb84-4467-97d9-8ca1c4166339' (Nullable = false) (Size = 50), @p2='1', @p3='2313128978' (Size = 50), @p4='2025' (Nullable = true), @p5='sdads' (Size = 50), @p6='dsadsa' (Size = 50), @p7='LIB8f5b3b91-b17c-4662-9ddc-ae4294d68b69' (Nullable = false) (Size = 50), @p8='1', @p9='8987987899' (Size = 50), @p10='2025' (Nullable = true), @p11='ssadsdad' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+MERGE [Book] USING (
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, 0),
+(@p6, @p7, @p8, @p9, @p10, @p11, 1)) AS i ([Author], [BookSID], [BorrowedStatus], [ISBN], [PublishedYear], [Title], _Position) ON 1=0
+WHEN NOT MATCHED THEN
+INSERT ([Author], [BookSID], [BorrowedStatus], [ISBN], [PublishedYear], [Title])
+VALUES (i.[Author], i.[BookSID], i.[BorrowedStatus], i.[ISBN], i.[PublishedYear], i.[Title])
+OUTPUT INSERTED.[BookID], INSERTED.[Status], i._Position;
+2025-08-16 21:55:39.120 +05:30 [INF] Book created successfully with SID:
+2025-08-16 21:55:39.120 +05:30 [INF] Executed action method EvaluationAPI.Controllers.BookController.InsertBook (EvaluationAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 59.7356ms.
+2025-08-16 21:55:39.120 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[EA.Model.ResponseModel.BookResponseModel, EA.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-08-16 21:55:39.121 +05:30 [INF] Executed action EvaluationAPI.Controllers.BookController.InsertBook (EvaluationAPI) in 62.1586ms
+2025-08-16 21:55:39.121 +05:30 [INF] Executed endpoint 'EvaluationAPI.Controllers.BookController.InsertBook (EvaluationAPI)'
+2025-08-16 21:55:39.121 +05:30 [INF] Finished: POST /api/Book/InsertBook in 63ms
+2025-08-16 21:55:39.121 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5188/api/Book/InsertBook - 200 null application/json; charset=utf-8 65.6884ms
+2025-08-16 21:56:38.064 +05:30 [INF] Application is shutting down...
+2025-08-16 22:03:14.796 +05:30 [INF] Now listening on: http://localhost:5188
+2025-08-16 22:03:14.830 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-16 22:03:14.831 +05:30 [INF] Hosting environment: Development
+2025-08-16 22:03:14.831 +05:30 [INF] Content root path: /Users/nisargkaneriya/Documents/Nisarg/dotnet_projects/WebApplication1/EvaluationAPI
+2025-08-16 22:03:15.461 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5188/swagger/v1/swagger.json - null null
+2025-08-16 22:03:15.551 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5188/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 87.2572ms
+2025-08-16 22:03:18.026 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5188/api/Book/InsertBook - application/json 309
+2025-08-16 22:03:18.032 +05:30 [WRN] Failed to determine the https port for redirect.
+2025-08-16 22:03:18.034 +05:30 [INF] Request: POST /api/Book/InsertBook at "2025-08-16T16:33:18.0335690Z"
+2025-08-16 22:03:18.036 +05:30 [INF] Executing endpoint 'EvaluationAPI.Controllers.BookController.InsertBook (EvaluationAPI)'
+2025-08-16 22:03:18.051 +05:30 [INF] Route matched with {action = "InsertBook", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[EA.Model.ResponseModel.BookResponseModel]]] InsertBook(System.Collections.Generic.List`1[EA.Model.RequestModel.BookRequestWithouSidModel]) on controller EvaluationAPI.Controllers.BookController (EvaluationAPI).
+2025-08-16 22:03:18.233 +05:30 [INF] Executing action method EvaluationAPI.Controllers.BookController.InsertBook (EvaluationAPI) - Validation state: "Valid"
+2025-08-16 22:03:18.488 +05:30 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2025-08-16 22:03:18.969 +05:30 [INF] Executed DbCommand (37ms) [Parameters=[@p0='Niasdsadsarg' (Size = 50), @p1='LIB5b75819b-8c2a-4bb6-a451-146301f7ddfb' (Nullable = false) (Size = 50), @p2='1', @p3='2313128978' (Size = 50), @p4='2025' (Nullable = true), @p5='sdads' (Size = 50), @p6='dsadsa' (Size = 50), @p7='LIB9507b237-a0fc-405a-8832-82e2b2b3e8e9' (Nullable = false) (Size = 50), @p8='1', @p9='8987987899' (Size = 50), @p10='2025' (Nullable = true), @p11='ssadsdad' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+MERGE [Book] USING (
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, 0),
+(@p6, @p7, @p8, @p9, @p10, @p11, 1)) AS i ([Author], [BookSID], [BorrowedStatus], [ISBN], [PublishedYear], [Title], _Position) ON 1=0
+WHEN NOT MATCHED THEN
+INSERT ([Author], [BookSID], [BorrowedStatus], [ISBN], [PublishedYear], [Title])
+VALUES (i.[Author], i.[BookSID], i.[BorrowedStatus], i.[ISBN], i.[PublishedYear], i.[Title])
+OUTPUT INSERTED.[BookID], INSERTED.[Status], i._Position;
+2025-08-16 22:03:19.005 +05:30 [INF] Book created successfully with SID:
+2025-08-16 22:03:19.009 +05:30 [INF] Executed action method EvaluationAPI.Controllers.BookController.InsertBook (EvaluationAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 773.1801ms.
+2025-08-16 22:03:19.016 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[EA.Model.ResponseModel.BookResponseModel, EA.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-08-16 22:03:19.047 +05:30 [INF] Executed action EvaluationAPI.Controllers.BookController.InsertBook (EvaluationAPI) in 993.0201ms
+2025-08-16 22:03:19.048 +05:30 [INF] Executed endpoint 'EvaluationAPI.Controllers.BookController.InsertBook (EvaluationAPI)'
+2025-08-16 22:03:19.048 +05:30 [INF] Finished: POST /api/Book/InsertBook in 1015ms
+2025-08-16 22:03:19.060 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5188/api/Book/InsertBook - 200 null application/json; charset=utf-8 1033.403ms
+2025-08-16 22:03:21.028 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5188/api/Book/InsertBook - application/json 309
+2025-08-16 22:03:21.030 +05:30 [INF] Request: POST /api/Book/InsertBook at "2025-08-16T16:33:21.0302460Z"
+2025-08-16 22:03:21.030 +05:30 [INF] Executing endpoint 'EvaluationAPI.Controllers.BookController.InsertBook (EvaluationAPI)'
+2025-08-16 22:03:21.030 +05:30 [INF] Route matched with {action = "InsertBook", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[EA.Model.ResponseModel.BookResponseModel]]] InsertBook(System.Collections.Generic.List`1[EA.Model.RequestModel.BookRequestWithouSidModel]) on controller EvaluationAPI.Controllers.BookController (EvaluationAPI).
+2025-08-16 22:03:21.032 +05:30 [INF] Executing action method EvaluationAPI.Controllers.BookController.InsertBook (EvaluationAPI) - Validation state: "Valid"
+2025-08-16 22:03:21.065 +05:30 [INF] Executed DbCommand (7ms) [Parameters=[@p0='Niasdsadsarg' (Size = 50), @p1='LIBfd747dfb-1bec-4955-8ff2-38e13540c2ab' (Nullable = false) (Size = 50), @p2='1', @p3='2313128978' (Size = 50), @p4='2025' (Nullable = true), @p5='sdads' (Size = 50), @p6='dsadsa' (Size = 50), @p7='LIBcd0568f5-d301-41d1-b61d-7ec74bb42663' (Nullable = false) (Size = 50), @p8='1', @p9='8987987899' (Size = 50), @p10='2025' (Nullable = true), @p11='ssadsdad' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+MERGE [Book] USING (
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, 0),
+(@p6, @p7, @p8, @p9, @p10, @p11, 1)) AS i ([Author], [BookSID], [BorrowedStatus], [ISBN], [PublishedYear], [Title], _Position) ON 1=0
+WHEN NOT MATCHED THEN
+INSERT ([Author], [BookSID], [BorrowedStatus], [ISBN], [PublishedYear], [Title])
+VALUES (i.[Author], i.[BookSID], i.[BorrowedStatus], i.[ISBN], i.[PublishedYear], i.[Title])
+OUTPUT INSERTED.[BookID], INSERTED.[Status], i._Position;
+2025-08-16 22:03:21.065 +05:30 [INF] Book created successfully with SID:
+2025-08-16 22:03:21.066 +05:30 [INF] Executed action method EvaluationAPI.Controllers.BookController.InsertBook (EvaluationAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 33.853ms.
+2025-08-16 22:03:21.066 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[EA.Model.ResponseModel.BookResponseModel, EA.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-08-16 22:03:21.066 +05:30 [INF] Executed action EvaluationAPI.Controllers.BookController.InsertBook (EvaluationAPI) in 36.0607ms
+2025-08-16 22:03:21.067 +05:30 [INF] Executed endpoint 'EvaluationAPI.Controllers.BookController.InsertBook (EvaluationAPI)'
+2025-08-16 22:03:21.067 +05:30 [INF] Finished: POST /api/Book/InsertBook in 36ms
+2025-08-16 22:03:21.067 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5188/api/Book/InsertBook - 200 null application/json; charset=utf-8 39.3279ms
+2025-08-16 22:08:28.647 +05:30 [INF] Application is shutting down...
