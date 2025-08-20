@@ -27,12 +27,14 @@ public class BookController : BaseController
 
         var parameters = FillParamesFromModel(model);
         var list = await _BookRepository.List(parameters);
+        
 
         if (list != null)
         {
             var result = JsonConvert.DeserializeObject<List<BookResponseModel>>(list.Result?.ToString() ?? "[]") ?? [];
+           list.Result = result;
             _logger.LogInformation("Retrieved {Count} books", result.Count);
-            return Ok(result);
+            return Ok(BindSearchResult(list, model, "book list"));
         }
 
         _logger.LogWarning("No books found matching search parameters");

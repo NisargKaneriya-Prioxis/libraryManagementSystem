@@ -3097,11 +3097,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/nisargkaneriya/Documents/Nisarg/dotnet_projects/WebApplication1/EA.Services/EA.Services.csproj",
+      "projectUniqueName": "/Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/WebApplication1/EA.Services/EA.Services.csproj",
       "projectName": "EA.Services",
-      "projectPath": "/Users/nisargkaneriya/Documents/Nisarg/dotnet_projects/WebApplication1/EA.Services/EA.Services.csproj",
+      "projectPath": "/Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/WebApplication1/EA.Services/EA.Services.csproj",
       "packagesPath": "/Users/nisargkaneriya/.nuget/packages/",
-      "outputPath": "/Users/nisargkaneriya/Documents/Nisarg/dotnet_projects/WebApplication1/EA.Services/obj/",
+      "outputPath": "/Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/WebApplication1/EA.Services/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/nisargkaneriya/.nuget/NuGet/NuGet.Config"
@@ -3116,11 +3116,11 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "/Users/nisargkaneriya/Documents/Nisarg/dotnet_projects/WebApplication1/EA.Common/EA.Common.csproj": {
-              "projectPath": "/Users/nisargkaneriya/Documents/Nisarg/dotnet_projects/WebApplication1/EA.Common/EA.Common.csproj"
+            "/Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/WebApplication1/EA.Common/EA.Common.csproj": {
+              "projectPath": "/Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/WebApplication1/EA.Common/EA.Common.csproj"
             },
-            "/Users/nisargkaneriya/Documents/Nisarg/dotnet_projects/WebApplication1/EA.Model/EA.Model.csproj": {
-              "projectPath": "/Users/nisargkaneriya/Documents/Nisarg/dotnet_projects/WebApplication1/EA.Model/EA.Model.csproj"
+            "/Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/WebApplication1/EA.Model/EA.Model.csproj": {
+              "projectPath": "/Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/WebApplication1/EA.Model/EA.Model.csproj"
             }
           }
         }

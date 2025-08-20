@@ -46,6 +46,7 @@ public class BookRepository : IBookRepository
             var res = await _spContext.ExecutreStoreProcedureResultList(sqlQuery, param);
 
             var list = JsonConvert.DeserializeObject<List<BookResponseModel>>(res.Result?.ToString() ?? "[]");
+            
 
             if (list == null || !list.Any())
             {

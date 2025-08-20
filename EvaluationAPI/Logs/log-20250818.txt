@@ -2853,3 +2853,58 @@ SP_GetAllBookdynamic @p0
 2025-08-18 15:37:01.477 +05:30 [INF] Executed endpoint 'EvaluationAPI.Controllers.BookController.GetallBooks (EvaluationAPI)'
 2025-08-18 15:37:01.492 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5188/api/Book/dynamicgetall - 200 null application/json; charset=utf-8 1465.0648ms
 2025-08-18 15:37:55.934 +05:30 [INF] Application is shutting down...
+2025-08-18 16:40:51.969 +05:30 [INF] Now listening on: http://localhost:5188
+2025-08-18 16:40:52.135 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-18 16:40:52.135 +05:30 [INF] Hosting environment: Development
+2025-08-18 16:40:52.135 +05:30 [INF] Content root path: /Users/nisargkaneriya/Documents/Nisarg/dotnet_projects/WebApplication1/EvaluationAPI
+2025-08-18 16:40:52.378 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5188/swagger/v1/swagger.json - null null
+2025-08-18 16:40:52.615 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5188/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 237.8863ms
+2025-08-18 16:40:57.355 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5188/api/Book/dynamicgetall - null null
+2025-08-18 16:40:57.368 +05:30 [WRN] Failed to determine the https port for redirect.
+2025-08-18 16:40:57.373 +05:30 [INF] Executing endpoint 'EvaluationAPI.Controllers.BookController.GetallBooks (EvaluationAPI)'
+2025-08-18 16:40:57.395 +05:30 [INF] Route matched with {action = "GetallBooks", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[EA.Model.ResponseModel.BookResponseModel]]] GetallBooks(SearchRequestModel) on controller EvaluationAPI.Controllers.BookController (EvaluationAPI).
+2025-08-18 16:40:57.529 +05:30 [INF] Executing action method EvaluationAPI.Controllers.BookController.GetallBooks (EvaluationAPI) - Validation state: "Valid"
+2025-08-18 16:40:57.534 +05:30 [INF] Fetching all books with search params: {"SearchText":null,"Page":1,"PageSize":10,"SortColumn":null,"SortOrder":null,"Filters":null,"$type":"SearchRequestModel"}
+2025-08-18 16:40:57.545 +05:30 [INF] Fetching list of books with parameters: {"SortColumn":"BookSid","SortOrder":"DESC","SearchText":"%","Filters":"1 = 1 AND","Page":1,"PageSize":10}
+2025-08-18 16:40:57.874 +05:30 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2025-08-18 16:40:58.663 +05:30 [INF] Executed DbCommand (53ms) [Parameters=[p0='<Search><SortColumn>BookSid</SortColumn><SortOrder>DESC</SortOrder><SearchText>%</SearchText><Filters>1 = 1 AND</Filters><Page>1</Page><PageSize>10</PageSize></Search>' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SP_GetAllBookdynamic @p0
+2025-08-18 16:40:58.797 +05:30 [INF] Books list retrieved successfully.
+2025-08-18 16:40:58.798 +05:30 [INF] Retrieved 10 books
+2025-08-18 16:40:58.801 +05:30 [INF] Executed action method EvaluationAPI.Controllers.BookController.GetallBooks (EvaluationAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1268.8471ms.
+2025-08-18 16:40:58.817 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[EA.Model.ResponseModel.BookResponseModel, EA.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-08-18 16:40:58.997 +05:30 [INF] Executed action EvaluationAPI.Controllers.BookController.GetallBooks (EvaluationAPI) in 1597.431ms
+2025-08-18 16:40:58.998 +05:30 [INF] Executed endpoint 'EvaluationAPI.Controllers.BookController.GetallBooks (EvaluationAPI)'
+2025-08-18 16:40:59.010 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5188/api/Book/dynamicgetall - 200 null application/json; charset=utf-8 1655.3688ms
+2025-08-18 16:46:07.977 +05:30 [INF] Request starting HTTP/1.1 DELETE http://localhost:5188/api/Book/dynamicdelete/jkl - null 0
+2025-08-18 16:46:07.980 +05:30 [INF] Executing endpoint 'EvaluationAPI.Controllers.BookController.DeleteBook (EvaluationAPI)'
+2025-08-18 16:46:07.983 +05:30 [INF] Route matched with {action = "DeleteBook", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] DeleteBook(System.String) on controller EvaluationAPI.Controllers.BookController (EvaluationAPI).
+2025-08-18 16:46:07.985 +05:30 [INF] Executing action method EvaluationAPI.Controllers.BookController.DeleteBook (EvaluationAPI) - Validation state: "Valid"
+2025-08-18 16:46:07.986 +05:30 [INF] Request to delete book with SID: jkl
+2025-08-18 16:46:07.987 +05:30 [INF] Deleting (marking as unavailable) book with SID: jkl
+2025-08-18 16:46:08.084 +05:30 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[BookID], [b].[Author], [b].[BookSID], [b].[BorrowedStatus], [b].[ISBN], [b].[PublishedYear], [b].[Status], [b].[Title]
+FROM [Book] AS [b]
+2025-08-18 16:46:08.087 +05:30 [WRN] Book not found for deletion. SID: jkl
+2025-08-18 16:46:08.087 +05:30 [WRN] Deleting failed Book with the Sid:jkl
+2025-08-18 16:46:08.088 +05:30 [INF] Executed action EvaluationAPI.Controllers.BookController.DeleteBook (EvaluationAPI) in 105.027ms
+2025-08-18 16:46:08.088 +05:30 [INF] Executed endpoint 'EvaluationAPI.Controllers.BookController.DeleteBook (EvaluationAPI)'
+2025-08-18 16:46:08.089 +05:30 [ERR] Custom error occurred: Book not found for deletion
+EA.Common.HttpStatusCodeException: Book not found for deletion
+   at EA.Services.Repositories.Implementation.BookRepository.Deletebook(String bookSid) in /Users/nisargkaneriya/Documents/Nisarg/dotnet_projects/WebApplication1/EA.Services/Repositories/Implementation/BookRepository.cs:line 342
+   at EvaluationAPI.Controllers.BookController.DeleteBook(String bookSid) in /Users/nisargkaneriya/Documents/Nisarg/dotnet_projects/WebApplication1/EvaluationAPI/Controllers/BookController.cs:line 144
+   at lambda_method43(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at EvaluationAPI.Helper.ExceptionHandlingMiddleware.InvokeAsync(HttpContext context) in /Users/nisargkaneriya/Documents/Nisarg/dotnet_projects/WebApplication1/EvaluationAPI/Helper/ExceptionHandlingMiddleware.cs:line 23
+2025-08-18 16:46:08.125 +05:30 [INF] Request finished HTTP/1.1 DELETE http://localhost:5188/api/Book/dynamicdelete/jkl - 400 null application/json 147.5904ms
+2025-08-18 16:50:30.459 +05:30 [INF] Application is shutting down...

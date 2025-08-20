@@ -60,11 +60,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/nisargkaneriya/Documents/Nisarg/dotnet_projects/WebApplication1/EA.Common/EA.Common.csproj",
+      "projectUniqueName": "/Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/WebApplication1/EA.Common/EA.Common.csproj",
       "projectName": "EA.Common",
-      "projectPath": "/Users/nisargkaneriya/Documents/Nisarg/dotnet_projects/WebApplication1/EA.Common/EA.Common.csproj",
+      "projectPath": "/Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/WebApplication1/EA.Common/EA.Common.csproj",
       "packagesPath": "/Users/nisargkaneriya/.nuget/packages/",
-      "outputPath": "/Users/nisargkaneriya/Documents/Nisarg/dotnet_projects/WebApplication1/EA.Common/obj/",
+      "outputPath": "/Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/WebApplication1/EA.Common/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/nisargkaneriya/.nuget/NuGet/NuGet.Config"

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "BspnQ0Vzbd0=",
+  "dgSpecHash": "uTCxY3jd2LQ=",
   "success": true,
-  "projectFilePath": "/Users/nisargkaneriya/Documents/Nisarg/dotnet_projects/WebApplication1/EA.Services/EA.Services.csproj",
+  "projectFilePath": "/Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/WebApplication1/EA.Services/EA.Services.csproj",
   "expectedPackageFiles": [
     "/Users/nisargkaneriya/.nuget/packages/automapper/12.0.1/automapper.12.0.1.nupkg.sha512",
     "/Users/nisargkaneriya/.nuget/packages/automapper.extensions.microsoft.dependencyinjection/12.0.1/automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
