@@ -1,0 +1,1302 @@
+2025-08-21 14:52:45.827 +05:30 [INF] Now listening on: http://localhost:5188
+2025-08-21 14:52:45.872 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-21 14:52:45.872 +05:30 [INF] Hosting environment: Development
+2025-08-21 14:52:45.872 +05:30 [INF] Content root path: /Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/WebApplication1/EvaluationAPI
+2025-08-21 14:52:46.757 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5188/swagger/v1/swagger.json - null null
+2025-08-21 14:52:46.853 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5188/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 96.239ms
+2025-08-21 14:53:10.190 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5188/api/Book/dynamicgetall - null null
+2025-08-21 14:53:10.212 +05:30 [WRN] Failed to determine the https port for redirect.
+2025-08-21 14:53:10.263 +05:30 [INF] Executing endpoint 'EvaluationAPI.Controllers.BookController.GetallBooks (EvaluationAPI)'
+2025-08-21 14:53:10.276 +05:30 [INF] Route matched with {action = "GetallBooks", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[EA.Model.ResponseModel.BookResponseModel]]] GetallBooks(SearchRequestModel) on controller EvaluationAPI.Controllers.BookController (EvaluationAPI).
+2025-08-21 14:53:10.379 +05:30 [INF] Executing action method EvaluationAPI.Controllers.BookController.GetallBooks (EvaluationAPI) - Validation state: "Valid"
+2025-08-21 14:53:10.383 +05:30 [INF] Fetching all books with search params: {"SearchText":null,"Page":1,"PageSize":10,"SortColumn":null,"SortOrder":null,"Filters":null,"$type":"SearchRequestModel"}
+2025-08-21 14:53:10.391 +05:30 [INF] Fetching list of books with parameters: {"SortColumn":"BookSid","SortOrder":"DESC","SearchText":"%","Filters":"1 = 1 AND","Page":1,"PageSize":10}
+2025-08-21 14:53:10.606 +05:30 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2025-08-21 14:53:11.163 +05:30 [INF] Executed DbCommand (138ms) [Parameters=[p0='<Search><SortColumn>BookSid</SortColumn><SortOrder>DESC</SortOrder><SearchText>%</SearchText><Filters>1 = 1 AND</Filters><Page>1</Page><PageSize>10</PageSize></Search>' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SP_GetAllBookdynamic @p0
+2025-08-21 14:53:11.258 +05:30 [INF] Books list retrieved successfully.
+2025-08-21 14:53:11.258 +05:30 [INF] Retrieved 10 books
+2025-08-21 14:53:11.266 +05:30 [INF] Executed action method EvaluationAPI.Controllers.BookController.GetallBooks (EvaluationAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 884.5786ms.
+2025-08-21 14:53:11.273 +05:30 [INF] Executing OkObjectResult, writing value of type 'EA.Model.CommonModel.Page'.
+2025-08-21 14:53:11.386 +05:30 [INF] Executed action EvaluationAPI.Controllers.BookController.GetallBooks (EvaluationAPI) in 1107.3827ms
+2025-08-21 14:53:11.387 +05:30 [INF] Executed endpoint 'EvaluationAPI.Controllers.BookController.GetallBooks (EvaluationAPI)'
+2025-08-21 14:53:11.397 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5188/api/Book/dynamicgetall - 200 null application/json; charset=utf-8 1208.6201ms
+2025-08-21 14:53:41.454 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5188/api/Book/dynamicgetall - null null
+2025-08-21 14:53:41.464 +05:30 [INF] Executing endpoint 'EvaluationAPI.Controllers.BookController.GetallBooks (EvaluationAPI)'
+2025-08-21 14:53:41.465 +05:30 [INF] Route matched with {action = "GetallBooks", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[EA.Model.ResponseModel.BookResponseModel]]] GetallBooks(SearchRequestModel) on controller EvaluationAPI.Controllers.BookController (EvaluationAPI).
+2025-08-21 14:53:41.471 +05:30 [INF] Executing action method EvaluationAPI.Controllers.BookController.GetallBooks (EvaluationAPI) - Validation state: "Valid"
+2025-08-21 14:53:41.472 +05:30 [INF] Fetching all books with search params: {"SearchText":null,"Page":1,"PageSize":10,"SortColumn":null,"SortOrder":null,"Filters":null,"$type":"SearchRequestModel"}
+2025-08-21 14:53:41.474 +05:30 [INF] Fetching list of books with parameters: {"SortColumn":"BookSid","SortOrder":"DESC","SearchText":"%","Filters":"1 = 1 AND","Page":1,"PageSize":10}
+2025-08-21 14:53:41.552 +05:30 [INF] Executed DbCommand (37ms) [Parameters=[p0='<Search><SortColumn>BookSid</SortColumn><SortOrder>DESC</SortOrder><SearchText>%</SearchText><Filters>1 = 1 AND</Filters><Page>1</Page><PageSize>10</PageSize></Search>' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SP_GetAllBookdynamic @p0
+2025-08-21 14:53:41.554 +05:30 [INF] Books list retrieved successfully.
+2025-08-21 14:53:41.554 +05:30 [INF] Retrieved 10 books
+2025-08-21 14:53:41.555 +05:30 [INF] Executed action method EvaluationAPI.Controllers.BookController.GetallBooks (EvaluationAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 83.861ms.
+2025-08-21 14:53:41.556 +05:30 [INF] Executing OkObjectResult, writing value of type 'EA.Model.CommonModel.Page'.
+2025-08-21 14:53:41.558 +05:30 [INF] Executed action EvaluationAPI.Controllers.BookController.GetallBooks (EvaluationAPI) in 92.1601ms
+2025-08-21 14:53:41.558 +05:30 [INF] Executed endpoint 'EvaluationAPI.Controllers.BookController.GetallBooks (EvaluationAPI)'
+2025-08-21 14:53:41.558 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5188/api/Book/dynamicgetall - 200 null application/json; charset=utf-8 105.3113ms
+2025-08-21 15:01:30.286 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5188/api/Book/dynamicgetall - null null
+2025-08-21 15:01:30.289 +05:30 [INF] Executing endpoint 'EvaluationAPI.Controllers.BookController.GetallBooks (EvaluationAPI)'
+2025-08-21 15:01:30.292 +05:30 [INF] Route matched with {action = "GetallBooks", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[EA.Model.ResponseModel.BookResponseModel]]] GetallBooks(SearchRequestModel) on controller EvaluationAPI.Controllers.BookController (EvaluationAPI).
+2025-08-21 15:01:30.305 +05:30 [INF] Executing action method EvaluationAPI.Controllers.BookController.GetallBooks (EvaluationAPI) - Validation state: "Valid"
+2025-08-21 15:01:30.306 +05:30 [INF] Fetching all books with search params: {"SearchText":null,"Page":1,"PageSize":10,"SortColumn":null,"SortOrder":null,"Filters":null,"$type":"SearchRequestModel"}
+2025-08-21 15:01:30.306 +05:30 [INF] Fetching list of books with parameters: {"SortColumn":"BookSid","SortOrder":"DESC","SearchText":"%","Filters":"1 = 1 AND","Page":1,"PageSize":10}
+2025-08-21 15:01:30.427 +05:30 [INF] Executed DbCommand (15ms) [Parameters=[p0='<Search><SortColumn>BookSid</SortColumn><SortOrder>DESC</SortOrder><SearchText>%</SearchText><Filters>1 = 1 AND</Filters><Page>1</Page><PageSize>10</PageSize></Search>' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SP_GetAllBookdynamic @p0
+2025-08-21 15:01:30.429 +05:30 [INF] Books list retrieved successfully.
+2025-08-21 15:01:30.429 +05:30 [INF] Retrieved 10 books
+2025-08-21 15:01:30.429 +05:30 [INF] Executed action method EvaluationAPI.Controllers.BookController.GetallBooks (EvaluationAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 123.7893ms.
+2025-08-21 15:01:30.430 +05:30 [INF] Executing OkObjectResult, writing value of type 'EA.Model.CommonModel.Page'.
+2025-08-21 15:01:30.431 +05:30 [INF] Executed action EvaluationAPI.Controllers.BookController.GetallBooks (EvaluationAPI) in 138.704ms
+2025-08-21 15:01:30.431 +05:30 [INF] Executed endpoint 'EvaluationAPI.Controllers.BookController.GetallBooks (EvaluationAPI)'
+2025-08-21 15:01:30.431 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5188/api/Book/dynamicgetall - 200 null application/json; charset=utf-8 145.2749ms
+2025-08-21 15:07:44.555 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5188/api/Book/dynamicgetall - null null
+2025-08-21 15:07:44.558 +05:30 [INF] Executing endpoint 'EvaluationAPI.Controllers.BookController.GetallBooks (EvaluationAPI)'
+2025-08-21 15:07:44.558 +05:30 [INF] Route matched with {action = "GetallBooks", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[EA.Model.ResponseModel.BookResponseModel]]] GetallBooks(SearchRequestModel) on controller EvaluationAPI.Controllers.BookController (EvaluationAPI).
+2025-08-21 15:07:44.561 +05:30 [INF] Executing action method EvaluationAPI.Controllers.BookController.GetallBooks (EvaluationAPI) - Validation state: "Valid"
+2025-08-21 15:07:44.561 +05:30 [INF] Fetching all books with search params: {"SearchText":null,"Page":1,"PageSize":10,"SortColumn":null,"SortOrder":null,"Filters":null,"$type":"SearchRequestModel"}
+2025-08-21 15:07:44.561 +05:30 [INF] Fetching list of books with parameters: {"SortColumn":"BookSid","SortOrder":"DESC","SearchText":"%","Filters":"1 = 1 AND","Page":1,"PageSize":10}
+2025-08-21 15:07:44.589 +05:30 [INF] Executed DbCommand (23ms) [Parameters=[p0='<Search><SortColumn>BookSid</SortColumn><SortOrder>DESC</SortOrder><SearchText>%</SearchText><Filters>1 = 1 AND</Filters><Page>1</Page><PageSize>10</PageSize></Search>' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SP_GetAllBookdynamic @p0
+2025-08-21 15:07:44.597 +05:30 [INF] Books list retrieved successfully.
+2025-08-21 15:07:44.597 +05:30 [INF] Retrieved 10 books
+2025-08-21 15:07:44.598 +05:30 [INF] Executed action method EvaluationAPI.Controllers.BookController.GetallBooks (EvaluationAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 37.7217ms.
+2025-08-21 15:07:44.600 +05:30 [INF] Executing OkObjectResult, writing value of type 'EA.Model.CommonModel.Page'.
+2025-08-21 15:07:44.602 +05:30 [INF] Executed action EvaluationAPI.Controllers.BookController.GetallBooks (EvaluationAPI) in 43.6089ms
+2025-08-21 15:07:44.602 +05:30 [INF] Executed endpoint 'EvaluationAPI.Controllers.BookController.GetallBooks (EvaluationAPI)'
+2025-08-21 15:07:44.602 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5188/api/Book/dynamicgetall - 200 null application/json; charset=utf-8 47.3379ms
+2025-08-21 15:08:31.715 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5188/api/Book/dynamicgetall - null null
+2025-08-21 15:08:31.723 +05:30 [INF] Executing endpoint 'EvaluationAPI.Controllers.BookController.GetallBooks (EvaluationAPI)'
+2025-08-21 15:08:31.724 +05:30 [INF] Route matched with {action = "GetallBooks", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[EA.Model.ResponseModel.BookResponseModel]]] GetallBooks(SearchRequestModel) on controller EvaluationAPI.Controllers.BookController (EvaluationAPI).
+2025-08-21 15:08:31.729 +05:30 [INF] Executing action method EvaluationAPI.Controllers.BookController.GetallBooks (EvaluationAPI) - Validation state: "Valid"
+2025-08-21 15:08:31.729 +05:30 [INF] Fetching all books with search params: {"SearchText":null,"Page":1,"PageSize":10,"SortColumn":null,"SortOrder":null,"Filters":null,"$type":"SearchRequestModel"}
+2025-08-21 15:08:31.729 +05:30 [INF] Fetching list of books with parameters: {"SortColumn":"BookSid","SortOrder":"DESC","SearchText":"%","Filters":"1 = 1 AND","Page":1,"PageSize":10}
+2025-08-21 15:08:31.757 +05:30 [INF] Executed DbCommand (25ms) [Parameters=[p0='<Search><SortColumn>BookSid</SortColumn><SortOrder>DESC</SortOrder><SearchText>%</SearchText><Filters>1 = 1 AND</Filters><Page>1</Page><PageSize>10</PageSize></Search>' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SP_GetAllBookdynamic @p0
+2025-08-21 15:08:31.759 +05:30 [INF] Books list retrieved successfully.
+2025-08-21 15:08:31.759 +05:30 [INF] Retrieved 10 books
+2025-08-21 15:08:31.759 +05:30 [INF] Executed action method EvaluationAPI.Controllers.BookController.GetallBooks (EvaluationAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 30.1521ms.
+2025-08-21 15:08:31.759 +05:30 [INF] Executing OkObjectResult, writing value of type 'EA.Model.CommonModel.Page'.
+2025-08-21 15:08:31.760 +05:30 [INF] Executed action EvaluationAPI.Controllers.BookController.GetallBooks (EvaluationAPI) in 36.0129ms
+2025-08-21 15:08:31.760 +05:30 [INF] Executed endpoint 'EvaluationAPI.Controllers.BookController.GetallBooks (EvaluationAPI)'
+2025-08-21 15:08:31.760 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5188/api/Book/dynamicgetall - 200 null application/json; charset=utf-8 45.1272ms
+2025-08-21 15:09:05.366 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5188/api/Book/dynamicgetall - null null
+2025-08-21 15:09:05.368 +05:30 [INF] Executing endpoint 'EvaluationAPI.Controllers.BookController.GetallBooks (EvaluationAPI)'
+2025-08-21 15:09:05.369 +05:30 [INF] Route matched with {action = "GetallBooks", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[EA.Model.ResponseModel.BookResponseModel]]] GetallBooks(SearchRequestModel) on controller EvaluationAPI.Controllers.BookController (EvaluationAPI).
+2025-08-21 15:09:05.372 +05:30 [INF] Executing action method EvaluationAPI.Controllers.BookController.GetallBooks (EvaluationAPI) - Validation state: "Valid"
+2025-08-21 15:09:05.373 +05:30 [INF] Fetching all books with search params: {"SearchText":null,"Page":1,"PageSize":10,"SortColumn":null,"SortOrder":null,"Filters":null,"$type":"SearchRequestModel"}
+2025-08-21 15:09:05.373 +05:30 [INF] Fetching list of books with parameters: {"SortColumn":"BookSid","SortOrder":"DESC","SearchText":"%","Filters":"1 = 1 AND","Page":1,"PageSize":10}
+2025-08-21 15:09:05.402 +05:30 [INF] Executed DbCommand (23ms) [Parameters=[p0='<Search><SortColumn>BookSid</SortColumn><SortOrder>DESC</SortOrder><SearchText>%</SearchText><Filters>1 = 1 AND</Filters><Page>1</Page><PageSize>10</PageSize></Search>' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SP_GetAllBookdynamic @p0
+2025-08-21 15:09:05.404 +05:30 [INF] Books list retrieved successfully.
+2025-08-21 15:09:05.404 +05:30 [INF] Retrieved 10 books
+2025-08-21 15:09:05.408 +05:30 [INF] Executed action method EvaluationAPI.Controllers.BookController.GetallBooks (EvaluationAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 35.1924ms.
+2025-08-21 15:09:05.409 +05:30 [INF] Executing OkObjectResult, writing value of type 'EA.Model.CommonModel.Page'.
+2025-08-21 15:09:05.409 +05:30 [INF] Executed action EvaluationAPI.Controllers.BookController.GetallBooks (EvaluationAPI) in 40.4635ms
+2025-08-21 15:09:05.410 +05:30 [INF] Executed endpoint 'EvaluationAPI.Controllers.BookController.GetallBooks (EvaluationAPI)'
+2025-08-21 15:09:05.410 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5188/api/Book/dynamicgetall - 200 null application/json; charset=utf-8 44.1693ms
+2025-08-21 15:09:49.115 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5188/api/Book/dynamicgetall - null null
+2025-08-21 15:09:49.122 +05:30 [INF] Executing endpoint 'EvaluationAPI.Controllers.BookController.GetallBooks (EvaluationAPI)'
+2025-08-21 15:09:49.127 +05:30 [INF] Route matched with {action = "GetallBooks", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[EA.Model.ResponseModel.BookResponseModel]]] GetallBooks(SearchRequestModel) on controller EvaluationAPI.Controllers.BookController (EvaluationAPI).
+2025-08-21 15:09:49.132 +05:30 [INF] Executing action method EvaluationAPI.Controllers.BookController.GetallBooks (EvaluationAPI) - Validation state: "Valid"
+2025-08-21 15:09:49.133 +05:30 [INF] Fetching all books with search params: {"SearchText":null,"Page":1,"PageSize":10,"SortColumn":null,"SortOrder":null,"Filters":null,"$type":"SearchRequestModel"}
+2025-08-21 15:09:49.133 +05:30 [INF] Fetching list of books with parameters: {"SortColumn":"BookSid","SortOrder":"DESC","SearchText":"%","Filters":"1 = 1 AND","Page":1,"PageSize":10}
+2025-08-21 15:09:49.157 +05:30 [INF] Executed DbCommand (19ms) [Parameters=[p0='<Search><SortColumn>BookSid</SortColumn><SortOrder>DESC</SortOrder><SearchText>%</SearchText><Filters>1 = 1 AND</Filters><Page>1</Page><PageSize>10</PageSize></Search>' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SP_GetAllBookdynamic @p0
+2025-08-21 15:09:49.158 +05:30 [INF] Books list retrieved successfully.
+2025-08-21 15:09:49.158 +05:30 [INF] Retrieved 10 books
+2025-08-21 15:09:49.158 +05:30 [INF] Executed action method EvaluationAPI.Controllers.BookController.GetallBooks (EvaluationAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 25.6314ms.
+2025-08-21 15:09:49.158 +05:30 [INF] Executing OkObjectResult, writing value of type 'EA.Model.CommonModel.Page'.
+2025-08-21 15:09:49.159 +05:30 [INF] Executed action EvaluationAPI.Controllers.BookController.GetallBooks (EvaluationAPI) in 30.2398ms
+2025-08-21 15:09:49.159 +05:30 [INF] Executed endpoint 'EvaluationAPI.Controllers.BookController.GetallBooks (EvaluationAPI)'
+2025-08-21 15:09:49.159 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5188/api/Book/dynamicgetall - 200 null application/json; charset=utf-8 44.5638ms
+2025-08-21 15:10:24.828 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5188/api/Book/dynamicgetall - null null
+2025-08-21 15:10:24.833 +05:30 [INF] Executing endpoint 'EvaluationAPI.Controllers.BookController.GetallBooks (EvaluationAPI)'
+2025-08-21 15:10:24.835 +05:30 [INF] Route matched with {action = "GetallBooks", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[EA.Model.ResponseModel.BookResponseModel]]] GetallBooks(SearchRequestModel) on controller EvaluationAPI.Controllers.BookController (EvaluationAPI).
+2025-08-21 15:10:24.851 +05:30 [INF] Executing action method EvaluationAPI.Controllers.BookController.GetallBooks (EvaluationAPI) - Validation state: "Valid"
+2025-08-21 15:10:24.852 +05:30 [INF] Fetching all books with search params: {"SearchText":null,"Page":1,"PageSize":10,"SortColumn":null,"SortOrder":null,"Filters":null,"$type":"SearchRequestModel"}
+2025-08-21 15:10:24.854 +05:30 [INF] Fetching list of books with parameters: {"SortColumn":"BookSid","SortOrder":"DESC","SearchText":"%","Filters":"1 = 1 AND","Page":1,"PageSize":10}
+2025-08-21 15:10:24.875 +05:30 [INF] Executed DbCommand (16ms) [Parameters=[p0='<Search><SortColumn>BookSid</SortColumn><SortOrder>DESC</SortOrder><SearchText>%</SearchText><Filters>1 = 1 AND</Filters><Page>1</Page><PageSize>10</PageSize></Search>' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SP_GetAllBookdynamic @p0
+2025-08-21 15:10:24.876 +05:30 [INF] Books list retrieved successfully.
+2025-08-21 15:10:24.876 +05:30 [INF] Retrieved 10 books
+2025-08-21 15:10:24.877 +05:30 [INF] Executed action method EvaluationAPI.Controllers.BookController.GetallBooks (EvaluationAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 24.9862ms.
+2025-08-21 15:10:24.877 +05:30 [INF] Executing OkObjectResult, writing value of type 'EA.Model.CommonModel.Page'.
+2025-08-21 15:10:24.877 +05:30 [INF] Executed action EvaluationAPI.Controllers.BookController.GetallBooks (EvaluationAPI) in 28.8172ms
+2025-08-21 15:10:24.877 +05:30 [INF] Executed endpoint 'EvaluationAPI.Controllers.BookController.GetallBooks (EvaluationAPI)'
+2025-08-21 15:10:24.878 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5188/api/Book/dynamicgetall - 200 null application/json; charset=utf-8 50.3929ms
+2025-08-21 15:11:48.407 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5188/api/Book/dynamicgetall - null null
+2025-08-21 15:11:48.409 +05:30 [INF] Executing endpoint 'EvaluationAPI.Controllers.BookController.GetallBooks (EvaluationAPI)'
+2025-08-21 15:11:48.410 +05:30 [INF] Route matched with {action = "GetallBooks", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[EA.Model.ResponseModel.BookResponseModel]]] GetallBooks(SearchRequestModel) on controller EvaluationAPI.Controllers.BookController (EvaluationAPI).
+2025-08-21 15:11:48.412 +05:30 [INF] Executing action method EvaluationAPI.Controllers.BookController.GetallBooks (EvaluationAPI) - Validation state: "Valid"
+2025-08-21 15:11:48.413 +05:30 [INF] Fetching all books with search params: {"SearchText":null,"Page":1,"PageSize":10,"SortColumn":null,"SortOrder":null,"Filters":null,"$type":"SearchRequestModel"}
+2025-08-21 15:11:48.414 +05:30 [INF] Fetching list of books with parameters: {"SortColumn":"BookSid","SortOrder":"DESC","SearchText":"%","Filters":"1 = 1 AND","Page":1,"PageSize":10}
+2025-08-21 15:11:48.450 +05:30 [INF] Executed DbCommand (33ms) [Parameters=[p0='<Search><SortColumn>BookSid</SortColumn><SortOrder>DESC</SortOrder><SearchText>%</SearchText><Filters>1 = 1 AND</Filters><Page>1</Page><PageSize>10</PageSize></Search>' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SP_GetAllBookdynamic @p0
+2025-08-21 15:11:48.454 +05:30 [INF] Books list retrieved successfully.
+2025-08-21 15:11:48.454 +05:30 [INF] Retrieved 10 books
+2025-08-21 15:11:48.455 +05:30 [INF] Executed action method EvaluationAPI.Controllers.BookController.GetallBooks (EvaluationAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 42.383ms.
+2025-08-21 15:11:48.455 +05:30 [INF] Executing OkObjectResult, writing value of type 'EA.Model.CommonModel.Page'.
+2025-08-21 15:11:48.456 +05:30 [INF] Executed action EvaluationAPI.Controllers.BookController.GetallBooks (EvaluationAPI) in 46.142ms
+2025-08-21 15:11:48.457 +05:30 [INF] Executed endpoint 'EvaluationAPI.Controllers.BookController.GetallBooks (EvaluationAPI)'
+2025-08-21 15:11:48.457 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5188/api/Book/dynamicgetall - 200 null application/json; charset=utf-8 50.5153ms
+2025-08-21 15:15:44.412 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5188/api/Book/dynamicgetall - null null
+2025-08-21 15:15:44.441 +05:30 [INF] Executing endpoint 'EvaluationAPI.Controllers.BookController.GetallBooks (EvaluationAPI)'
+2025-08-21 15:15:44.442 +05:30 [INF] Route matched with {action = "GetallBooks", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[EA.Model.ResponseModel.BookResponseModel]]] GetallBooks(SearchRequestModel) on controller EvaluationAPI.Controllers.BookController (EvaluationAPI).
+2025-08-21 15:15:44.468 +05:30 [INF] Executing action method EvaluationAPI.Controllers.BookController.GetallBooks (EvaluationAPI) - Validation state: "Valid"
+2025-08-21 15:15:44.468 +05:30 [INF] Fetching all books with search params: {"SearchText":null,"Page":1,"PageSize":10,"SortColumn":null,"SortOrder":null,"Filters":null,"$type":"SearchRequestModel"}
+2025-08-21 15:15:44.469 +05:30 [INF] Fetching list of books with parameters: {"SortColumn":"BookSid","SortOrder":"DESC","SearchText":"%","Filters":"1 = 1 AND","Page":1,"PageSize":10}
+2025-08-21 15:15:44.514 +05:30 [INF] Executed DbCommand (36ms) [Parameters=[p0='<Search><SortColumn>BookSid</SortColumn><SortOrder>DESC</SortOrder><SearchText>%</SearchText><Filters>1 = 1 AND</Filters><Page>1</Page><PageSize>10</PageSize></Search>' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SP_GetAllBookdynamic @p0
+2025-08-21 15:15:44.517 +05:30 [INF] Books list retrieved successfully.
+2025-08-21 15:15:44.517 +05:30 [INF] Retrieved 10 books
+2025-08-21 15:15:44.517 +05:30 [INF] Executed action method EvaluationAPI.Controllers.BookController.GetallBooks (EvaluationAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 49.0265ms.
+2025-08-21 15:15:44.517 +05:30 [INF] Executing OkObjectResult, writing value of type 'EA.Model.CommonModel.Page'.
+2025-08-21 15:15:44.518 +05:30 [INF] Executed action EvaluationAPI.Controllers.BookController.GetallBooks (EvaluationAPI) in 76.1971ms
+2025-08-21 15:15:44.518 +05:30 [INF] Executed endpoint 'EvaluationAPI.Controllers.BookController.GetallBooks (EvaluationAPI)'
+2025-08-21 15:15:44.519 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5188/api/Book/dynamicgetall - 200 null application/json; charset=utf-8 106.1772ms
+2025-08-21 15:16:36.689 +05:30 [INF] Application is shutting down...
+2025-08-21 15:17:29.229 +05:30 [INF] Now listening on: http://localhost:5188
+2025-08-21 15:17:29.262 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-21 15:17:29.262 +05:30 [INF] Hosting environment: Development
+2025-08-21 15:17:29.262 +05:30 [INF] Content root path: /Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/WebApplication1/EvaluationAPI
+2025-08-21 15:17:29.934 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5188/swagger/v1/swagger.json - null null
+2025-08-21 15:17:30.028 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5188/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 94.9462ms
+2025-08-21 15:17:34.527 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5188/api/Book/dynamicgetall - null null
+2025-08-21 15:17:34.552 +05:30 [WRN] Failed to determine the https port for redirect.
+2025-08-21 15:17:34.559 +05:30 [INF] Executing endpoint 'EvaluationAPI.Controllers.BookController.GetallBooks (EvaluationAPI)'
+2025-08-21 15:17:34.586 +05:30 [INF] Route matched with {action = "GetallBooks", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[EA.Model.ResponseModel.BookResponseModel]]] GetallBooks(SearchRequestModel) on controller EvaluationAPI.Controllers.BookController (EvaluationAPI).
+2025-08-21 15:17:34.708 +05:30 [INF] Executing action method EvaluationAPI.Controllers.BookController.GetallBooks (EvaluationAPI) - Validation state: "Valid"
+2025-08-21 15:17:34.713 +05:30 [INF] Fetching all books with search params: {"SearchText":null,"Page":1,"PageSize":10,"SortColumn":null,"SortOrder":null,"Filters":null,"$type":"SearchRequestModel"}
+2025-08-21 15:17:34.834 +05:30 [INF] Fetching list of books with parameters: {"SortColumn":"BookSid","SortOrder":"DESC","SearchText":"%","Filters":"1 = 1 AND","Page":1,"PageSize":10}
+2025-08-21 15:17:35.051 +05:30 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2025-08-21 15:17:35.517 +05:30 [INF] Executed DbCommand (44ms) [Parameters=[p0='<Search><SortColumn>BookSid</SortColumn><SortOrder>DESC</SortOrder><SearchText>%</SearchText><Filters>1 = 1 AND</Filters><Page>1</Page><PageSize>10</PageSize></Search>' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SP_GetAllBookdynamic @p0
+2025-08-21 15:17:35.614 +05:30 [INF] Books list retrieved successfully.
+2025-08-21 15:17:35.614 +05:30 [INF] Retrieved 10 books
+2025-08-21 15:17:35.624 +05:30 [INF] Executed action method EvaluationAPI.Controllers.BookController.GetallBooks (EvaluationAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 911.4398ms.
+2025-08-21 15:17:35.630 +05:30 [INF] Executing OkObjectResult, writing value of type 'EA.Model.CommonModel.Page'.
+2025-08-21 15:17:35.746 +05:30 [INF] Executed action EvaluationAPI.Controllers.BookController.GetallBooks (EvaluationAPI) in 1157.7856ms
+2025-08-21 15:17:35.747 +05:30 [INF] Executed endpoint 'EvaluationAPI.Controllers.BookController.GetallBooks (EvaluationAPI)'
+2025-08-21 15:17:35.757 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5188/api/Book/dynamicgetall - 200 null application/json; charset=utf-8 1230.5425ms
+2025-08-21 15:17:51.674 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5188/api/Book/dynamicgetall - null null
+2025-08-21 15:17:51.695 +05:30 [INF] Executing endpoint 'EvaluationAPI.Controllers.BookController.GetallBooks (EvaluationAPI)'
+2025-08-21 15:17:51.698 +05:30 [INF] Route matched with {action = "GetallBooks", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[EA.Model.ResponseModel.BookResponseModel]]] GetallBooks(SearchRequestModel) on controller EvaluationAPI.Controllers.BookController (EvaluationAPI).
+2025-08-21 15:17:51.723 +05:30 [INF] Executing action method EvaluationAPI.Controllers.BookController.GetallBooks (EvaluationAPI) - Validation state: "Valid"
+2025-08-21 15:17:51.726 +05:30 [INF] Fetching all books with search params: {"SearchText":null,"Page":1,"PageSize":10,"SortColumn":null,"SortOrder":null,"Filters":null,"$type":"SearchRequestModel"}
+2025-08-21 15:17:51.728 +05:30 [INF] Fetching list of books with parameters: {"SortColumn":"BookSid","SortOrder":"DESC","SearchText":"%","Filters":"1 = 1 AND","Page":1,"PageSize":10}
+2025-08-21 15:17:51.797 +05:30 [INF] Executed DbCommand (22ms) [Parameters=[p0='<Search><SortColumn>BookSid</SortColumn><SortOrder>DESC</SortOrder><SearchText>%</SearchText><Filters>1 = 1 AND</Filters><Page>1</Page><PageSize>10</PageSize></Search>' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SP_GetAllBookdynamic @p0
+2025-08-21 15:17:51.798 +05:30 [INF] Books list retrieved successfully.
+2025-08-21 15:17:51.798 +05:30 [INF] Retrieved 10 books
+2025-08-21 15:17:51.798 +05:30 [INF] Executed action method EvaluationAPI.Controllers.BookController.GetallBooks (EvaluationAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 75.211ms.
+2025-08-21 15:17:51.799 +05:30 [INF] Executing OkObjectResult, writing value of type 'EA.Model.CommonModel.Page'.
+2025-08-21 15:17:51.800 +05:30 [INF] Executed action EvaluationAPI.Controllers.BookController.GetallBooks (EvaluationAPI) in 99.6837ms
+2025-08-21 15:17:51.800 +05:30 [INF] Executed endpoint 'EvaluationAPI.Controllers.BookController.GetallBooks (EvaluationAPI)'
+2025-08-21 15:17:51.801 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5188/api/Book/dynamicgetall - 200 null application/json; charset=utf-8 127.203ms
+2025-08-21 15:18:07.028 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5188/api/Book/dynamicgetall - null null
+2025-08-21 15:18:07.032 +05:30 [INF] Executing endpoint 'EvaluationAPI.Controllers.BookController.GetallBooks (EvaluationAPI)'
+2025-08-21 15:18:07.034 +05:30 [INF] Route matched with {action = "GetallBooks", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[EA.Model.ResponseModel.BookResponseModel]]] GetallBooks(SearchRequestModel) on controller EvaluationAPI.Controllers.BookController (EvaluationAPI).
+2025-08-21 15:18:07.058 +05:30 [INF] Executing action method EvaluationAPI.Controllers.BookController.GetallBooks (EvaluationAPI) - Validation state: "Valid"
+2025-08-21 15:18:07.062 +05:30 [INF] Fetching all books with search params: {"SearchText":null,"Page":1,"PageSize":10,"SortColumn":null,"SortOrder":null,"Filters":null,"$type":"SearchRequestModel"}
+2025-08-21 15:18:07.064 +05:30 [INF] Fetching list of books with parameters: {"SortColumn":"BookSid","SortOrder":"DESC","SearchText":"%","Filters":"1 = 1 AND","Page":1,"PageSize":10}
+2025-08-21 15:18:07.108 +05:30 [INF] Executed DbCommand (19ms) [Parameters=[p0='<Search><SortColumn>BookSid</SortColumn><SortOrder>DESC</SortOrder><SearchText>%</SearchText><Filters>1 = 1 AND</Filters><Page>1</Page><PageSize>10</PageSize></Search>' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SP_GetAllBookdynamic @p0
+2025-08-21 15:18:07.110 +05:30 [INF] Books list retrieved successfully.
+2025-08-21 15:18:07.110 +05:30 [INF] Retrieved 10 books
+2025-08-21 15:18:07.110 +05:30 [INF] Executed action method EvaluationAPI.Controllers.BookController.GetallBooks (EvaluationAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 51.7029ms.
+2025-08-21 15:18:07.111 +05:30 [INF] Executing OkObjectResult, writing value of type 'EA.Model.CommonModel.Page'.
+2025-08-21 15:18:07.111 +05:30 [INF] Executed action EvaluationAPI.Controllers.BookController.GetallBooks (EvaluationAPI) in 76.3388ms
+2025-08-21 15:18:07.112 +05:30 [INF] Executed endpoint 'EvaluationAPI.Controllers.BookController.GetallBooks (EvaluationAPI)'
+2025-08-21 15:18:07.113 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5188/api/Book/dynamicgetall - 200 null application/json; charset=utf-8 84.2157ms
+2025-08-21 15:19:25.372 +05:30 [INF] Application is shutting down...
+2025-08-21 15:19:28.308 +05:30 [INF] Now listening on: http://localhost:5188
+2025-08-21 15:19:28.352 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-21 15:19:28.353 +05:30 [INF] Hosting environment: Development
+2025-08-21 15:19:28.353 +05:30 [INF] Content root path: /Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/WebApplication1/EvaluationAPI
+2025-08-21 15:19:29.302 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5188/swagger/v1/swagger.json - null null
+2025-08-21 15:19:29.392 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5188/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 91.036ms
+2025-08-21 15:19:35.182 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5188/api/Book/dynamicgetall - null null
+2025-08-21 15:19:35.197 +05:30 [WRN] Failed to determine the https port for redirect.
+2025-08-21 15:19:35.201 +05:30 [INF] Executing endpoint 'EvaluationAPI.Controllers.BookController.GetallBooks (EvaluationAPI)'
+2025-08-21 15:19:35.219 +05:30 [INF] Route matched with {action = "GetallBooks", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[EA.Model.ResponseModel.BookResponseModel]]] GetallBooks(SearchRequestModel) on controller EvaluationAPI.Controllers.BookController (EvaluationAPI).
+2025-08-21 15:19:35.340 +05:30 [INF] Executing action method EvaluationAPI.Controllers.BookController.GetallBooks (EvaluationAPI) - Validation state: "Valid"
+2025-08-21 15:19:35.344 +05:30 [INF] Fetching all books with search params: {"SearchText":null,"Page":1,"PageSize":10,"SortColumn":null,"SortOrder":null,"Filters":null,"$type":"SearchRequestModel"}
+2025-08-21 15:19:35.353 +05:30 [INF] Fetching list of books with parameters: {"SortColumn":"BookSid","SortOrder":"DESC","SearchText":"%","Filters":"1 = 1 AND","Page":1,"PageSize":10}
+2025-08-21 15:19:35.599 +05:30 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2025-08-21 15:19:36.157 +05:30 [INF] Executed DbCommand (53ms) [Parameters=[p0='<Search><SortColumn>BookSid</SortColumn><SortOrder>DESC</SortOrder><SearchText>%</SearchText><Filters>1 = 1 AND</Filters><Page>1</Page><PageSize>10</PageSize></Search>' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SP_GetAllBookdynamic @p0
+2025-08-21 15:19:36.271 +05:30 [INF] Books list retrieved successfully.
+2025-08-21 15:19:36.271 +05:30 [INF] Retrieved 10 books
+2025-08-21 15:19:36.281 +05:30 [INF] Executed action method EvaluationAPI.Controllers.BookController.GetallBooks (EvaluationAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 937.7719ms.
+2025-08-21 15:19:36.289 +05:30 [INF] Executing OkObjectResult, writing value of type 'EA.Model.CommonModel.Page'.
+2025-08-21 15:19:36.421 +05:30 [INF] Executed action EvaluationAPI.Controllers.BookController.GetallBooks (EvaluationAPI) in 1198.832ms
+2025-08-21 15:19:36.421 +05:30 [INF] Executed endpoint 'EvaluationAPI.Controllers.BookController.GetallBooks (EvaluationAPI)'
+2025-08-21 15:19:36.433 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5188/api/Book/dynamicgetall - 200 null application/json; charset=utf-8 1253.1066ms
+2025-08-21 15:19:42.014 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5188/api/Book/dynamicgetall - null null
+2025-08-21 15:19:42.019 +05:30 [INF] CORS policy execution successful.
+2025-08-21 15:19:42.021 +05:30 [INF] Executing endpoint 'EvaluationAPI.Controllers.BookController.GetallBooks (EvaluationAPI)'
+2025-08-21 15:19:42.022 +05:30 [INF] Route matched with {action = "GetallBooks", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[EA.Model.ResponseModel.BookResponseModel]]] GetallBooks(SearchRequestModel) on controller EvaluationAPI.Controllers.BookController (EvaluationAPI).
+2025-08-21 15:19:42.025 +05:30 [INF] Executing action method EvaluationAPI.Controllers.BookController.GetallBooks (EvaluationAPI) - Validation state: "Valid"
+2025-08-21 15:19:42.026 +05:30 [INF] Fetching all books with search params: {"SearchText":null,"Page":1,"PageSize":10,"SortColumn":null,"SortOrder":null,"Filters":null,"$type":"SearchRequestModel"}
+2025-08-21 15:19:42.026 +05:30 [INF] Fetching list of books with parameters: {"SortColumn":"BookSid","SortOrder":"DESC","SearchText":"%","Filters":"1 = 1 AND","Page":1,"PageSize":10}
+2025-08-21 15:19:42.094 +05:30 [INF] Executed DbCommand (8ms) [Parameters=[p0='<Search><SortColumn>BookSid</SortColumn><SortOrder>DESC</SortOrder><SearchText>%</SearchText><Filters>1 = 1 AND</Filters><Page>1</Page><PageSize>10</PageSize></Search>' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SP_GetAllBookdynamic @p0
+2025-08-21 15:19:42.095 +05:30 [INF] Books list retrieved successfully.
+2025-08-21 15:19:42.096 +05:30 [INF] Retrieved 10 books
+2025-08-21 15:19:42.096 +05:30 [INF] Executed action method EvaluationAPI.Controllers.BookController.GetallBooks (EvaluationAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 70.9113ms.
+2025-08-21 15:19:42.097 +05:30 [INF] Executing OkObjectResult, writing value of type 'EA.Model.CommonModel.Page'.
+2025-08-21 15:19:42.100 +05:30 [INF] Executed action EvaluationAPI.Controllers.BookController.GetallBooks (EvaluationAPI) in 78.6537ms
+2025-08-21 15:19:42.101 +05:30 [INF] Executed endpoint 'EvaluationAPI.Controllers.BookController.GetallBooks (EvaluationAPI)'
+2025-08-21 15:19:42.101 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5188/api/Book/dynamicgetall - 200 null application/json; charset=utf-8 87.0358ms
+2025-08-21 15:19:57.344 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5188/api/Book/dynamicgetall - null null
+2025-08-21 15:19:57.352 +05:30 [INF] CORS policy execution successful.
+2025-08-21 15:19:57.356 +05:30 [INF] Executing endpoint 'EvaluationAPI.Controllers.BookController.GetallBooks (EvaluationAPI)'
+2025-08-21 15:19:57.357 +05:30 [INF] Route matched with {action = "GetallBooks", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[EA.Model.ResponseModel.BookResponseModel]]] GetallBooks(SearchRequestModel) on controller EvaluationAPI.Controllers.BookController (EvaluationAPI).
+2025-08-21 15:19:57.408 +05:30 [INF] Executing action method EvaluationAPI.Controllers.BookController.GetallBooks (EvaluationAPI) - Validation state: "Valid"
+2025-08-21 15:19:57.409 +05:30 [INF] Fetching all books with search params: {"SearchText":null,"Page":1,"PageSize":10,"SortColumn":null,"SortOrder":null,"Filters":null,"$type":"SearchRequestModel"}
+2025-08-21 15:19:57.409 +05:30 [INF] Fetching list of books with parameters: {"SortColumn":"BookSid","SortOrder":"DESC","SearchText":"%","Filters":"1 = 1 AND","Page":1,"PageSize":10}
+2025-08-21 15:19:57.492 +05:30 [INF] Executed DbCommand (19ms) [Parameters=[p0='<Search><SortColumn>BookSid</SortColumn><SortOrder>DESC</SortOrder><SearchText>%</SearchText><Filters>1 = 1 AND</Filters><Page>1</Page><PageSize>10</PageSize></Search>' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SP_GetAllBookdynamic @p0
+2025-08-21 15:19:57.493 +05:30 [INF] Books list retrieved successfully.
+2025-08-21 15:19:57.493 +05:30 [INF] Retrieved 10 books
+2025-08-21 15:19:57.494 +05:30 [INF] Executed action method EvaluationAPI.Controllers.BookController.GetallBooks (EvaluationAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 85.136ms.
+2025-08-21 15:19:57.494 +05:30 [INF] Executing OkObjectResult, writing value of type 'EA.Model.CommonModel.Page'.
+2025-08-21 15:19:57.494 +05:30 [INF] Executed action EvaluationAPI.Controllers.BookController.GetallBooks (EvaluationAPI) in 137.0829ms
+2025-08-21 15:19:57.494 +05:30 [INF] Executed endpoint 'EvaluationAPI.Controllers.BookController.GetallBooks (EvaluationAPI)'
+2025-08-21 15:19:57.495 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5188/api/Book/dynamicgetall - 200 null application/json; charset=utf-8 151.8131ms
+2025-08-21 15:21:34.183 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5188/api/Book/dynamicgetall - null null
+2025-08-21 15:21:34.190 +05:30 [INF] CORS policy execution successful.
+2025-08-21 15:21:34.191 +05:30 [INF] Executing endpoint 'EvaluationAPI.Controllers.BookController.GetallBooks (EvaluationAPI)'
+2025-08-21 15:21:34.192 +05:30 [INF] Route matched with {action = "GetallBooks", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[EA.Model.ResponseModel.BookResponseModel]]] GetallBooks(SearchRequestModel) on controller EvaluationAPI.Controllers.BookController (EvaluationAPI).
+2025-08-21 15:21:34.195 +05:30 [INF] Executing action method EvaluationAPI.Controllers.BookController.GetallBooks (EvaluationAPI) - Validation state: "Valid"
+2025-08-21 15:21:34.195 +05:30 [INF] Fetching all books with search params: {"SearchText":null,"Page":1,"PageSize":10,"SortColumn":null,"SortOrder":null,"Filters":null,"$type":"SearchRequestModel"}
+2025-08-21 15:21:34.196 +05:30 [INF] Fetching list of books with parameters: {"SortColumn":"BookSid","SortOrder":"DESC","SearchText":"%","Filters":"1 = 1 AND","Page":1,"PageSize":10}
+2025-08-21 15:21:34.242 +05:30 [INF] Executed DbCommand (33ms) [Parameters=[p0='<Search><SortColumn>BookSid</SortColumn><SortOrder>DESC</SortOrder><SearchText>%</SearchText><Filters>1 = 1 AND</Filters><Page>1</Page><PageSize>10</PageSize></Search>' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SP_GetAllBookdynamic @p0
+2025-08-21 15:21:34.244 +05:30 [INF] Books list retrieved successfully.
+2025-08-21 15:21:34.244 +05:30 [INF] Retrieved 10 books
+2025-08-21 15:21:34.244 +05:30 [INF] Executed action method EvaluationAPI.Controllers.BookController.GetallBooks (EvaluationAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 48.6125ms.
+2025-08-21 15:21:34.244 +05:30 [INF] Executing OkObjectResult, writing value of type 'EA.Model.CommonModel.Page'.
+2025-08-21 15:21:34.246 +05:30 [INF] Executed action EvaluationAPI.Controllers.BookController.GetallBooks (EvaluationAPI) in 53.7027ms
+2025-08-21 15:21:34.246 +05:30 [INF] Executed endpoint 'EvaluationAPI.Controllers.BookController.GetallBooks (EvaluationAPI)'
+2025-08-21 15:21:34.247 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5188/api/Book/dynamicgetall - 200 null application/json; charset=utf-8 63.4256ms
+2025-08-21 15:22:54.079 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5188/api/Book/dynamicgetall - null null
+2025-08-21 15:22:54.665 +05:30 [INF] CORS policy execution successful.
+2025-08-21 15:22:54.666 +05:30 [INF] Executing endpoint 'EvaluationAPI.Controllers.BookController.GetallBooks (EvaluationAPI)'
+2025-08-21 15:22:54.667 +05:30 [INF] Route matched with {action = "GetallBooks", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[EA.Model.ResponseModel.BookResponseModel]]] GetallBooks(SearchRequestModel) on controller EvaluationAPI.Controllers.BookController (EvaluationAPI).
+2025-08-21 15:22:54.672 +05:30 [INF] Executing action method EvaluationAPI.Controllers.BookController.GetallBooks (EvaluationAPI) - Validation state: "Valid"
+2025-08-21 15:22:54.673 +05:30 [INF] Fetching all books with search params: {"SearchText":null,"Page":1,"PageSize":10,"SortColumn":null,"SortOrder":null,"Filters":null,"$type":"SearchRequestModel"}
+2025-08-21 15:22:54.673 +05:30 [INF] Fetching list of books with parameters: {"SortColumn":"BookSid","SortOrder":"DESC","SearchText":"%","Filters":"1 = 1 AND","Page":1,"PageSize":10}
+2025-08-21 15:22:54.696 +05:30 [INF] Executed DbCommand (17ms) [Parameters=[p0='<Search><SortColumn>BookSid</SortColumn><SortOrder>DESC</SortOrder><SearchText>%</SearchText><Filters>1 = 1 AND</Filters><Page>1</Page><PageSize>10</PageSize></Search>' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SP_GetAllBookdynamic @p0
+2025-08-21 15:22:54.719 +05:30 [INF] Books list retrieved successfully.
+2025-08-21 15:22:54.719 +05:30 [INF] Retrieved 10 books
+2025-08-21 15:22:54.719 +05:30 [INF] Executed action method EvaluationAPI.Controllers.BookController.GetallBooks (EvaluationAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 46.7951ms.
+2025-08-21 15:22:54.720 +05:30 [INF] Executing OkObjectResult, writing value of type 'EA.Model.CommonModel.Page'.
+2025-08-21 15:22:54.726 +05:30 [INF] Executed action EvaluationAPI.Controllers.BookController.GetallBooks (EvaluationAPI) in 59.1086ms
+2025-08-21 15:22:54.727 +05:30 [INF] Executed endpoint 'EvaluationAPI.Controllers.BookController.GetallBooks (EvaluationAPI)'
+2025-08-21 15:22:54.727 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5188/api/Book/dynamicgetall - 200 null application/json; charset=utf-8 647.8297ms
+2025-08-21 15:43:49.988 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5188/api/Book/dynamicLIBc27459bc-34d0-4e2f-9670-773d659bfba3 - null null
+2025-08-21 15:43:49.988 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5188/api/Book/dynamicLIBc27459bc-34d0-4e2f-9670-773d659bfba3 - null null
+2025-08-21 15:43:49.992 +05:30 [INF] CORS policy execution successful.
+2025-08-21 15:43:49.992 +05:30 [INF] CORS policy execution successful.
+2025-08-21 15:43:49.999 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5188/api/Book/dynamicLIBc27459bc-34d0-4e2f-9670-773d659bfba3 - 404 0 null 11.0178ms
+2025-08-21 15:43:50.000 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5188/api/Book/dynamicLIBc27459bc-34d0-4e2f-9670-773d659bfba3 - 404 0 null 11.0178ms
+2025-08-21 15:43:50.002 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5188/api/Book/dynamicLIBc27459bc-34d0-4e2f-9670-773d659bfba3, Response status code: 404
+2025-08-21 15:43:50.002 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5188/api/Book/dynamicLIBc27459bc-34d0-4e2f-9670-773d659bfba3, Response status code: 404
+2025-08-21 15:44:56.570 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5188/api/Book/dynamicgetall - null null
+2025-08-21 15:44:56.570 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5188/api/Book/dynamicgetall - null null
+2025-08-21 15:44:56.570 +05:30 [INF] CORS policy execution successful.
+2025-08-21 15:44:56.570 +05:30 [INF] CORS policy execution successful.
+2025-08-21 15:44:56.571 +05:30 [INF] Executing endpoint 'EvaluationAPI.Controllers.BookController.GetallBooks (EvaluationAPI)'
+2025-08-21 15:44:56.572 +05:30 [INF] Executing endpoint 'EvaluationAPI.Controllers.BookController.GetallBooks (EvaluationAPI)'
+2025-08-21 15:44:56.572 +05:30 [INF] Route matched with {action = "GetallBooks", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[EA.Model.ResponseModel.BookResponseModel]]] GetallBooks(SearchRequestModel) on controller EvaluationAPI.Controllers.BookController (EvaluationAPI).
+2025-08-21 15:44:56.572 +05:30 [INF] Route matched with {action = "GetallBooks", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[EA.Model.ResponseModel.BookResponseModel]]] GetallBooks(SearchRequestModel) on controller EvaluationAPI.Controllers.BookController (EvaluationAPI).
+2025-08-21 15:44:56.580 +05:30 [INF] Executing action method EvaluationAPI.Controllers.BookController.GetallBooks (EvaluationAPI) - Validation state: "Valid"
+2025-08-21 15:44:56.580 +05:30 [INF] Executing action method EvaluationAPI.Controllers.BookController.GetallBooks (EvaluationAPI) - Validation state: "Valid"
+2025-08-21 15:44:56.580 +05:30 [INF] Fetching all books with search params: {"SearchText":null,"Page":1,"PageSize":10,"SortColumn":null,"SortOrder":null,"Filters":null,"$type":"SearchRequestModel"}
+2025-08-21 15:44:56.580 +05:30 [INF] Fetching all books with search params: {"SearchText":null,"Page":1,"PageSize":10,"SortColumn":null,"SortOrder":null,"Filters":null,"$type":"SearchRequestModel"}
+2025-08-21 15:44:56.581 +05:30 [INF] Fetching list of books with parameters: {"SortColumn":"BookSid","SortOrder":"DESC","SearchText":"%","Filters":"1 = 1 AND","Page":1,"PageSize":10}
+2025-08-21 15:44:56.584 +05:30 [INF] Fetching list of books with parameters: {"SortColumn":"BookSid","SortOrder":"DESC","SearchText":"%","Filters":"1 = 1 AND","Page":1,"PageSize":10}
+2025-08-21 15:44:56.702 +05:30 [INF] Executed DbCommand (42ms) [Parameters=[p0='<Search><SortColumn>BookSid</SortColumn><SortOrder>DESC</SortOrder><SearchText>%</SearchText><Filters>1 = 1 AND</Filters><Page>1</Page><PageSize>10</PageSize></Search>' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SP_GetAllBookdynamic @p0
+2025-08-21 15:44:56.703 +05:30 [INF] Executed DbCommand (13ms) [Parameters=[p0='<Search><SortColumn>BookSid</SortColumn><SortOrder>DESC</SortOrder><SearchText>%</SearchText><Filters>1 = 1 AND</Filters><Page>1</Page><PageSize>10</PageSize></Search>' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SP_GetAllBookdynamic @p0
+2025-08-21 15:44:56.705 +05:30 [INF] Books list retrieved successfully.
+2025-08-21 15:44:56.705 +05:30 [INF] Books list retrieved successfully.
+2025-08-21 15:44:56.705 +05:30 [INF] Retrieved 10 books
+2025-08-21 15:44:56.705 +05:30 [INF] Retrieved 10 books
+2025-08-21 15:44:56.706 +05:30 [INF] Executed action method EvaluationAPI.Controllers.BookController.GetallBooks (EvaluationAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 125.6519ms.
+2025-08-21 15:44:56.706 +05:30 [INF] Executed action method EvaluationAPI.Controllers.BookController.GetallBooks (EvaluationAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 125.6165ms.
+2025-08-21 15:44:56.706 +05:30 [INF] Executing OkObjectResult, writing value of type 'EA.Model.CommonModel.Page'.
+2025-08-21 15:44:56.706 +05:30 [INF] Executing OkObjectResult, writing value of type 'EA.Model.CommonModel.Page'.
+2025-08-21 15:44:56.709 +05:30 [INF] Executed action EvaluationAPI.Controllers.BookController.GetallBooks (EvaluationAPI) in 137.2327ms
+2025-08-21 15:44:56.709 +05:30 [INF] Executed endpoint 'EvaluationAPI.Controllers.BookController.GetallBooks (EvaluationAPI)'
+2025-08-21 15:44:56.710 +05:30 [INF] Executed action EvaluationAPI.Controllers.BookController.GetallBooks (EvaluationAPI) in 137.3414ms
+2025-08-21 15:44:56.710 +05:30 [INF] Executed endpoint 'EvaluationAPI.Controllers.BookController.GetallBooks (EvaluationAPI)'
+2025-08-21 15:44:56.710 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5188/api/Book/dynamicgetall - 200 null application/json; charset=utf-8 140.0683ms
+2025-08-21 15:44:56.712 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5188/api/Book/dynamicgetall - 200 null application/json; charset=utf-8 142.8403ms
+2025-08-21 15:44:58.860 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5188/api/Book/dynamicLIBc27459bc-34d0-4e2f-9670-773d659bfba3 - null null
+2025-08-21 15:44:58.861 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5188/api/Book/dynamicLIBc27459bc-34d0-4e2f-9670-773d659bfba3 - 404 0 null 0.8006ms
+2025-08-21 15:44:58.865 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5188/api/Book/dynamicLIBc27459bc-34d0-4e2f-9670-773d659bfba3, Response status code: 404
+2025-08-21 15:44:58.935 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5188/favicon.ico - null null
+2025-08-21 15:44:58.935 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5188/favicon.ico - 404 0 null 0.7133ms
+2025-08-21 15:44:58.936 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5188/favicon.ico, Response status code: 404
+2025-08-21 15:45:06.393 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5188/api/Book/dynamicLIBc27459bc-34d0-4e2f-9670-773d659bfba3 - null null
+2025-08-21 15:45:06.393 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5188/api/Book/dynamicLIBc27459bc-34d0-4e2f-9670-773d659bfba3 - 404 0 null 0.5342ms
+2025-08-21 15:45:06.393 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5188/api/Book/dynamicLIBc27459bc-34d0-4e2f-9670-773d659bfba3, Response status code: 404
+2025-08-21 15:45:25.141 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5188/api/Book/dynamicgetall - null null
+2025-08-21 15:45:25.142 +05:30 [INF] CORS policy execution successful.
+2025-08-21 15:45:25.143 +05:30 [INF] Executing endpoint 'EvaluationAPI.Controllers.BookController.GetallBooks (EvaluationAPI)'
+2025-08-21 15:45:25.143 +05:30 [INF] Route matched with {action = "GetallBooks", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[EA.Model.ResponseModel.BookResponseModel]]] GetallBooks(SearchRequestModel) on controller EvaluationAPI.Controllers.BookController (EvaluationAPI).
+2025-08-21 15:45:25.145 +05:30 [INF] Executing action method EvaluationAPI.Controllers.BookController.GetallBooks (EvaluationAPI) - Validation state: "Valid"
+2025-08-21 15:45:25.145 +05:30 [INF] Fetching all books with search params: {"SearchText":null,"Page":1,"PageSize":10,"SortColumn":null,"SortOrder":null,"Filters":null,"$type":"SearchRequestModel"}
+2025-08-21 15:45:25.145 +05:30 [INF] Fetching list of books with parameters: {"SortColumn":"BookSid","SortOrder":"DESC","SearchText":"%","Filters":"1 = 1 AND","Page":1,"PageSize":10}
+2025-08-21 15:45:25.158 +05:30 [INF] Executed DbCommand (9ms) [Parameters=[p0='<Search><SortColumn>BookSid</SortColumn><SortOrder>DESC</SortOrder><SearchText>%</SearchText><Filters>1 = 1 AND</Filters><Page>1</Page><PageSize>10</PageSize></Search>' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SP_GetAllBookdynamic @p0
+2025-08-21 15:45:25.159 +05:30 [INF] Books list retrieved successfully.
+2025-08-21 15:45:25.159 +05:30 [INF] Retrieved 10 books
+2025-08-21 15:45:25.159 +05:30 [INF] Executed action method EvaluationAPI.Controllers.BookController.GetallBooks (EvaluationAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 14.3083ms.
+2025-08-21 15:45:25.160 +05:30 [INF] Executing OkObjectResult, writing value of type 'EA.Model.CommonModel.Page'.
+2025-08-21 15:45:25.160 +05:30 [INF] Executed action EvaluationAPI.Controllers.BookController.GetallBooks (EvaluationAPI) in 16.2174ms
+2025-08-21 15:45:25.160 +05:30 [INF] Executed endpoint 'EvaluationAPI.Controllers.BookController.GetallBooks (EvaluationAPI)'
+2025-08-21 15:45:25.160 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5188/api/Book/dynamicgetall - 200 null application/json; charset=utf-8 18.8861ms
+2025-08-21 15:45:27.173 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5188/api/Book/dynamic/LIBc27459bc-34d0-4e2f-9670-773d659bfba3 - null null
+2025-08-21 15:45:27.174 +05:30 [INF] Executing endpoint 'EvaluationAPI.Controllers.BookController.GetByBookSID (EvaluationAPI)'
+2025-08-21 15:45:27.187 +05:30 [INF] Route matched with {action = "GetByBookSID", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[EA.Model.ResponseModel.BookResponseModel]] GetByBookSID(System.String) on controller EvaluationAPI.Controllers.BookController (EvaluationAPI).
+2025-08-21 15:45:27.191 +05:30 [INF] Executing action method EvaluationAPI.Controllers.BookController.GetByBookSID (EvaluationAPI) - Validation state: "Valid"
+2025-08-21 15:45:27.194 +05:30 [INF] Fetching book with SID: LIBc27459bc-34d0-4e2f-9670-773d659bfba3
+2025-08-21 15:45:27.197 +05:30 [INF] Fetching book with SID: LIBc27459bc-34d0-4e2f-9670-773d659bfba3
+2025-08-21 15:45:27.241 +05:30 [INF] Executed DbCommand (24ms) [Parameters=[p0='LIBc27459bc-34d0-4e2f-9670-773d659bfba3' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SP_GetBookById @p0
+2025-08-21 15:45:27.244 +05:30 [INF] Successfully retrieved book: asdfghjkl; (SID: LIBc27459bc-34d0-4e2f-9670-773d659bfba3)
+2025-08-21 15:45:27.244 +05:30 [INF] Successfully retrieved book: asdfghjkl; (SID: LIBc27459bc-34d0-4e2f-9670-773d659bfba3)
+2025-08-21 15:45:27.244 +05:30 [INF] Executed action method EvaluationAPI.Controllers.BookController.GetByBookSID (EvaluationAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 52.2686ms.
+2025-08-21 15:45:27.244 +05:30 [INF] Executing OkObjectResult, writing value of type 'EA.Model.ResponseModel.BookResponseModel'.
+2025-08-21 15:45:27.245 +05:30 [INF] Executed action EvaluationAPI.Controllers.BookController.GetByBookSID (EvaluationAPI) in 56.6809ms
+2025-08-21 15:45:27.245 +05:30 [INF] Executed endpoint 'EvaluationAPI.Controllers.BookController.GetByBookSID (EvaluationAPI)'
+2025-08-21 15:45:27.245 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5188/api/Book/dynamic/LIBc27459bc-34d0-4e2f-9670-773d659bfba3 - 200 null application/json; charset=utf-8 71.9527ms
+2025-08-21 15:49:52.558 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5188/api/Book/dynamic/LIBc27459bc-34d0-4e2f-9670-773d659bfba3 - null null
+2025-08-21 15:49:52.562 +05:30 [INF] Executing endpoint 'EvaluationAPI.Controllers.BookController.GetByBookSID (EvaluationAPI)'
+2025-08-21 15:49:52.563 +05:30 [INF] Route matched with {action = "GetByBookSID", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[EA.Model.ResponseModel.BookResponseModel]] GetByBookSID(System.String) on controller EvaluationAPI.Controllers.BookController (EvaluationAPI).
+2025-08-21 15:49:52.569 +05:30 [INF] Executing action method EvaluationAPI.Controllers.BookController.GetByBookSID (EvaluationAPI) - Validation state: "Valid"
+2025-08-21 15:49:52.569 +05:30 [INF] Fetching book with SID: LIBc27459bc-34d0-4e2f-9670-773d659bfba3
+2025-08-21 15:49:52.570 +05:30 [INF] Fetching book with SID: LIBc27459bc-34d0-4e2f-9670-773d659bfba3
+2025-08-21 15:49:52.595 +05:30 [INF] Executed DbCommand (17ms) [Parameters=[p0='LIBc27459bc-34d0-4e2f-9670-773d659bfba3' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SP_GetBookById @p0
+2025-08-21 15:49:52.597 +05:30 [INF] Successfully retrieved book: asdfghjkl; (SID: LIBc27459bc-34d0-4e2f-9670-773d659bfba3)
+2025-08-21 15:49:52.597 +05:30 [INF] Successfully retrieved book: asdfghjkl; (SID: LIBc27459bc-34d0-4e2f-9670-773d659bfba3)
+2025-08-21 15:49:52.598 +05:30 [INF] Executed action method EvaluationAPI.Controllers.BookController.GetByBookSID (EvaluationAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 28.3187ms.
+2025-08-21 15:49:52.599 +05:30 [INF] Executing OkObjectResult, writing value of type 'EA.Model.ResponseModel.BookResponseModel'.
+2025-08-21 15:49:52.599 +05:30 [INF] Executed action EvaluationAPI.Controllers.BookController.GetByBookSID (EvaluationAPI) in 35.8973ms
+2025-08-21 15:49:52.599 +05:30 [INF] Executed endpoint 'EvaluationAPI.Controllers.BookController.GetByBookSID (EvaluationAPI)'
+2025-08-21 15:49:52.600 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5188/api/Book/dynamic/LIBc27459bc-34d0-4e2f-9670-773d659bfba3 - 200 null application/json; charset=utf-8 41.967ms
+2025-08-21 15:50:15.824 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5188/api/Book/dynamicgetall - null null
+2025-08-21 15:50:15.826 +05:30 [INF] CORS policy execution successful.
+2025-08-21 15:50:15.826 +05:30 [INF] Executing endpoint 'EvaluationAPI.Controllers.BookController.GetallBooks (EvaluationAPI)'
+2025-08-21 15:50:15.826 +05:30 [INF] Route matched with {action = "GetallBooks", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[EA.Model.ResponseModel.BookResponseModel]]] GetallBooks(SearchRequestModel) on controller EvaluationAPI.Controllers.BookController (EvaluationAPI).
+2025-08-21 15:50:16.059 +05:30 [INF] Executing action method EvaluationAPI.Controllers.BookController.GetallBooks (EvaluationAPI) - Validation state: "Valid"
+2025-08-21 15:50:16.059 +05:30 [INF] Fetching all books with search params: {"SearchText":null,"Page":1,"PageSize":10,"SortColumn":null,"SortOrder":null,"Filters":null,"$type":"SearchRequestModel"}
+2025-08-21 15:50:16.061 +05:30 [INF] Fetching list of books with parameters: {"SortColumn":"BookSid","SortOrder":"DESC","SearchText":"%","Filters":"1 = 1 AND","Page":1,"PageSize":10}
+2025-08-21 15:50:16.087 +05:30 [INF] Executed DbCommand (19ms) [Parameters=[p0='<Search><SortColumn>BookSid</SortColumn><SortOrder>DESC</SortOrder><SearchText>%</SearchText><Filters>1 = 1 AND</Filters><Page>1</Page><PageSize>10</PageSize></Search>' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SP_GetAllBookdynamic @p0
+2025-08-21 15:50:16.088 +05:30 [INF] Books list retrieved successfully.
+2025-08-21 15:50:16.088 +05:30 [INF] Retrieved 10 books
+2025-08-21 15:50:16.089 +05:30 [INF] Executed action method EvaluationAPI.Controllers.BookController.GetallBooks (EvaluationAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 29.8228ms.
+2025-08-21 15:50:16.089 +05:30 [INF] Executing OkObjectResult, writing value of type 'EA.Model.CommonModel.Page'.
+2025-08-21 15:50:16.089 +05:30 [INF] Executed action EvaluationAPI.Controllers.BookController.GetallBooks (EvaluationAPI) in 31.7056ms
+2025-08-21 15:50:16.089 +05:30 [INF] Executed endpoint 'EvaluationAPI.Controllers.BookController.GetallBooks (EvaluationAPI)'
+2025-08-21 15:50:16.089 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5188/api/Book/dynamicgetall - 200 null application/json; charset=utf-8 265.0054ms
+2025-08-21 15:50:19.372 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5188/api/Book/dynamic/LIBc27459bc-34d0-4e2f-9670-773d659bfba3 - null null
+2025-08-21 15:50:19.372 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5188/api/Book/dynamic/LIBc27459bc-34d0-4e2f-9670-773d659bfba3 - null null
+2025-08-21 15:50:19.372 +05:30 [INF] CORS policy execution successful.
+2025-08-21 15:50:19.372 +05:30 [INF] CORS policy execution successful.
+2025-08-21 15:50:19.372 +05:30 [INF] Executing endpoint 'EvaluationAPI.Controllers.BookController.GetByBookSID (EvaluationAPI)'
+2025-08-21 15:50:19.372 +05:30 [INF] Executing endpoint 'EvaluationAPI.Controllers.BookController.GetByBookSID (EvaluationAPI)'
+2025-08-21 15:50:19.372 +05:30 [INF] Route matched with {action = "GetByBookSID", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[EA.Model.ResponseModel.BookResponseModel]] GetByBookSID(System.String) on controller EvaluationAPI.Controllers.BookController (EvaluationAPI).
+2025-08-21 15:50:19.372 +05:30 [INF] Route matched with {action = "GetByBookSID", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[EA.Model.ResponseModel.BookResponseModel]] GetByBookSID(System.String) on controller EvaluationAPI.Controllers.BookController (EvaluationAPI).
+2025-08-21 15:50:19.373 +05:30 [INF] Executing action method EvaluationAPI.Controllers.BookController.GetByBookSID (EvaluationAPI) - Validation state: "Valid"
+2025-08-21 15:50:19.373 +05:30 [INF] Executing action method EvaluationAPI.Controllers.BookController.GetByBookSID (EvaluationAPI) - Validation state: "Valid"
+2025-08-21 15:50:19.373 +05:30 [INF] Fetching book with SID: LIBc27459bc-34d0-4e2f-9670-773d659bfba3
+2025-08-21 15:50:19.373 +05:30 [INF] Fetching book with SID: LIBc27459bc-34d0-4e2f-9670-773d659bfba3
+2025-08-21 15:50:19.374 +05:30 [INF] Fetching book with SID: LIBc27459bc-34d0-4e2f-9670-773d659bfba3
+2025-08-21 15:50:19.374 +05:30 [INF] Fetching book with SID: LIBc27459bc-34d0-4e2f-9670-773d659bfba3
+2025-08-21 15:50:19.381 +05:30 [INF] Executed DbCommand (6ms) [Parameters=[p0='LIBc27459bc-34d0-4e2f-9670-773d659bfba3' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SP_GetBookById @p0
+2025-08-21 15:50:19.381 +05:30 [INF] Executed DbCommand (6ms) [Parameters=[p0='LIBc27459bc-34d0-4e2f-9670-773d659bfba3' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SP_GetBookById @p0
+2025-08-21 15:50:19.381 +05:30 [INF] Successfully retrieved book: asdfghjkl; (SID: LIBc27459bc-34d0-4e2f-9670-773d659bfba3)
+2025-08-21 15:50:19.381 +05:30 [INF] Successfully retrieved book: asdfghjkl; (SID: LIBc27459bc-34d0-4e2f-9670-773d659bfba3)
+2025-08-21 15:50:19.382 +05:30 [INF] Successfully retrieved book: asdfghjkl; (SID: LIBc27459bc-34d0-4e2f-9670-773d659bfba3)
+2025-08-21 15:50:19.382 +05:30 [INF] Successfully retrieved book: asdfghjkl; (SID: LIBc27459bc-34d0-4e2f-9670-773d659bfba3)
+2025-08-21 15:50:19.382 +05:30 [INF] Executed action method EvaluationAPI.Controllers.BookController.GetByBookSID (EvaluationAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 8.3097ms.
+2025-08-21 15:50:19.382 +05:30 [INF] Executed action method EvaluationAPI.Controllers.BookController.GetByBookSID (EvaluationAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 8.327ms.
+2025-08-21 15:50:19.382 +05:30 [INF] Executing OkObjectResult, writing value of type 'EA.Model.ResponseModel.BookResponseModel'.
+2025-08-21 15:50:19.382 +05:30 [INF] Executing OkObjectResult, writing value of type 'EA.Model.ResponseModel.BookResponseModel'.
+2025-08-21 15:50:19.382 +05:30 [INF] Executed action EvaluationAPI.Controllers.BookController.GetByBookSID (EvaluationAPI) in 9.7137ms
+2025-08-21 15:50:19.384 +05:30 [INF] Executed endpoint 'EvaluationAPI.Controllers.BookController.GetByBookSID (EvaluationAPI)'
+2025-08-21 15:50:19.384 +05:30 [INF] Executed action EvaluationAPI.Controllers.BookController.GetByBookSID (EvaluationAPI) in 10.8513ms
+2025-08-21 15:50:19.384 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5188/api/Book/dynamic/LIBc27459bc-34d0-4e2f-9670-773d659bfba3 - 200 null application/json; charset=utf-8 12.0308ms
+2025-08-21 15:50:19.384 +05:30 [INF] Executed endpoint 'EvaluationAPI.Controllers.BookController.GetByBookSID (EvaluationAPI)'
+2025-08-21 15:50:19.384 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5188/api/Book/dynamic/LIBc27459bc-34d0-4e2f-9670-773d659bfba3 - 200 null application/json; charset=utf-8 11.9737ms
+2025-08-21 15:50:24.231 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5188/api/Book/dynamicgetall - null null
+2025-08-21 15:50:24.232 +05:30 [INF] CORS policy execution successful.
+2025-08-21 15:50:24.232 +05:30 [INF] Executing endpoint 'EvaluationAPI.Controllers.BookController.GetallBooks (EvaluationAPI)'
+2025-08-21 15:50:24.232 +05:30 [INF] Route matched with {action = "GetallBooks", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[EA.Model.ResponseModel.BookResponseModel]]] GetallBooks(SearchRequestModel) on controller EvaluationAPI.Controllers.BookController (EvaluationAPI).
+2025-08-21 15:50:24.234 +05:30 [INF] Executing action method EvaluationAPI.Controllers.BookController.GetallBooks (EvaluationAPI) - Validation state: "Valid"
+2025-08-21 15:50:24.235 +05:30 [INF] Fetching all books with search params: {"SearchText":null,"Page":1,"PageSize":10,"SortColumn":null,"SortOrder":null,"Filters":null,"$type":"SearchRequestModel"}
+2025-08-21 15:50:24.238 +05:30 [INF] Fetching list of books with parameters: {"SortColumn":"BookSid","SortOrder":"DESC","SearchText":"%","Filters":"1 = 1 AND","Page":1,"PageSize":10}
+2025-08-21 15:50:24.248 +05:30 [INF] Executed DbCommand (8ms) [Parameters=[p0='<Search><SortColumn>BookSid</SortColumn><SortOrder>DESC</SortOrder><SearchText>%</SearchText><Filters>1 = 1 AND</Filters><Page>1</Page><PageSize>10</PageSize></Search>' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SP_GetAllBookdynamic @p0
+2025-08-21 15:50:24.249 +05:30 [INF] Books list retrieved successfully.
+2025-08-21 15:50:24.250 +05:30 [INF] Retrieved 10 books
+2025-08-21 15:50:24.250 +05:30 [INF] Executed action method EvaluationAPI.Controllers.BookController.GetallBooks (EvaluationAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 15.288ms.
+2025-08-21 15:50:24.250 +05:30 [INF] Executing OkObjectResult, writing value of type 'EA.Model.CommonModel.Page'.
+2025-08-21 15:50:24.250 +05:30 [INF] Executed action EvaluationAPI.Controllers.BookController.GetallBooks (EvaluationAPI) in 17.1526ms
+2025-08-21 15:50:24.251 +05:30 [INF] Executed endpoint 'EvaluationAPI.Controllers.BookController.GetallBooks (EvaluationAPI)'
+2025-08-21 15:50:24.251 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5188/api/Book/dynamicgetall - 200 null application/json; charset=utf-8 19.6232ms
+2025-08-21 15:50:26.316 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5188/api/Book/dynamic/LIB040 - null null
+2025-08-21 15:50:26.316 +05:30 [INF] CORS policy execution successful.
+2025-08-21 15:50:26.317 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5188/api/Book/dynamic/LIB040 - null null
+2025-08-21 15:50:26.317 +05:30 [INF] Executing endpoint 'EvaluationAPI.Controllers.BookController.GetByBookSID (EvaluationAPI)'
+2025-08-21 15:50:26.317 +05:30 [INF] CORS policy execution successful.
+2025-08-21 15:50:26.317 +05:30 [INF] Route matched with {action = "GetByBookSID", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[EA.Model.ResponseModel.BookResponseModel]] GetByBookSID(System.String) on controller EvaluationAPI.Controllers.BookController (EvaluationAPI).
+2025-08-21 15:50:26.318 +05:30 [INF] Executing endpoint 'EvaluationAPI.Controllers.BookController.GetByBookSID (EvaluationAPI)'
+2025-08-21 15:50:26.318 +05:30 [INF] Route matched with {action = "GetByBookSID", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[EA.Model.ResponseModel.BookResponseModel]] GetByBookSID(System.String) on controller EvaluationAPI.Controllers.BookController (EvaluationAPI).
+2025-08-21 15:50:26.320 +05:30 [INF] Executing action method EvaluationAPI.Controllers.BookController.GetByBookSID (EvaluationAPI) - Validation state: "Valid"
+2025-08-21 15:50:26.320 +05:30 [INF] Fetching book with SID: LIB040
+2025-08-21 15:50:26.320 +05:30 [INF] Fetching book with SID: LIB040
+2025-08-21 15:50:26.320 +05:30 [INF] Executing action method EvaluationAPI.Controllers.BookController.GetByBookSID (EvaluationAPI) - Validation state: "Valid"
+2025-08-21 15:50:26.320 +05:30 [INF] Fetching book with SID: LIB040
+2025-08-21 15:50:26.320 +05:30 [INF] Fetching book with SID: LIB040
+2025-08-21 15:50:26.326 +05:30 [INF] Executed DbCommand (5ms) [Parameters=[p0='LIB040' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SP_GetBookById @p0
+2025-08-21 15:50:26.326 +05:30 [INF] Executed DbCommand (5ms) [Parameters=[p0='LIB040' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SP_GetBookById @p0
+2025-08-21 15:50:26.327 +05:30 [INF] Successfully retrieved book: The Psychology of Money (SID: LIB040)
+2025-08-21 15:50:26.327 +05:30 [INF] Successfully retrieved book: The Psychology of Money (SID: LIB040)
+2025-08-21 15:50:26.327 +05:30 [INF] Successfully retrieved book: The Psychology of Money (SID: LIB040)
+2025-08-21 15:50:26.327 +05:30 [INF] Executed action method EvaluationAPI.Controllers.BookController.GetByBookSID (EvaluationAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 7.0352ms.
+2025-08-21 15:50:26.327 +05:30 [INF] Successfully retrieved book: The Psychology of Money (SID: LIB040)
+2025-08-21 15:50:26.328 +05:30 [INF] Executed action method EvaluationAPI.Controllers.BookController.GetByBookSID (EvaluationAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 8.0289ms.
+2025-08-21 15:50:26.328 +05:30 [INF] Executing OkObjectResult, writing value of type 'EA.Model.ResponseModel.BookResponseModel'.
+2025-08-21 15:50:26.328 +05:30 [INF] Executing OkObjectResult, writing value of type 'EA.Model.ResponseModel.BookResponseModel'.
+2025-08-21 15:50:26.328 +05:30 [INF] Executed action EvaluationAPI.Controllers.BookController.GetByBookSID (EvaluationAPI) in 8.3625ms
+2025-08-21 15:50:26.328 +05:30 [INF] Executed action EvaluationAPI.Controllers.BookController.GetByBookSID (EvaluationAPI) in 9.9473ms
+2025-08-21 15:50:26.329 +05:30 [INF] Executed endpoint 'EvaluationAPI.Controllers.BookController.GetByBookSID (EvaluationAPI)'
+2025-08-21 15:50:26.329 +05:30 [INF] Executed endpoint 'EvaluationAPI.Controllers.BookController.GetByBookSID (EvaluationAPI)'
+2025-08-21 15:50:26.329 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5188/api/Book/dynamic/LIB040 - 200 null application/json; charset=utf-8 12.233ms
+2025-08-21 15:50:26.329 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5188/api/Book/dynamic/LIB040 - 200 null application/json; charset=utf-8 12.8675ms
+2025-08-21 15:50:29.515 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5188/api/Book/dynamicgetall - null null
+2025-08-21 15:50:29.516 +05:30 [INF] CORS policy execution successful.
+2025-08-21 15:50:29.517 +05:30 [INF] Executing endpoint 'EvaluationAPI.Controllers.BookController.GetallBooks (EvaluationAPI)'
+2025-08-21 15:50:29.518 +05:30 [INF] Route matched with {action = "GetallBooks", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[EA.Model.ResponseModel.BookResponseModel]]] GetallBooks(SearchRequestModel) on controller EvaluationAPI.Controllers.BookController (EvaluationAPI).
+2025-08-21 15:50:29.522 +05:30 [INF] Executing action method EvaluationAPI.Controllers.BookController.GetallBooks (EvaluationAPI) - Validation state: "Valid"
+2025-08-21 15:50:29.523 +05:30 [INF] Fetching all books with search params: {"SearchText":null,"Page":1,"PageSize":10,"SortColumn":null,"SortOrder":null,"Filters":null,"$type":"SearchRequestModel"}
+2025-08-21 15:50:29.523 +05:30 [INF] Fetching list of books with parameters: {"SortColumn":"BookSid","SortOrder":"DESC","SearchText":"%","Filters":"1 = 1 AND","Page":1,"PageSize":10}
+2025-08-21 15:50:29.531 +05:30 [INF] Executed DbCommand (7ms) [Parameters=[p0='<Search><SortColumn>BookSid</SortColumn><SortOrder>DESC</SortOrder><SearchText>%</SearchText><Filters>1 = 1 AND</Filters><Page>1</Page><PageSize>10</PageSize></Search>' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SP_GetAllBookdynamic @p0
+2025-08-21 15:50:29.531 +05:30 [INF] Books list retrieved successfully.
+2025-08-21 15:50:29.531 +05:30 [INF] Retrieved 10 books
+2025-08-21 15:50:29.531 +05:30 [INF] Executed action method EvaluationAPI.Controllers.BookController.GetallBooks (EvaluationAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 8.804ms.
+2025-08-21 15:50:29.531 +05:30 [INF] Executing OkObjectResult, writing value of type 'EA.Model.CommonModel.Page'.
+2025-08-21 15:50:29.532 +05:30 [INF] Executed action EvaluationAPI.Controllers.BookController.GetallBooks (EvaluationAPI) in 9.9967ms
+2025-08-21 15:50:29.532 +05:30 [INF] Executed endpoint 'EvaluationAPI.Controllers.BookController.GetallBooks (EvaluationAPI)'
+2025-08-21 15:50:29.532 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5188/api/Book/dynamicgetall - 200 null application/json; charset=utf-8 16.8416ms
+2025-08-21 15:50:34.557 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5188/api/Book/dynamic/LIB039 - null null
+2025-08-21 15:50:34.560 +05:30 [INF] CORS policy execution successful.
+2025-08-21 15:50:34.560 +05:30 [INF] Executing endpoint 'EvaluationAPI.Controllers.BookController.GetByBookSID (EvaluationAPI)'
+2025-08-21 15:50:34.560 +05:30 [INF] Route matched with {action = "GetByBookSID", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[EA.Model.ResponseModel.BookResponseModel]] GetByBookSID(System.String) on controller EvaluationAPI.Controllers.BookController (EvaluationAPI).
+2025-08-21 15:50:34.562 +05:30 [INF] Executing action method EvaluationAPI.Controllers.BookController.GetByBookSID (EvaluationAPI) - Validation state: "Valid"
+2025-08-21 15:50:34.562 +05:30 [INF] Fetching book with SID: LIB039
+2025-08-21 15:50:34.562 +05:30 [INF] Fetching book with SID: LIB039
+2025-08-21 15:50:34.565 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5188/api/Book/dynamic/LIB039 - null null
+2025-08-21 15:50:34.566 +05:30 [INF] CORS policy execution successful.
+2025-08-21 15:50:34.566 +05:30 [INF] Executing endpoint 'EvaluationAPI.Controllers.BookController.GetByBookSID (EvaluationAPI)'
+2025-08-21 15:50:34.566 +05:30 [INF] Route matched with {action = "GetByBookSID", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[EA.Model.ResponseModel.BookResponseModel]] GetByBookSID(System.String) on controller EvaluationAPI.Controllers.BookController (EvaluationAPI).
+2025-08-21 15:50:34.569 +05:30 [INF] Executing action method EvaluationAPI.Controllers.BookController.GetByBookSID (EvaluationAPI) - Validation state: "Valid"
+2025-08-21 15:50:34.569 +05:30 [INF] Fetching book with SID: LIB039
+2025-08-21 15:50:34.571 +05:30 [INF] Fetching book with SID: LIB039
+2025-08-21 15:50:34.571 +05:30 [INF] Executed DbCommand (6ms) [Parameters=[p0='LIB039' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SP_GetBookById @p0
+2025-08-21 15:50:34.572 +05:30 [INF] Successfully retrieved book: 21 Lessons for the 21st Century (SID: LIB039)
+2025-08-21 15:50:34.572 +05:30 [INF] Successfully retrieved book: 21 Lessons for the 21st Century (SID: LIB039)
+2025-08-21 15:50:34.572 +05:30 [INF] Executed action method EvaluationAPI.Controllers.BookController.GetByBookSID (EvaluationAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 9.9601ms.
+2025-08-21 15:50:34.572 +05:30 [INF] Executing OkObjectResult, writing value of type 'EA.Model.ResponseModel.BookResponseModel'.
+2025-08-21 15:50:34.573 +05:30 [INF] Executed action EvaluationAPI.Controllers.BookController.GetByBookSID (EvaluationAPI) in 11.9191ms
+2025-08-21 15:50:34.574 +05:30 [INF] Executed endpoint 'EvaluationAPI.Controllers.BookController.GetByBookSID (EvaluationAPI)'
+2025-08-21 15:50:34.575 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5188/api/Book/dynamic/LIB039 - 200 null application/json; charset=utf-8 17.3053ms
+2025-08-21 15:50:34.578 +05:30 [INF] Executed DbCommand (6ms) [Parameters=[p0='LIB039' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SP_GetBookById @p0
+2025-08-21 15:50:34.579 +05:30 [INF] Successfully retrieved book: 21 Lessons for the 21st Century (SID: LIB039)
+2025-08-21 15:50:34.579 +05:30 [INF] Successfully retrieved book: 21 Lessons for the 21st Century (SID: LIB039)
+2025-08-21 15:50:34.579 +05:30 [INF] Executed action method EvaluationAPI.Controllers.BookController.GetByBookSID (EvaluationAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 9.8134ms.
+2025-08-21 15:50:34.579 +05:30 [INF] Executing OkObjectResult, writing value of type 'EA.Model.ResponseModel.BookResponseModel'.
+2025-08-21 15:50:34.579 +05:30 [INF] Executed action EvaluationAPI.Controllers.BookController.GetByBookSID (EvaluationAPI) in 11.2558ms
+2025-08-21 15:50:34.579 +05:30 [INF] Executed endpoint 'EvaluationAPI.Controllers.BookController.GetByBookSID (EvaluationAPI)'
+2025-08-21 15:50:34.580 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5188/api/Book/dynamic/LIB039 - 200 null application/json; charset=utf-8 14.3605ms
+2025-08-21 15:50:37.431 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5188/api/Book/dynamicgetall - null null
+2025-08-21 15:50:37.431 +05:30 [INF] CORS policy execution successful.
+2025-08-21 15:50:37.432 +05:30 [INF] Executing endpoint 'EvaluationAPI.Controllers.BookController.GetallBooks (EvaluationAPI)'
+2025-08-21 15:50:37.432 +05:30 [INF] Route matched with {action = "GetallBooks", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[EA.Model.ResponseModel.BookResponseModel]]] GetallBooks(SearchRequestModel) on controller EvaluationAPI.Controllers.BookController (EvaluationAPI).
+2025-08-21 15:50:37.434 +05:30 [INF] Executing action method EvaluationAPI.Controllers.BookController.GetallBooks (EvaluationAPI) - Validation state: "Valid"
+2025-08-21 15:50:37.434 +05:30 [INF] Fetching all books with search params: {"SearchText":null,"Page":1,"PageSize":10,"SortColumn":null,"SortOrder":null,"Filters":null,"$type":"SearchRequestModel"}
+2025-08-21 15:50:37.435 +05:30 [INF] Fetching list of books with parameters: {"SortColumn":"BookSid","SortOrder":"DESC","SearchText":"%","Filters":"1 = 1 AND","Page":1,"PageSize":10}
+2025-08-21 15:50:37.448 +05:30 [INF] Executed DbCommand (11ms) [Parameters=[p0='<Search><SortColumn>BookSid</SortColumn><SortOrder>DESC</SortOrder><SearchText>%</SearchText><Filters>1 = 1 AND</Filters><Page>1</Page><PageSize>10</PageSize></Search>' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SP_GetAllBookdynamic @p0
+2025-08-21 15:50:37.449 +05:30 [INF] Books list retrieved successfully.
+2025-08-21 15:50:37.449 +05:30 [INF] Retrieved 10 books
+2025-08-21 15:50:37.450 +05:30 [INF] Executed action method EvaluationAPI.Controllers.BookController.GetallBooks (EvaluationAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 16.0138ms.
+2025-08-21 15:50:37.450 +05:30 [INF] Executing OkObjectResult, writing value of type 'EA.Model.CommonModel.Page'.
+2025-08-21 15:50:37.451 +05:30 [INF] Executed action EvaluationAPI.Controllers.BookController.GetallBooks (EvaluationAPI) in 18.075ms
+2025-08-21 15:50:37.451 +05:30 [INF] Executed endpoint 'EvaluationAPI.Controllers.BookController.GetallBooks (EvaluationAPI)'
+2025-08-21 15:50:37.451 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5188/api/Book/dynamicgetall - 200 null application/json; charset=utf-8 20.2315ms
+2025-08-21 15:52:34.875 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5188/api/Book/dynamicgetall - null null
+2025-08-21 15:52:34.875 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5188/api/Book/dynamicgetall - null null
+2025-08-21 15:52:34.881 +05:30 [INF] CORS policy execution successful.
+2025-08-21 15:52:34.889 +05:30 [INF] CORS policy execution successful.
+2025-08-21 15:52:34.895 +05:30 [INF] Executing endpoint 'EvaluationAPI.Controllers.BookController.GetallBooks (EvaluationAPI)'
+2025-08-21 15:52:34.895 +05:30 [INF] Executing endpoint 'EvaluationAPI.Controllers.BookController.GetallBooks (EvaluationAPI)'
+2025-08-21 15:52:34.896 +05:30 [INF] Route matched with {action = "GetallBooks", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[EA.Model.ResponseModel.BookResponseModel]]] GetallBooks(SearchRequestModel) on controller EvaluationAPI.Controllers.BookController (EvaluationAPI).
+2025-08-21 15:52:34.896 +05:30 [INF] Route matched with {action = "GetallBooks", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[EA.Model.ResponseModel.BookResponseModel]]] GetallBooks(SearchRequestModel) on controller EvaluationAPI.Controllers.BookController (EvaluationAPI).
+2025-08-21 15:52:34.899 +05:30 [INF] Executing action method EvaluationAPI.Controllers.BookController.GetallBooks (EvaluationAPI) - Validation state: "Valid"
+2025-08-21 15:52:34.899 +05:30 [INF] Executing action method EvaluationAPI.Controllers.BookController.GetallBooks (EvaluationAPI) - Validation state: "Valid"
+2025-08-21 15:52:34.899 +05:30 [INF] Fetching all books with search params: {"SearchText":null,"Page":1,"PageSize":10,"SortColumn":null,"SortOrder":null,"Filters":null,"$type":"SearchRequestModel"}
+2025-08-21 15:52:34.899 +05:30 [INF] Fetching all books with search params: {"SearchText":null,"Page":1,"PageSize":10,"SortColumn":null,"SortOrder":null,"Filters":null,"$type":"SearchRequestModel"}
+2025-08-21 15:52:34.900 +05:30 [INF] Fetching list of books with parameters: {"SortColumn":"BookSid","SortOrder":"DESC","SearchText":"%","Filters":"1 = 1 AND","Page":1,"PageSize":10}
+2025-08-21 15:52:34.900 +05:30 [INF] Fetching list of books with parameters: {"SortColumn":"BookSid","SortOrder":"DESC","SearchText":"%","Filters":"1 = 1 AND","Page":1,"PageSize":10}
+2025-08-21 15:52:34.956 +05:30 [INF] Executed DbCommand (46ms) [Parameters=[p0='<Search><SortColumn>BookSid</SortColumn><SortOrder>DESC</SortOrder><SearchText>%</SearchText><Filters>1 = 1 AND</Filters><Page>1</Page><PageSize>10</PageSize></Search>' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SP_GetAllBookdynamic @p0
+2025-08-21 15:52:34.956 +05:30 [INF] Executed DbCommand (46ms) [Parameters=[p0='<Search><SortColumn>BookSid</SortColumn><SortOrder>DESC</SortOrder><SearchText>%</SearchText><Filters>1 = 1 AND</Filters><Page>1</Page><PageSize>10</PageSize></Search>' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SP_GetAllBookdynamic @p0
+2025-08-21 15:52:34.964 +05:30 [INF] Books list retrieved successfully.
+2025-08-21 15:52:34.964 +05:30 [INF] Books list retrieved successfully.
+2025-08-21 15:52:34.964 +05:30 [INF] Retrieved 10 books
+2025-08-21 15:52:34.964 +05:30 [INF] Retrieved 10 books
+2025-08-21 15:52:34.965 +05:30 [INF] Executed action method EvaluationAPI.Controllers.BookController.GetallBooks (EvaluationAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 66.1582ms.
+2025-08-21 15:52:34.965 +05:30 [INF] Executed action method EvaluationAPI.Controllers.BookController.GetallBooks (EvaluationAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 66.2223ms.
+2025-08-21 15:52:34.966 +05:30 [INF] Executing OkObjectResult, writing value of type 'EA.Model.CommonModel.Page'.
+2025-08-21 15:52:34.966 +05:30 [INF] Executing OkObjectResult, writing value of type 'EA.Model.CommonModel.Page'.
+2025-08-21 15:52:34.973 +05:30 [INF] Executed action EvaluationAPI.Controllers.BookController.GetallBooks (EvaluationAPI) in 76.8109ms
+2025-08-21 15:52:34.973 +05:30 [INF] Executed action EvaluationAPI.Controllers.BookController.GetallBooks (EvaluationAPI) in 71.1985ms
+2025-08-21 15:52:34.973 +05:30 [INF] Executed endpoint 'EvaluationAPI.Controllers.BookController.GetallBooks (EvaluationAPI)'
+2025-08-21 15:52:34.974 +05:30 [INF] Executed endpoint 'EvaluationAPI.Controllers.BookController.GetallBooks (EvaluationAPI)'
+2025-08-21 15:52:34.974 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5188/api/Book/dynamicgetall - 200 null application/json; charset=utf-8 99.4595ms
+2025-08-21 15:52:34.975 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5188/api/Book/dynamicgetall - 200 null application/json; charset=utf-8 100.6346ms
+2025-08-21 16:00:01.362 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5188/api/Book/dynamicgetall - null null
+2025-08-21 16:00:01.362 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5188/api/Book/dynamicgetall - null null
+2025-08-21 16:00:01.365 +05:30 [INF] CORS policy execution successful.
+2025-08-21 16:00:01.365 +05:30 [INF] CORS policy execution successful.
+2025-08-21 16:00:01.366 +05:30 [INF] Executing endpoint 'EvaluationAPI.Controllers.BookController.GetallBooks (EvaluationAPI)'
+2025-08-21 16:00:01.366 +05:30 [INF] Executing endpoint 'EvaluationAPI.Controllers.BookController.GetallBooks (EvaluationAPI)'
+2025-08-21 16:00:01.366 +05:30 [INF] Route matched with {action = "GetallBooks", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[EA.Model.ResponseModel.BookResponseModel]]] GetallBooks(SearchRequestModel) on controller EvaluationAPI.Controllers.BookController (EvaluationAPI).
+2025-08-21 16:00:01.366 +05:30 [INF] Route matched with {action = "GetallBooks", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[EA.Model.ResponseModel.BookResponseModel]]] GetallBooks(SearchRequestModel) on controller EvaluationAPI.Controllers.BookController (EvaluationAPI).
+2025-08-21 16:00:01.369 +05:30 [INF] Executing action method EvaluationAPI.Controllers.BookController.GetallBooks (EvaluationAPI) - Validation state: "Valid"
+2025-08-21 16:00:01.369 +05:30 [INF] Executing action method EvaluationAPI.Controllers.BookController.GetallBooks (EvaluationAPI) - Validation state: "Valid"
+2025-08-21 16:00:01.370 +05:30 [INF] Fetching all books with search params: {"SearchText":null,"Page":1,"PageSize":10,"SortColumn":null,"SortOrder":null,"Filters":null,"$type":"SearchRequestModel"}
+2025-08-21 16:00:01.370 +05:30 [INF] Fetching all books with search params: {"SearchText":null,"Page":1,"PageSize":10,"SortColumn":null,"SortOrder":null,"Filters":null,"$type":"SearchRequestModel"}
+2025-08-21 16:00:01.370 +05:30 [INF] Fetching list of books with parameters: {"SortColumn":"BookSid","SortOrder":"DESC","SearchText":"%","Filters":"1 = 1 AND","Page":1,"PageSize":10}
+2025-08-21 16:00:01.371 +05:30 [INF] Fetching list of books with parameters: {"SortColumn":"BookSid","SortOrder":"DESC","SearchText":"%","Filters":"1 = 1 AND","Page":1,"PageSize":10}
+2025-08-21 16:00:01.419 +05:30 [INF] Executed DbCommand (8ms) [Parameters=[p0='<Search><SortColumn>BookSid</SortColumn><SortOrder>DESC</SortOrder><SearchText>%</SearchText><Filters>1 = 1 AND</Filters><Page>1</Page><PageSize>10</PageSize></Search>' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SP_GetAllBookdynamic @p0
+2025-08-21 16:00:01.421 +05:30 [INF] Books list retrieved successfully.
+2025-08-21 16:00:01.421 +05:30 [INF] Retrieved 10 books
+2025-08-21 16:00:01.421 +05:30 [INF] Executed action method EvaluationAPI.Controllers.BookController.GetallBooks (EvaluationAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 51.513ms.
+2025-08-21 16:00:01.421 +05:30 [INF] Executing OkObjectResult, writing value of type 'EA.Model.CommonModel.Page'.
+2025-08-21 16:00:01.422 +05:30 [INF] Executed action EvaluationAPI.Controllers.BookController.GetallBooks (EvaluationAPI) in 55.2134ms
+2025-08-21 16:00:01.422 +05:30 [INF] Executed endpoint 'EvaluationAPI.Controllers.BookController.GetallBooks (EvaluationAPI)'
+2025-08-21 16:00:01.422 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5188/api/Book/dynamicgetall - 200 null application/json; charset=utf-8 60.7831ms
+2025-08-21 16:00:01.436 +05:30 [INF] Executed DbCommand (6ms) [Parameters=[p0='<Search><SortColumn>BookSid</SortColumn><SortOrder>DESC</SortOrder><SearchText>%</SearchText><Filters>1 = 1 AND</Filters><Page>1</Page><PageSize>10</PageSize></Search>' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SP_GetAllBookdynamic @p0
+2025-08-21 16:00:01.438 +05:30 [INF] Books list retrieved successfully.
+2025-08-21 16:00:01.438 +05:30 [INF] Retrieved 10 books
+2025-08-21 16:00:01.438 +05:30 [INF] Executed action method EvaluationAPI.Controllers.BookController.GetallBooks (EvaluationAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 68.7352ms.
+2025-08-21 16:00:01.438 +05:30 [INF] Executing OkObjectResult, writing value of type 'EA.Model.CommonModel.Page'.
+2025-08-21 16:00:01.439 +05:30 [INF] Executed action EvaluationAPI.Controllers.BookController.GetallBooks (EvaluationAPI) in 72.087ms
+2025-08-21 16:00:01.439 +05:30 [INF] Executed endpoint 'EvaluationAPI.Controllers.BookController.GetallBooks (EvaluationAPI)'
+2025-08-21 16:00:01.440 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5188/api/Book/dynamicgetall - 200 null application/json; charset=utf-8 78.3484ms
+2025-08-21 16:03:24.941 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5188/api/Book/dynamicgetall - null null
+2025-08-21 16:03:24.941 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5188/api/Book/dynamicgetall - null null
+2025-08-21 16:03:24.949 +05:30 [INF] CORS policy execution successful.
+2025-08-21 16:03:24.948 +05:30 [INF] CORS policy execution successful.
+2025-08-21 16:03:24.950 +05:30 [INF] Executing endpoint 'EvaluationAPI.Controllers.BookController.GetallBooks (EvaluationAPI)'
+2025-08-21 16:03:24.950 +05:30 [INF] Executing endpoint 'EvaluationAPI.Controllers.BookController.GetallBooks (EvaluationAPI)'
+2025-08-21 16:03:24.952 +05:30 [INF] Route matched with {action = "GetallBooks", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[EA.Model.ResponseModel.BookResponseModel]]] GetallBooks(SearchRequestModel) on controller EvaluationAPI.Controllers.BookController (EvaluationAPI).
+2025-08-21 16:03:24.952 +05:30 [INF] Route matched with {action = "GetallBooks", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[EA.Model.ResponseModel.BookResponseModel]]] GetallBooks(SearchRequestModel) on controller EvaluationAPI.Controllers.BookController (EvaluationAPI).
+2025-08-21 16:03:24.958 +05:30 [INF] Executing action method EvaluationAPI.Controllers.BookController.GetallBooks (EvaluationAPI) - Validation state: "Valid"
+2025-08-21 16:03:24.958 +05:30 [INF] Executing action method EvaluationAPI.Controllers.BookController.GetallBooks (EvaluationAPI) - Validation state: "Valid"
+2025-08-21 16:03:24.958 +05:30 [INF] Fetching all books with search params: {"SearchText":null,"Page":1,"PageSize":10,"SortColumn":null,"SortOrder":null,"Filters":null,"$type":"SearchRequestModel"}
+2025-08-21 16:03:24.958 +05:30 [INF] Fetching all books with search params: {"SearchText":null,"Page":1,"PageSize":10,"SortColumn":null,"SortOrder":null,"Filters":null,"$type":"SearchRequestModel"}
+2025-08-21 16:03:24.959 +05:30 [INF] Fetching list of books with parameters: {"SortColumn":"BookSid","SortOrder":"DESC","SearchText":"%","Filters":"1 = 1 AND","Page":1,"PageSize":10}
+2025-08-21 16:03:24.959 +05:30 [INF] Fetching list of books with parameters: {"SortColumn":"BookSid","SortOrder":"DESC","SearchText":"%","Filters":"1 = 1 AND","Page":1,"PageSize":10}
+2025-08-21 16:03:25.032 +05:30 [INF] Executed DbCommand (62ms) [Parameters=[p0='<Search><SortColumn>BookSid</SortColumn><SortOrder>DESC</SortOrder><SearchText>%</SearchText><Filters>1 = 1 AND</Filters><Page>1</Page><PageSize>10</PageSize></Search>' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SP_GetAllBookdynamic @p0
+2025-08-21 16:03:25.033 +05:30 [INF] Executed DbCommand (62ms) [Parameters=[p0='<Search><SortColumn>BookSid</SortColumn><SortOrder>DESC</SortOrder><SearchText>%</SearchText><Filters>1 = 1 AND</Filters><Page>1</Page><PageSize>10</PageSize></Search>' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SP_GetAllBookdynamic @p0
+2025-08-21 16:03:25.035 +05:30 [INF] Books list retrieved successfully.
+2025-08-21 16:03:25.035 +05:30 [INF] Retrieved 10 books
+2025-08-21 16:03:25.035 +05:30 [INF] Books list retrieved successfully.
+2025-08-21 16:03:25.035 +05:30 [INF] Retrieved 10 books
+2025-08-21 16:03:25.036 +05:30 [INF] Executed action method EvaluationAPI.Controllers.BookController.GetallBooks (EvaluationAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 77.7476ms.
+2025-08-21 16:03:25.036 +05:30 [INF] Executed action method EvaluationAPI.Controllers.BookController.GetallBooks (EvaluationAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 77.7267ms.
+2025-08-21 16:03:25.036 +05:30 [INF] Executing OkObjectResult, writing value of type 'EA.Model.CommonModel.Page'.
+2025-08-21 16:03:25.036 +05:30 [INF] Executing OkObjectResult, writing value of type 'EA.Model.CommonModel.Page'.
+2025-08-21 16:03:25.037 +05:30 [INF] Executed action EvaluationAPI.Controllers.BookController.GetallBooks (EvaluationAPI) in 84.5567ms
+2025-08-21 16:03:25.037 +05:30 [INF] Executed endpoint 'EvaluationAPI.Controllers.BookController.GetallBooks (EvaluationAPI)'
+2025-08-21 16:03:25.037 +05:30 [INF] Executed action EvaluationAPI.Controllers.BookController.GetallBooks (EvaluationAPI) in 84.4734ms
+2025-08-21 16:03:25.037 +05:30 [INF] Executed endpoint 'EvaluationAPI.Controllers.BookController.GetallBooks (EvaluationAPI)'
+2025-08-21 16:03:25.037 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5188/api/Book/dynamicgetall - 200 null application/json; charset=utf-8 97.2728ms
+2025-08-21 16:03:25.037 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5188/api/Book/dynamicgetall - 200 null application/json; charset=utf-8 97.1446ms
+2025-08-21 16:03:27.359 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5188/api/Book/dynamic/LIBc27459bc-34d0-4e2f-9670-773d659bfba3 - null null
+2025-08-21 16:03:27.359 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5188/api/Book/dynamic/LIBc27459bc-34d0-4e2f-9670-773d659bfba3 - null null
+2025-08-21 16:03:27.360 +05:30 [INF] CORS policy execution successful.
+2025-08-21 16:03:27.360 +05:30 [INF] Executing endpoint 'EvaluationAPI.Controllers.BookController.GetByBookSID (EvaluationAPI)'
+2025-08-21 16:03:27.360 +05:30 [INF] CORS policy execution successful.
+2025-08-21 16:03:27.360 +05:30 [INF] Route matched with {action = "GetByBookSID", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[EA.Model.ResponseModel.BookResponseModel]] GetByBookSID(System.String) on controller EvaluationAPI.Controllers.BookController (EvaluationAPI).
+2025-08-21 16:03:27.360 +05:30 [INF] Executing endpoint 'EvaluationAPI.Controllers.BookController.GetByBookSID (EvaluationAPI)'
+2025-08-21 16:03:27.361 +05:30 [INF] Route matched with {action = "GetByBookSID", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[EA.Model.ResponseModel.BookResponseModel]] GetByBookSID(System.String) on controller EvaluationAPI.Controllers.BookController (EvaluationAPI).
+2025-08-21 16:03:27.380 +05:30 [INF] Executing action method EvaluationAPI.Controllers.BookController.GetByBookSID (EvaluationAPI) - Validation state: "Valid"
+2025-08-21 16:03:27.380 +05:30 [INF] Fetching book with SID: LIBc27459bc-34d0-4e2f-9670-773d659bfba3
+2025-08-21 16:03:27.380 +05:30 [INF] Fetching book with SID: LIBc27459bc-34d0-4e2f-9670-773d659bfba3
+2025-08-21 16:03:27.380 +05:30 [INF] Executing action method EvaluationAPI.Controllers.BookController.GetByBookSID (EvaluationAPI) - Validation state: "Valid"
+2025-08-21 16:03:27.380 +05:30 [INF] Fetching book with SID: LIBc27459bc-34d0-4e2f-9670-773d659bfba3
+2025-08-21 16:03:27.380 +05:30 [INF] Fetching book with SID: LIBc27459bc-34d0-4e2f-9670-773d659bfba3
+2025-08-21 16:03:27.387 +05:30 [INF] Executed DbCommand (5ms) [Parameters=[p0='LIBc27459bc-34d0-4e2f-9670-773d659bfba3' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SP_GetBookById @p0
+2025-08-21 16:03:27.387 +05:30 [INF] Executed DbCommand (5ms) [Parameters=[p0='LIBc27459bc-34d0-4e2f-9670-773d659bfba3' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SP_GetBookById @p0
+2025-08-21 16:03:27.387 +05:30 [INF] Successfully retrieved book: asdfghjkl; (SID: LIBc27459bc-34d0-4e2f-9670-773d659bfba3)
+2025-08-21 16:03:27.387 +05:30 [INF] Successfully retrieved book: asdfghjkl; (SID: LIBc27459bc-34d0-4e2f-9670-773d659bfba3)
+2025-08-21 16:03:27.387 +05:30 [INF] Successfully retrieved book: asdfghjkl; (SID: LIBc27459bc-34d0-4e2f-9670-773d659bfba3)
+2025-08-21 16:03:27.387 +05:30 [INF] Executed action method EvaluationAPI.Controllers.BookController.GetByBookSID (EvaluationAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 7.5777ms.
+2025-08-21 16:03:27.387 +05:30 [INF] Successfully retrieved book: asdfghjkl; (SID: LIBc27459bc-34d0-4e2f-9670-773d659bfba3)
+2025-08-21 16:03:27.388 +05:30 [INF] Executed action method EvaluationAPI.Controllers.BookController.GetByBookSID (EvaluationAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 7.3142ms.
+2025-08-21 16:03:27.388 +05:30 [INF] Executing OkObjectResult, writing value of type 'EA.Model.ResponseModel.BookResponseModel'.
+2025-08-21 16:03:27.388 +05:30 [INF] Executing OkObjectResult, writing value of type 'EA.Model.ResponseModel.BookResponseModel'.
+2025-08-21 16:03:27.389 +05:30 [INF] Executed action EvaluationAPI.Controllers.BookController.GetByBookSID (EvaluationAPI) in 28.0135ms
+2025-08-21 16:03:27.389 +05:30 [INF] Executed action EvaluationAPI.Controllers.BookController.GetByBookSID (EvaluationAPI) in 28.3982ms
+2025-08-21 16:03:27.389 +05:30 [INF] Executed endpoint 'EvaluationAPI.Controllers.BookController.GetByBookSID (EvaluationAPI)'
+2025-08-21 16:03:27.389 +05:30 [INF] Executed endpoint 'EvaluationAPI.Controllers.BookController.GetByBookSID (EvaluationAPI)'
+2025-08-21 16:03:27.389 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5188/api/Book/dynamic/LIBc27459bc-34d0-4e2f-9670-773d659bfba3 - 200 null application/json; charset=utf-8 29.8845ms
+2025-08-21 16:03:27.389 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5188/api/Book/dynamic/LIBc27459bc-34d0-4e2f-9670-773d659bfba3 - 200 null application/json; charset=utf-8 29.9106ms
+2025-08-21 16:03:29.787 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5188/api/Book/dynamicgetall - null null
+2025-08-21 16:03:29.788 +05:30 [INF] CORS policy execution successful.
+2025-08-21 16:03:29.788 +05:30 [INF] Executing endpoint 'EvaluationAPI.Controllers.BookController.GetallBooks (EvaluationAPI)'
+2025-08-21 16:03:29.789 +05:30 [INF] Route matched with {action = "GetallBooks", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[EA.Model.ResponseModel.BookResponseModel]]] GetallBooks(SearchRequestModel) on controller EvaluationAPI.Controllers.BookController (EvaluationAPI).
+2025-08-21 16:03:29.790 +05:30 [INF] Executing action method EvaluationAPI.Controllers.BookController.GetallBooks (EvaluationAPI) - Validation state: "Valid"
+2025-08-21 16:03:29.791 +05:30 [INF] Fetching all books with search params: {"SearchText":null,"Page":1,"PageSize":10,"SortColumn":null,"SortOrder":null,"Filters":null,"$type":"SearchRequestModel"}
+2025-08-21 16:03:29.792 +05:30 [INF] Fetching list of books with parameters: {"SortColumn":"BookSid","SortOrder":"DESC","SearchText":"%","Filters":"1 = 1 AND","Page":1,"PageSize":10}
+2025-08-21 16:03:29.804 +05:30 [INF] Executed DbCommand (7ms) [Parameters=[p0='<Search><SortColumn>BookSid</SortColumn><SortOrder>DESC</SortOrder><SearchText>%</SearchText><Filters>1 = 1 AND</Filters><Page>1</Page><PageSize>10</PageSize></Search>' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SP_GetAllBookdynamic @p0
+2025-08-21 16:03:29.806 +05:30 [INF] Books list retrieved successfully.
+2025-08-21 16:03:29.806 +05:30 [INF] Retrieved 10 books
+2025-08-21 16:03:29.806 +05:30 [INF] Executed action method EvaluationAPI.Controllers.BookController.GetallBooks (EvaluationAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 15.6033ms.
+2025-08-21 16:03:29.806 +05:30 [INF] Executing OkObjectResult, writing value of type 'EA.Model.CommonModel.Page'.
+2025-08-21 16:03:29.806 +05:30 [INF] Executed action EvaluationAPI.Controllers.BookController.GetallBooks (EvaluationAPI) in 17.5672ms
+2025-08-21 16:03:29.807 +05:30 [INF] Executed endpoint 'EvaluationAPI.Controllers.BookController.GetallBooks (EvaluationAPI)'
+2025-08-21 16:03:29.807 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5188/api/Book/dynamicgetall - 200 null application/json; charset=utf-8 19.4952ms
+2025-08-21 16:03:35.238 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5188/api/Book/dynamic/LIB9ff65df8-f656-4b0e-b42a-7a4a6eb29c7c - null null
+2025-08-21 16:03:35.239 +05:30 [INF] CORS policy execution successful.
+2025-08-21 16:03:35.240 +05:30 [INF] Executing endpoint 'EvaluationAPI.Controllers.BookController.GetByBookSID (EvaluationAPI)'
+2025-08-21 16:03:35.238 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5188/api/Book/dynamic/LIB9ff65df8-f656-4b0e-b42a-7a4a6eb29c7c - null null
+2025-08-21 16:03:35.240 +05:30 [INF] Route matched with {action = "GetByBookSID", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[EA.Model.ResponseModel.BookResponseModel]] GetByBookSID(System.String) on controller EvaluationAPI.Controllers.BookController (EvaluationAPI).
+2025-08-21 16:03:35.240 +05:30 [INF] CORS policy execution successful.
+2025-08-21 16:03:35.240 +05:30 [INF] Executing endpoint 'EvaluationAPI.Controllers.BookController.GetByBookSID (EvaluationAPI)'
+2025-08-21 16:03:35.240 +05:30 [INF] Route matched with {action = "GetByBookSID", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[EA.Model.ResponseModel.BookResponseModel]] GetByBookSID(System.String) on controller EvaluationAPI.Controllers.BookController (EvaluationAPI).
+2025-08-21 16:03:35.241 +05:30 [INF] Executing action method EvaluationAPI.Controllers.BookController.GetByBookSID (EvaluationAPI) - Validation state: "Valid"
+2025-08-21 16:03:35.241 +05:30 [INF] Fetching book with SID: LIB9ff65df8-f656-4b0e-b42a-7a4a6eb29c7c
+2025-08-21 16:03:35.241 +05:30 [INF] Fetching book with SID: LIB9ff65df8-f656-4b0e-b42a-7a4a6eb29c7c
+2025-08-21 16:03:35.242 +05:30 [INF] Executing action method EvaluationAPI.Controllers.BookController.GetByBookSID (EvaluationAPI) - Validation state: "Valid"
+2025-08-21 16:03:35.242 +05:30 [INF] Fetching book with SID: LIB9ff65df8-f656-4b0e-b42a-7a4a6eb29c7c
+2025-08-21 16:03:35.242 +05:30 [INF] Fetching book with SID: LIB9ff65df8-f656-4b0e-b42a-7a4a6eb29c7c
+2025-08-21 16:03:35.250 +05:30 [INF] Executed DbCommand (6ms) [Parameters=[p0='LIB9ff65df8-f656-4b0e-b42a-7a4a6eb29c7c' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SP_GetBookById @p0
+2025-08-21 16:03:35.250 +05:30 [INF] Executed DbCommand (5ms) [Parameters=[p0='LIB9ff65df8-f656-4b0e-b42a-7a4a6eb29c7c' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SP_GetBookById @p0
+2025-08-21 16:03:35.250 +05:30 [INF] Successfully retrieved book: string (SID: LIB9ff65df8-f656-4b0e-b42a-7a4a6eb29c7c)
+2025-08-21 16:03:35.250 +05:30 [INF] Successfully retrieved book: string (SID: LIB9ff65df8-f656-4b0e-b42a-7a4a6eb29c7c)
+2025-08-21 16:03:35.251 +05:30 [INF] Executed action method EvaluationAPI.Controllers.BookController.GetByBookSID (EvaluationAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 9.2472ms.
+2025-08-21 16:03:35.250 +05:30 [INF] Successfully retrieved book: string (SID: LIB9ff65df8-f656-4b0e-b42a-7a4a6eb29c7c)
+2025-08-21 16:03:35.251 +05:30 [INF] Successfully retrieved book: string (SID: LIB9ff65df8-f656-4b0e-b42a-7a4a6eb29c7c)
+2025-08-21 16:03:35.251 +05:30 [INF] Executed action method EvaluationAPI.Controllers.BookController.GetByBookSID (EvaluationAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 9.0363ms.
+2025-08-21 16:03:35.251 +05:30 [INF] Executing OkObjectResult, writing value of type 'EA.Model.ResponseModel.BookResponseModel'.
+2025-08-21 16:03:35.251 +05:30 [INF] Executed action EvaluationAPI.Controllers.BookController.GetByBookSID (EvaluationAPI) in 11.3985ms
+2025-08-21 16:03:35.251 +05:30 [INF] Executing OkObjectResult, writing value of type 'EA.Model.ResponseModel.BookResponseModel'.
+2025-08-21 16:03:35.251 +05:30 [INF] Executed endpoint 'EvaluationAPI.Controllers.BookController.GetByBookSID (EvaluationAPI)'
+2025-08-21 16:03:35.252 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5188/api/Book/dynamic/LIB9ff65df8-f656-4b0e-b42a-7a4a6eb29c7c - 200 null application/json; charset=utf-8 13.7248ms
+2025-08-21 16:03:35.252 +05:30 [INF] Executed action EvaluationAPI.Controllers.BookController.GetByBookSID (EvaluationAPI) in 10.4859ms
+2025-08-21 16:03:35.252 +05:30 [INF] Executed endpoint 'EvaluationAPI.Controllers.BookController.GetByBookSID (EvaluationAPI)'
+2025-08-21 16:03:35.252 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5188/api/Book/dynamic/LIB9ff65df8-f656-4b0e-b42a-7a4a6eb29c7c - 200 null application/json; charset=utf-8 14.2427ms
+2025-08-21 16:03:38.348 +05:30 [INF] Application is shutting down...
+2025-08-21 16:05:58.185 +05:30 [INF] Now listening on: http://localhost:5188
+2025-08-21 16:05:58.217 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-21 16:05:58.217 +05:30 [INF] Hosting environment: Development
+2025-08-21 16:05:58.217 +05:30 [INF] Content root path: /Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/WebApplication1/EvaluationAPI
+2025-08-21 16:05:58.848 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5188/swagger - null null
+2025-08-21 16:05:58.870 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5188/swagger - 301 0 null 22.7442ms
+2025-08-21 16:05:58.872 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5188/swagger/index.html - null null
+2025-08-21 16:05:58.941 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5188/swagger/index.html - 200 null text/html;charset=utf-8 69.0965ms
+2025-08-21 16:05:58.942 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5188/swagger/swagger-ui.css - null null
+2025-08-21 16:05:58.942 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5188/swagger/index.css - null null
+2025-08-21 16:05:58.943 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5188/swagger/index.js - null null
+2025-08-21 16:05:58.943 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5188/swagger/swagger-ui-standalone-preset.js - null null
+2025-08-21 16:05:58.944 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5188/swagger/swagger-ui-bundle.js - null null
+2025-08-21 16:05:58.945 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5188/swagger/index.js - 200 null application/javascript;charset=utf-8 2.1358ms
+2025-08-21 16:05:58.957 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5188/swagger/swagger-ui-standalone-preset.js - 304 null null 14.5453ms
+2025-08-21 16:05:58.957 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5188/swagger/swagger-ui.css - 304 null null 15.3682ms
+2025-08-21 16:05:58.958 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5188/swagger/index.css - 304 null null 15.0291ms
+2025-08-21 16:05:58.961 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5188/swagger/swagger-ui-bundle.js - 304 null null 17.5025ms
+2025-08-21 16:05:59.074 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5188/swagger/favicon-16x16.png - null null
+2025-08-21 16:05:59.074 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5188/swagger/favicon-32x32.png - null null
+2025-08-21 16:05:59.075 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5188/swagger/favicon-16x16.png - 304 null null 1.1855ms
+2025-08-21 16:05:59.075 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5188/swagger/favicon-32x32.png - 304 null null 1.2735ms
+2025-08-21 16:05:59.080 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5188/swagger/v1/swagger.json - null null
+2025-08-21 16:05:59.172 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5188/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 92.1107ms
+2025-08-21 16:12:28.697 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5188/api/Book/dynamicgetall - null null
+2025-08-21 16:12:28.716 +05:30 [WRN] Failed to determine the https port for redirect.
+2025-08-21 16:12:28.722 +05:30 [INF] Executing endpoint 'EvaluationAPI.Controllers.BookController.GetallBooks (EvaluationAPI)'
+2025-08-21 16:12:28.748 +05:30 [INF] Route matched with {action = "GetallBooks", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[EA.Model.ResponseModel.BookResponseModel]]] GetallBooks(SearchRequestModel) on controller EvaluationAPI.Controllers.BookController (EvaluationAPI).
+2025-08-21 16:12:28.865 +05:30 [INF] Executing action method EvaluationAPI.Controllers.BookController.GetallBooks (EvaluationAPI) - Validation state: "Valid"
+2025-08-21 16:12:28.870 +05:30 [INF] Fetching all books with search params: {"SearchText":null,"Page":1,"PageSize":10,"SortColumn":null,"SortOrder":null,"Filters":null,"$type":"SearchRequestModel"}
+2025-08-21 16:12:28.878 +05:30 [INF] Fetching list of books with parameters: {"SortColumn":"BookSid","SortOrder":"DESC","SearchText":"%","Filters":"1 = 1 AND","Page":1,"PageSize":10}
+2025-08-21 16:12:29.105 +05:30 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2025-08-21 16:12:29.561 +05:30 [INF] Executed DbCommand (31ms) [Parameters=[p0='<Search><SortColumn>BookSid</SortColumn><SortOrder>DESC</SortOrder><SearchText>%</SearchText><Filters>1 = 1 AND</Filters><Page>1</Page><PageSize>10</PageSize></Search>' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SP_GetAllBookdynamic @p0
+2025-08-21 16:12:29.656 +05:30 [INF] Books list retrieved successfully.
+2025-08-21 16:12:29.656 +05:30 [INF] Retrieved 10 books
+2025-08-21 16:12:29.663 +05:30 [INF] Executed action method EvaluationAPI.Controllers.BookController.GetallBooks (EvaluationAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 795.2165ms.
+2025-08-21 16:12:29.669 +05:30 [INF] Executing OkObjectResult, writing value of type 'EA.Model.CommonModel.Page'.
+2025-08-21 16:12:29.727 +05:30 [INF] Executed action EvaluationAPI.Controllers.BookController.GetallBooks (EvaluationAPI) in 976.6559ms
+2025-08-21 16:12:29.728 +05:30 [INF] Executed endpoint 'EvaluationAPI.Controllers.BookController.GetallBooks (EvaluationAPI)'
+2025-08-21 16:12:29.737 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5188/api/Book/dynamicgetall - 200 null application/json; charset=utf-8 1039.9517ms
+2025-08-21 16:14:27.239 +05:30 [INF] Application is shutting down...
+2025-08-21 16:17:14.770 +05:30 [INF] Now listening on: http://localhost:5188
+2025-08-21 16:17:14.801 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-21 16:17:14.801 +05:30 [INF] Hosting environment: Development
+2025-08-21 16:17:14.801 +05:30 [INF] Content root path: /Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/WebApplication1/EvaluationAPI
+2025-08-21 16:17:15.311 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5188/swagger - null null
+2025-08-21 16:17:15.340 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5188/swagger - 301 0 null 29.3816ms
+2025-08-21 16:17:15.344 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5188/swagger/index.html - null null
+2025-08-21 16:17:15.410 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5188/swagger/index.html - 200 null text/html;charset=utf-8 65.6527ms
+2025-08-21 16:17:15.520 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5188/swagger/v1/swagger.json - null null
+2025-08-21 16:17:15.596 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5188/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 75.8394ms
+2025-08-21 16:20:15.418 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5188/api/Book/dynamicgetall - null null
+2025-08-21 16:20:15.430 +05:30 [INF] CORS policy execution successful.
+2025-08-21 16:20:15.436 +05:30 [WRN] Failed to determine the https port for redirect.
+2025-08-21 16:20:15.440 +05:30 [INF] Executing endpoint 'EvaluationAPI.Controllers.BookController.GetallBooks (EvaluationAPI)'
+2025-08-21 16:20:15.469 +05:30 [INF] Route matched with {action = "GetallBooks", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[EA.Model.ResponseModel.BookResponseModel]]] GetallBooks(SearchRequestModel) on controller EvaluationAPI.Controllers.BookController (EvaluationAPI).
+2025-08-21 16:20:15.603 +05:30 [INF] Executing action method EvaluationAPI.Controllers.BookController.GetallBooks (EvaluationAPI) - Validation state: "Valid"
+2025-08-21 16:20:15.608 +05:30 [INF] Fetching all books with search params: {"SearchText":null,"Page":1,"PageSize":10,"SortColumn":null,"SortOrder":null,"Filters":null,"$type":"SearchRequestModel"}
+2025-08-21 16:20:15.616 +05:30 [INF] Fetching list of books with parameters: {"SortColumn":"BookSid","SortOrder":"DESC","SearchText":"%","Filters":"1 = 1 AND","Page":1,"PageSize":10}
+2025-08-21 16:20:15.845 +05:30 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2025-08-21 16:20:16.314 +05:30 [INF] Executed DbCommand (33ms) [Parameters=[p0='<Search><SortColumn>BookSid</SortColumn><SortOrder>DESC</SortOrder><SearchText>%</SearchText><Filters>1 = 1 AND</Filters><Page>1</Page><PageSize>10</PageSize></Search>' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SP_GetAllBookdynamic @p0
+2025-08-21 16:20:16.405 +05:30 [INF] Books list retrieved successfully.
+2025-08-21 16:20:16.405 +05:30 [INF] Retrieved 10 books
+2025-08-21 16:20:16.412 +05:30 [INF] Executed action method EvaluationAPI.Controllers.BookController.GetallBooks (EvaluationAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 806.043ms.
+2025-08-21 16:20:16.418 +05:30 [INF] Executing OkObjectResult, writing value of type 'EA.Model.CommonModel.Page'.
+2025-08-21 16:20:16.479 +05:30 [INF] Executed action EvaluationAPI.Controllers.BookController.GetallBooks (EvaluationAPI) in 1007.1826ms
+2025-08-21 16:20:16.479 +05:30 [INF] Executed endpoint 'EvaluationAPI.Controllers.BookController.GetallBooks (EvaluationAPI)'
+2025-08-21 16:20:16.489 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5188/api/Book/dynamicgetall - 200 null application/json; charset=utf-8 1071.0601ms
+2025-08-21 16:20:31.833 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5188/api/Book/InsertBook - null 0
+2025-08-21 16:20:31.840 +05:30 [INF] CORS policy execution successful.
+2025-08-21 16:20:31.843 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5188/api/Book/InsertBook - 204 null null 10.0867ms
+2025-08-21 16:20:31.846 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5188/api/Book/InsertBook - application/json 108
+2025-08-21 16:20:31.847 +05:30 [INF] CORS policy execution successful.
+2025-08-21 16:20:31.848 +05:30 [INF] Executing endpoint 'EvaluationAPI.Controllers.BookController.InsertBook (EvaluationAPI)'
+2025-08-21 16:20:31.858 +05:30 [INF] Route matched with {action = "InsertBook", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[EA.Model.ResponseModel.BookResponseModel]]] InsertBook(System.Collections.Generic.List`1[EA.Model.RequestModel.BookRequestWithouSidModel]) on controller EvaluationAPI.Controllers.BookController (EvaluationAPI).
+2025-08-21 16:20:31.894 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2025-08-21 16:20:31.907 +05:30 [INF] Executed action EvaluationAPI.Controllers.BookController.InsertBook (EvaluationAPI) in 48.9281ms
+2025-08-21 16:20:31.907 +05:30 [INF] Executed endpoint 'EvaluationAPI.Controllers.BookController.InsertBook (EvaluationAPI)'
+2025-08-21 16:20:31.907 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5188/api/Book/InsertBook - 400 null application/problem+json; charset=utf-8 60.7083ms
+2025-08-21 16:21:33.025 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5188/api/Book/InsertBook - null 0
+2025-08-21 16:21:33.028 +05:30 [INF] CORS policy execution successful.
+2025-08-21 16:21:33.029 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5188/api/Book/InsertBook - 204 null null 3.395ms
+2025-08-21 16:21:33.031 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5188/api/Book/InsertBook - application/json 77
+2025-08-21 16:21:33.032 +05:30 [INF] CORS policy execution successful.
+2025-08-21 16:21:33.032 +05:30 [INF] Executing endpoint 'EvaluationAPI.Controllers.BookController.InsertBook (EvaluationAPI)'
+2025-08-21 16:21:33.033 +05:30 [INF] Route matched with {action = "InsertBook", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[EA.Model.ResponseModel.BookResponseModel]]] InsertBook(System.Collections.Generic.List`1[EA.Model.RequestModel.BookRequestWithouSidModel]) on controller EvaluationAPI.Controllers.BookController (EvaluationAPI).
+2025-08-21 16:21:33.045 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2025-08-21 16:21:33.045 +05:30 [INF] Executed action EvaluationAPI.Controllers.BookController.InsertBook (EvaluationAPI) in 12.0269ms
+2025-08-21 16:21:33.045 +05:30 [INF] Executed endpoint 'EvaluationAPI.Controllers.BookController.InsertBook (EvaluationAPI)'
+2025-08-21 16:21:33.046 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5188/api/Book/InsertBook - 400 null application/problem+json; charset=utf-8 14.0622ms
+2025-08-21 16:24:17.996 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5188/api/Book/InsertBook - null 0
+2025-08-21 16:24:18.000 +05:30 [INF] CORS policy execution successful.
+2025-08-21 16:24:18.001 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5188/api/Book/InsertBook - 204 null null 5.3375ms
+2025-08-21 16:24:18.004 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5188/api/Book/InsertBook - application/json 74
+2025-08-21 16:24:18.005 +05:30 [INF] CORS policy execution successful.
+2025-08-21 16:24:18.007 +05:30 [INF] Executing endpoint 'EvaluationAPI.Controllers.BookController.InsertBook (EvaluationAPI)'
+2025-08-21 16:24:18.008 +05:30 [INF] Route matched with {action = "InsertBook", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[EA.Model.ResponseModel.BookResponseModel]]] InsertBook(System.Collections.Generic.List`1[EA.Model.RequestModel.BookRequestWithouSidModel]) on controller EvaluationAPI.Controllers.BookController (EvaluationAPI).
+2025-08-21 16:24:18.014 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2025-08-21 16:24:18.016 +05:30 [INF] Executed action EvaluationAPI.Controllers.BookController.InsertBook (EvaluationAPI) in 7.3353ms
+2025-08-21 16:24:18.016 +05:30 [INF] Executed endpoint 'EvaluationAPI.Controllers.BookController.InsertBook (EvaluationAPI)'
+2025-08-21 16:24:18.016 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5188/api/Book/InsertBook - 400 null application/problem+json; charset=utf-8 11.9794ms
+2025-08-21 16:25:16.716 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5188/api/Book/InsertBook - application/json 162
+2025-08-21 16:25:16.719 +05:30 [INF] CORS policy execution failed.
+2025-08-21 16:25:16.721 +05:30 [INF] Request origin http://localhost:5188 does not have permission to access the resource.
+2025-08-21 16:25:16.722 +05:30 [INF] Executing endpoint 'EvaluationAPI.Controllers.BookController.InsertBook (EvaluationAPI)'
+2025-08-21 16:25:16.722 +05:30 [INF] Route matched with {action = "InsertBook", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[EA.Model.ResponseModel.BookResponseModel]]] InsertBook(System.Collections.Generic.List`1[EA.Model.RequestModel.BookRequestWithouSidModel]) on controller EvaluationAPI.Controllers.BookController (EvaluationAPI).
+2025-08-21 16:25:16.758 +05:30 [INF] Executing action method EvaluationAPI.Controllers.BookController.InsertBook (EvaluationAPI) - Validation state: "Valid"
+2025-08-21 16:25:16.762 +05:30 [INF] Inserting 1 new books
+2025-08-21 16:25:16.928 +05:30 [INF] Executed DbCommand (24ms) [Parameters=[@__book_Title_0='asdfg' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[BookID], [b].[Author], [b].[BookSID], [b].[BorrowedStatus], [b].[ISBN], [b].[PublishedYear], [b].[Status], [b].[Title]
+FROM [Book] AS [b]
+WHERE [b].[Title] = @__book_Title_0
+2025-08-21 16:25:16.930 +05:30 [WRN] Insert failed: Duplicate Title detected - asdfg
+2025-08-21 16:25:16.930 +05:30 [WRN] Known error occurred while inserting books: A book with the title 'asdfg' already exists.
+2025-08-21 16:25:16.931 +05:30 [INF] Executed action EvaluationAPI.Controllers.BookController.InsertBook (EvaluationAPI) in 208.3422ms
+2025-08-21 16:25:16.931 +05:30 [INF] Executed endpoint 'EvaluationAPI.Controllers.BookController.InsertBook (EvaluationAPI)'
+2025-08-21 16:25:16.931 +05:30 [ERR] Custom error occurred: A book with the title 'asdfg' already exists.
+EA.Common.HttpStatusCodeException: A book with the title 'asdfg' already exists.
+   at EA.Services.Repositories.Implementation.BookRepository.InsertBook(List`1 books) in /Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/WebApplication1/EA.Services/Repositories/Implementation/BookRepository.cs:line 140
+   at EvaluationAPI.Controllers.BookController.InsertBook(List`1 book) in /Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/WebApplication1/EvaluationAPI/Controllers/BookController.cs:line 66
+   at lambda_method44(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at EvaluationAPI.Helper.ExceptionHandlingMiddleware.InvokeAsync(HttpContext context) in /Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/WebApplication1/EvaluationAPI/Helper/ExceptionHandlingMiddleware.cs:line 23
+2025-08-21 16:25:16.961 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5188/api/Book/InsertBook - 409 null application/json 245.906ms
+2025-08-21 16:25:30.108 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5188/api/Book/InsertBook - application/json 165
+2025-08-21 16:25:30.109 +05:30 [INF] CORS policy execution failed.
+2025-08-21 16:25:30.109 +05:30 [INF] Request origin http://localhost:5188 does not have permission to access the resource.
+2025-08-21 16:25:30.109 +05:30 [INF] Executing endpoint 'EvaluationAPI.Controllers.BookController.InsertBook (EvaluationAPI)'
+2025-08-21 16:25:30.110 +05:30 [INF] Route matched with {action = "InsertBook", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[EA.Model.ResponseModel.BookResponseModel]]] InsertBook(System.Collections.Generic.List`1[EA.Model.RequestModel.BookRequestWithouSidModel]) on controller EvaluationAPI.Controllers.BookController (EvaluationAPI).
+2025-08-21 16:25:30.115 +05:30 [INF] Executing action method EvaluationAPI.Controllers.BookController.InsertBook (EvaluationAPI) - Validation state: "Valid"
+2025-08-21 16:25:30.116 +05:30 [INF] Inserting 1 new books
+2025-08-21 16:25:30.155 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[@__book_Title_0='zxklreop' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[BookID], [b].[Author], [b].[BookSID], [b].[BorrowedStatus], [b].[ISBN], [b].[PublishedYear], [b].[Status], [b].[Title]
+FROM [Book] AS [b]
+WHERE [b].[Title] = @__book_Title_0
+2025-08-21 16:25:30.156 +05:30 [WRN] Insert failed: Duplicate Title detected - zxklreop
+2025-08-21 16:25:30.156 +05:30 [WRN] Known error occurred while inserting books: A book with the title 'zxklreop' already exists.
+2025-08-21 16:25:30.157 +05:30 [INF] Executed action EvaluationAPI.Controllers.BookController.InsertBook (EvaluationAPI) in 46.5105ms
+2025-08-21 16:25:30.157 +05:30 [INF] Executed endpoint 'EvaluationAPI.Controllers.BookController.InsertBook (EvaluationAPI)'
+2025-08-21 16:25:30.157 +05:30 [ERR] Custom error occurred: A book with the title 'zxklreop' already exists.
+EA.Common.HttpStatusCodeException: A book with the title 'zxklreop' already exists.
+   at EA.Services.Repositories.Implementation.BookRepository.InsertBook(List`1 books) in /Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/WebApplication1/EA.Services/Repositories/Implementation/BookRepository.cs:line 140
+   at EvaluationAPI.Controllers.BookController.InsertBook(List`1 book) in /Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/WebApplication1/EvaluationAPI/Controllers/BookController.cs:line 66
+   at lambda_method44(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at EvaluationAPI.Helper.ExceptionHandlingMiddleware.InvokeAsync(HttpContext context) in /Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/WebApplication1/EvaluationAPI/Helper/ExceptionHandlingMiddleware.cs:line 23
+2025-08-21 16:25:30.159 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5188/api/Book/InsertBook - 409 null application/json 51.3062ms
+2025-08-21 16:26:28.812 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5188/api/Book/InsertBook - application/json 166
+2025-08-21 16:26:28.820 +05:30 [INF] CORS policy execution failed.
+2025-08-21 16:26:28.820 +05:30 [INF] Request origin http://localhost:5188 does not have permission to access the resource.
+2025-08-21 16:26:28.821 +05:30 [INF] Executing endpoint 'EvaluationAPI.Controllers.BookController.InsertBook (EvaluationAPI)'
+2025-08-21 16:26:28.822 +05:30 [INF] Route matched with {action = "InsertBook", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[EA.Model.ResponseModel.BookResponseModel]]] InsertBook(System.Collections.Generic.List`1[EA.Model.RequestModel.BookRequestWithouSidModel]) on controller EvaluationAPI.Controllers.BookController (EvaluationAPI).
+2025-08-21 16:26:28.826 +05:30 [INF] Executing action method EvaluationAPI.Controllers.BookController.InsertBook (EvaluationAPI) - Validation state: "Valid"
+2025-08-21 16:26:28.826 +05:30 [INF] Inserting 1 new books
+2025-08-21 16:26:28.841 +05:30 [INF] Executed DbCommand (9ms) [Parameters=[@__book_Title_0='zxklreop' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[BookID], [b].[Author], [b].[BookSID], [b].[BorrowedStatus], [b].[ISBN], [b].[PublishedYear], [b].[Status], [b].[Title]
+FROM [Book] AS [b]
+WHERE [b].[Title] = @__book_Title_0
+2025-08-21 16:26:28.842 +05:30 [WRN] Insert failed: Duplicate Title detected - zxklreop
+2025-08-21 16:26:28.842 +05:30 [WRN] Known error occurred while inserting books: A book with the title 'zxklreop' already exists.
+2025-08-21 16:26:28.844 +05:30 [INF] Executed action EvaluationAPI.Controllers.BookController.InsertBook (EvaluationAPI) in 21.5453ms
+2025-08-21 16:26:28.844 +05:30 [INF] Executed endpoint 'EvaluationAPI.Controllers.BookController.InsertBook (EvaluationAPI)'
+2025-08-21 16:26:28.845 +05:30 [ERR] Custom error occurred: A book with the title 'zxklreop' already exists.
+EA.Common.HttpStatusCodeException: A book with the title 'zxklreop' already exists.
+   at EA.Services.Repositories.Implementation.BookRepository.InsertBook(List`1 books) in /Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/WebApplication1/EA.Services/Repositories/Implementation/BookRepository.cs:line 140
+   at EvaluationAPI.Controllers.BookController.InsertBook(List`1 book) in /Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/WebApplication1/EvaluationAPI/Controllers/BookController.cs:line 66
+   at lambda_method44(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at EvaluationAPI.Helper.ExceptionHandlingMiddleware.InvokeAsync(HttpContext context) in /Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/WebApplication1/EvaluationAPI/Helper/ExceptionHandlingMiddleware.cs:line 23
+2025-08-21 16:26:28.853 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5188/api/Book/InsertBook - 409 null application/json 42.26ms
+2025-08-21 16:28:05.157 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5188/api/Book/InsertBook - application/json 163
+2025-08-21 16:28:05.163 +05:30 [INF] CORS policy execution failed.
+2025-08-21 16:28:05.163 +05:30 [INF] Request origin http://localhost:5188 does not have permission to access the resource.
+2025-08-21 16:28:05.163 +05:30 [INF] Executing endpoint 'EvaluationAPI.Controllers.BookController.InsertBook (EvaluationAPI)'
+2025-08-21 16:28:05.164 +05:30 [INF] Route matched with {action = "InsertBook", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[EA.Model.ResponseModel.BookResponseModel]]] InsertBook(System.Collections.Generic.List`1[EA.Model.RequestModel.BookRequestWithouSidModel]) on controller EvaluationAPI.Controllers.BookController (EvaluationAPI).
+2025-08-21 16:28:05.170 +05:30 [INF] Executing action method EvaluationAPI.Controllers.BookController.InsertBook (EvaluationAPI) - Validation state: "Valid"
+2025-08-21 16:28:05.170 +05:30 [INF] Inserting 1 new books
+2025-08-21 16:28:05.190 +05:30 [INF] Executed DbCommand (16ms) [Parameters=[@__book_Title_0='Heman' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[BookID], [b].[Author], [b].[BookSID], [b].[BorrowedStatus], [b].[ISBN], [b].[PublishedYear], [b].[Status], [b].[Title]
+FROM [Book] AS [b]
+WHERE [b].[Title] = @__book_Title_0
+2025-08-21 16:28:05.191 +05:30 [WRN] Insert failed: Duplicate Title detected - Heman
+2025-08-21 16:28:05.192 +05:30 [WRN] Known error occurred while inserting books: A book with the title 'Heman' already exists.
+2025-08-21 16:28:05.192 +05:30 [INF] Executed action EvaluationAPI.Controllers.BookController.InsertBook (EvaluationAPI) in 27.9661ms
+2025-08-21 16:28:05.193 +05:30 [INF] Executed endpoint 'EvaluationAPI.Controllers.BookController.InsertBook (EvaluationAPI)'
+2025-08-21 16:28:05.193 +05:30 [ERR] Custom error occurred: A book with the title 'Heman' already exists.
+EA.Common.HttpStatusCodeException: A book with the title 'Heman' already exists.
+   at EA.Services.Repositories.Implementation.BookRepository.InsertBook(List`1 books) in /Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/WebApplication1/EA.Services/Repositories/Implementation/BookRepository.cs:line 140
+   at EvaluationAPI.Controllers.BookController.InsertBook(List`1 book) in /Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/WebApplication1/EvaluationAPI/Controllers/BookController.cs:line 66
+   at lambda_method44(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at EvaluationAPI.Helper.ExceptionHandlingMiddleware.InvokeAsync(HttpContext context) in /Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/WebApplication1/EvaluationAPI/Helper/ExceptionHandlingMiddleware.cs:line 23
+2025-08-21 16:28:05.195 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5188/api/Book/InsertBook - 409 null application/json 38.72ms
+2025-08-21 16:29:19.418 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5188/api/Book/InsertBook - application/json 98
+2025-08-21 16:29:19.420 +05:30 [INF] Executing endpoint 'EvaluationAPI.Controllers.BookController.InsertBook (EvaluationAPI)'
+2025-08-21 16:29:19.420 +05:30 [INF] Route matched with {action = "InsertBook", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[EA.Model.ResponseModel.BookResponseModel]]] InsertBook(System.Collections.Generic.List`1[EA.Model.RequestModel.BookRequestWithouSidModel]) on controller EvaluationAPI.Controllers.BookController (EvaluationAPI).
+2025-08-21 16:29:19.431 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2025-08-21 16:29:19.432 +05:30 [INF] Executed action EvaluationAPI.Controllers.BookController.InsertBook (EvaluationAPI) in 11.046ms
+2025-08-21 16:29:19.432 +05:30 [INF] Executed endpoint 'EvaluationAPI.Controllers.BookController.InsertBook (EvaluationAPI)'
+2025-08-21 16:29:19.432 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5188/api/Book/InsertBook - 400 null application/problem+json; charset=utf-8 14.0152ms
+2025-08-21 16:29:26.747 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5188/api/Book/InsertBook - application/json 97
+2025-08-21 16:29:26.748 +05:30 [INF] Executing endpoint 'EvaluationAPI.Controllers.BookController.InsertBook (EvaluationAPI)'
+2025-08-21 16:29:26.748 +05:30 [INF] Route matched with {action = "InsertBook", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[EA.Model.ResponseModel.BookResponseModel]]] InsertBook(System.Collections.Generic.List`1[EA.Model.RequestModel.BookRequestWithouSidModel]) on controller EvaluationAPI.Controllers.BookController (EvaluationAPI).
+2025-08-21 16:29:26.752 +05:30 [INF] Executing action method EvaluationAPI.Controllers.BookController.InsertBook (EvaluationAPI) - Validation state: "Valid"
+2025-08-21 16:29:26.752 +05:30 [INF] Inserting 1 new books
+2025-08-21 16:29:26.767 +05:30 [INF] Executed DbCommand (10ms) [Parameters=[@__book_Title_0='Heman;' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[BookID], [b].[Author], [b].[BookSID], [b].[BorrowedStatus], [b].[ISBN], [b].[PublishedYear], [b].[Status], [b].[Title]
+FROM [Book] AS [b]
+WHERE [b].[Title] = @__book_Title_0
+2025-08-21 16:29:26.770 +05:30 [WRN] Insert failed: Duplicate Title detected - Heman;
+2025-08-21 16:29:26.772 +05:30 [WRN] Known error occurred while inserting books: A book with the title 'Heman;' already exists.
+2025-08-21 16:29:26.773 +05:30 [INF] Executed action EvaluationAPI.Controllers.BookController.InsertBook (EvaluationAPI) in 24.9892ms
+2025-08-21 16:29:26.774 +05:30 [INF] Executed endpoint 'EvaluationAPI.Controllers.BookController.InsertBook (EvaluationAPI)'
+2025-08-21 16:29:26.776 +05:30 [ERR] Custom error occurred: A book with the title 'Heman;' already exists.
+EA.Common.HttpStatusCodeException: A book with the title 'Heman;' already exists.
+   at EA.Services.Repositories.Implementation.BookRepository.InsertBook(List`1 books) in /Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/WebApplication1/EA.Services/Repositories/Implementation/BookRepository.cs:line 140
+   at EvaluationAPI.Controllers.BookController.InsertBook(List`1 book) in /Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/WebApplication1/EvaluationAPI/Controllers/BookController.cs:line 66
+   at lambda_method44(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at EvaluationAPI.Helper.ExceptionHandlingMiddleware.InvokeAsync(HttpContext context) in /Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/WebApplication1/EvaluationAPI/Helper/ExceptionHandlingMiddleware.cs:line 23
+2025-08-21 16:29:26.783 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5188/api/Book/InsertBook - 409 null application/json 36.1522ms
+2025-08-21 16:29:43.016 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5188/api/Book/InsertBook - application/json 134
+2025-08-21 16:29:43.017 +05:30 [INF] Executing endpoint 'EvaluationAPI.Controllers.BookController.InsertBook (EvaluationAPI)'
+2025-08-21 16:29:43.017 +05:30 [INF] Route matched with {action = "InsertBook", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[EA.Model.ResponseModel.BookResponseModel]]] InsertBook(System.Collections.Generic.List`1[EA.Model.RequestModel.BookRequestWithouSidModel]) on controller EvaluationAPI.Controllers.BookController (EvaluationAPI).
+2025-08-21 16:29:43.020 +05:30 [INF] Executing action method EvaluationAPI.Controllers.BookController.InsertBook (EvaluationAPI) - Validation state: "Valid"
+2025-08-21 16:29:43.020 +05:30 [INF] Inserting 1 new books
+2025-08-21 16:29:43.031 +05:30 [INF] Executed DbCommand (8ms) [Parameters=[@__book_Title_0='Heman;' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[BookID], [b].[Author], [b].[BookSID], [b].[BorrowedStatus], [b].[ISBN], [b].[PublishedYear], [b].[Status], [b].[Title]
+FROM [Book] AS [b]
+WHERE [b].[Title] = @__book_Title_0
+2025-08-21 16:29:43.032 +05:30 [WRN] Insert failed: Duplicate Title detected - Heman;
+2025-08-21 16:29:43.032 +05:30 [WRN] Known error occurred while inserting books: A book with the title 'Heman;' already exists.
+2025-08-21 16:29:43.033 +05:30 [INF] Executed action EvaluationAPI.Controllers.BookController.InsertBook (EvaluationAPI) in 15.2834ms
+2025-08-21 16:29:43.033 +05:30 [INF] Executed endpoint 'EvaluationAPI.Controllers.BookController.InsertBook (EvaluationAPI)'
+2025-08-21 16:29:43.033 +05:30 [ERR] Custom error occurred: A book with the title 'Heman;' already exists.
+EA.Common.HttpStatusCodeException: A book with the title 'Heman;' already exists.
+   at EA.Services.Repositories.Implementation.BookRepository.InsertBook(List`1 books) in /Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/WebApplication1/EA.Services/Repositories/Implementation/BookRepository.cs:line 140
+   at EvaluationAPI.Controllers.BookController.InsertBook(List`1 book) in /Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/WebApplication1/EvaluationAPI/Controllers/BookController.cs:line 66
+   at lambda_method44(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at EvaluationAPI.Helper.ExceptionHandlingMiddleware.InvokeAsync(HttpContext context) in /Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/WebApplication1/EvaluationAPI/Helper/ExceptionHandlingMiddleware.cs:line 23
+2025-08-21 16:29:43.039 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5188/api/Book/InsertBook - 409 null application/json 22.343ms
+2025-08-21 16:31:06.656 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5188/api/Book/dynamicgetall - null null
+2025-08-21 16:31:06.656 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5188/api/Book/dynamicgetall - null null
+2025-08-21 16:31:06.660 +05:30 [INF] CORS policy execution successful.
+2025-08-21 16:31:06.660 +05:30 [INF] CORS policy execution successful.
+2025-08-21 16:31:06.661 +05:30 [INF] Executing endpoint 'EvaluationAPI.Controllers.BookController.GetallBooks (EvaluationAPI)'
+2025-08-21 16:31:06.661 +05:30 [INF] Executing endpoint 'EvaluationAPI.Controllers.BookController.GetallBooks (EvaluationAPI)'
+2025-08-21 16:31:06.662 +05:30 [INF] Route matched with {action = "GetallBooks", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[EA.Model.ResponseModel.BookResponseModel]]] GetallBooks(SearchRequestModel) on controller EvaluationAPI.Controllers.BookController (EvaluationAPI).
+2025-08-21 16:31:06.662 +05:30 [INF] Route matched with {action = "GetallBooks", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[EA.Model.ResponseModel.BookResponseModel]]] GetallBooks(SearchRequestModel) on controller EvaluationAPI.Controllers.BookController (EvaluationAPI).
+2025-08-21 16:31:06.665 +05:30 [INF] Executing action method EvaluationAPI.Controllers.BookController.GetallBooks (EvaluationAPI) - Validation state: "Valid"
+2025-08-21 16:31:06.665 +05:30 [INF] Executing action method EvaluationAPI.Controllers.BookController.GetallBooks (EvaluationAPI) - Validation state: "Valid"
+2025-08-21 16:31:06.666 +05:30 [INF] Fetching all books with search params: {"SearchText":null,"Page":1,"PageSize":10,"SortColumn":null,"SortOrder":null,"Filters":null,"$type":"SearchRequestModel"}
+2025-08-21 16:31:06.666 +05:30 [INF] Fetching all books with search params: {"SearchText":null,"Page":1,"PageSize":10,"SortColumn":null,"SortOrder":null,"Filters":null,"$type":"SearchRequestModel"}
+2025-08-21 16:31:06.667 +05:30 [INF] Fetching list of books with parameters: {"SortColumn":"BookSid","SortOrder":"DESC","SearchText":"%","Filters":"1 = 1 AND","Page":1,"PageSize":10}
+2025-08-21 16:31:06.667 +05:30 [INF] Fetching list of books with parameters: {"SortColumn":"BookSid","SortOrder":"DESC","SearchText":"%","Filters":"1 = 1 AND","Page":1,"PageSize":10}
+2025-08-21 16:31:06.745 +05:30 [INF] Executed DbCommand (62ms) [Parameters=[p0='<Search><SortColumn>BookSid</SortColumn><SortOrder>DESC</SortOrder><SearchText>%</SearchText><Filters>1 = 1 AND</Filters><Page>1</Page><PageSize>10</PageSize></Search>' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SP_GetAllBookdynamic @p0
+2025-08-21 16:31:06.747 +05:30 [INF] Books list retrieved successfully.
+2025-08-21 16:31:06.748 +05:30 [INF] Retrieved 10 books
+2025-08-21 16:31:06.752 +05:30 [INF] Executed action method EvaluationAPI.Controllers.BookController.GetallBooks (EvaluationAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 85.9474ms.
+2025-08-21 16:31:06.753 +05:30 [INF] Executing OkObjectResult, writing value of type 'EA.Model.CommonModel.Page'.
+2025-08-21 16:31:06.758 +05:30 [INF] Executed action EvaluationAPI.Controllers.BookController.GetallBooks (EvaluationAPI) in 95.7309ms
+2025-08-21 16:31:06.758 +05:30 [INF] Executed endpoint 'EvaluationAPI.Controllers.BookController.GetallBooks (EvaluationAPI)'
+2025-08-21 16:31:06.759 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5188/api/Book/dynamicgetall - 200 null application/json; charset=utf-8 104.0302ms
+2025-08-21 16:31:06.778 +05:30 [INF] Executed DbCommand (15ms) [Parameters=[p0='<Search><SortColumn>BookSid</SortColumn><SortOrder>DESC</SortOrder><SearchText>%</SearchText><Filters>1 = 1 AND</Filters><Page>1</Page><PageSize>10</PageSize></Search>' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SP_GetAllBookdynamic @p0
+2025-08-21 16:31:06.779 +05:30 [INF] Books list retrieved successfully.
+2025-08-21 16:31:06.779 +05:30 [INF] Retrieved 10 books
+2025-08-21 16:31:06.779 +05:30 [INF] Executed action method EvaluationAPI.Controllers.BookController.GetallBooks (EvaluationAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 113.7463ms.
+2025-08-21 16:31:06.779 +05:30 [INF] Executing OkObjectResult, writing value of type 'EA.Model.CommonModel.Page'.
+2025-08-21 16:31:06.780 +05:30 [INF] Executed action EvaluationAPI.Controllers.BookController.GetallBooks (EvaluationAPI) in 117.7074ms
+2025-08-21 16:31:06.780 +05:30 [INF] Executed endpoint 'EvaluationAPI.Controllers.BookController.GetallBooks (EvaluationAPI)'
+2025-08-21 16:31:06.780 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5188/api/Book/dynamicgetall - 200 null application/json; charset=utf-8 124.7475ms
+2025-08-21 16:31:19.927 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5188/api/Book/dynamic/LIBc27459bc-34d0-4e2f-9670-773d659bfba3 - null null
+2025-08-21 16:31:19.927 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5188/api/Book/dynamic/LIBc27459bc-34d0-4e2f-9670-773d659bfba3 - null null
+2025-08-21 16:31:19.928 +05:30 [INF] CORS policy execution successful.
+2025-08-21 16:31:19.929 +05:30 [INF] CORS policy execution successful.
+2025-08-21 16:31:19.930 +05:30 [INF] Executing endpoint 'EvaluationAPI.Controllers.BookController.GetByBookSID (EvaluationAPI)'
+2025-08-21 16:31:19.930 +05:30 [INF] Executing endpoint 'EvaluationAPI.Controllers.BookController.GetByBookSID (EvaluationAPI)'
+2025-08-21 16:31:19.939 +05:30 [INF] Route matched with {action = "GetByBookSID", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[EA.Model.ResponseModel.BookResponseModel]] GetByBookSID(System.String) on controller EvaluationAPI.Controllers.BookController (EvaluationAPI).
+2025-08-21 16:31:19.939 +05:30 [INF] Route matched with {action = "GetByBookSID", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[EA.Model.ResponseModel.BookResponseModel]] GetByBookSID(System.String) on controller EvaluationAPI.Controllers.BookController (EvaluationAPI).
+2025-08-21 16:31:19.940 +05:30 [INF] Executing action method EvaluationAPI.Controllers.BookController.GetByBookSID (EvaluationAPI) - Validation state: "Valid"
+2025-08-21 16:31:19.940 +05:30 [INF] Executing action method EvaluationAPI.Controllers.BookController.GetByBookSID (EvaluationAPI) - Validation state: "Valid"
+2025-08-21 16:31:19.941 +05:30 [INF] Fetching book with SID: LIBc27459bc-34d0-4e2f-9670-773d659bfba3
+2025-08-21 16:31:19.941 +05:30 [INF] Fetching book with SID: LIBc27459bc-34d0-4e2f-9670-773d659bfba3
+2025-08-21 16:31:19.942 +05:30 [INF] Fetching book with SID: LIBc27459bc-34d0-4e2f-9670-773d659bfba3
+2025-08-21 16:31:19.942 +05:30 [INF] Fetching book with SID: LIBc27459bc-34d0-4e2f-9670-773d659bfba3
+2025-08-21 16:31:19.964 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[p0='LIBc27459bc-34d0-4e2f-9670-773d659bfba3' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SP_GetBookById @p0
+2025-08-21 16:31:19.964 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[p0='LIBc27459bc-34d0-4e2f-9670-773d659bfba3' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SP_GetBookById @p0
+2025-08-21 16:31:19.965 +05:30 [INF] Successfully retrieved book: asdfghjkl; (SID: LIBc27459bc-34d0-4e2f-9670-773d659bfba3)
+2025-08-21 16:31:19.965 +05:30 [INF] Successfully retrieved book: asdfghjkl; (SID: LIBc27459bc-34d0-4e2f-9670-773d659bfba3)
+2025-08-21 16:31:19.965 +05:30 [INF] Successfully retrieved book: asdfghjkl; (SID: LIBc27459bc-34d0-4e2f-9670-773d659bfba3)
+2025-08-21 16:31:19.965 +05:30 [INF] Successfully retrieved book: asdfghjkl; (SID: LIBc27459bc-34d0-4e2f-9670-773d659bfba3)
+2025-08-21 16:31:19.966 +05:30 [INF] Executed action method EvaluationAPI.Controllers.BookController.GetByBookSID (EvaluationAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 25.5337ms.
+2025-08-21 16:31:19.966 +05:30 [INF] Executed action method EvaluationAPI.Controllers.BookController.GetByBookSID (EvaluationAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 25.5406ms.
+2025-08-21 16:31:19.966 +05:30 [INF] Executing OkObjectResult, writing value of type 'EA.Model.ResponseModel.BookResponseModel'.
+2025-08-21 16:31:19.966 +05:30 [INF] Executing OkObjectResult, writing value of type 'EA.Model.ResponseModel.BookResponseModel'.
+2025-08-21 16:31:19.966 +05:30 [INF] Executed action EvaluationAPI.Controllers.BookController.GetByBookSID (EvaluationAPI) in 26.8213ms
+2025-08-21 16:31:19.966 +05:30 [INF] Executed action EvaluationAPI.Controllers.BookController.GetByBookSID (EvaluationAPI) in 26.7148ms
+2025-08-21 16:31:19.966 +05:30 [INF] Executed endpoint 'EvaluationAPI.Controllers.BookController.GetByBookSID (EvaluationAPI)'
+2025-08-21 16:31:19.966 +05:30 [INF] Executed endpoint 'EvaluationAPI.Controllers.BookController.GetByBookSID (EvaluationAPI)'
+2025-08-21 16:31:19.966 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5188/api/Book/dynamic/LIBc27459bc-34d0-4e2f-9670-773d659bfba3 - 200 null application/json; charset=utf-8 38.6228ms
+2025-08-21 16:31:19.966 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5188/api/Book/dynamic/LIBc27459bc-34d0-4e2f-9670-773d659bfba3 - 200 null application/json; charset=utf-8 38.6459ms
+2025-08-21 16:33:18.041 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5188/api/Book/InsertBook - application/json 134
+2025-08-21 16:33:18.043 +05:30 [INF] Executing endpoint 'EvaluationAPI.Controllers.BookController.InsertBook (EvaluationAPI)'
+2025-08-21 16:33:18.052 +05:30 [INF] Route matched with {action = "InsertBook", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[EA.Model.ResponseModel.BookResponseModel]]] InsertBook(System.Collections.Generic.List`1[EA.Model.RequestModel.BookRequestWithouSidModel]) on controller EvaluationAPI.Controllers.BookController (EvaluationAPI).
+2025-08-21 16:33:18.060 +05:30 [INF] Executing action method EvaluationAPI.Controllers.BookController.InsertBook (EvaluationAPI) - Validation state: "Valid"
+2025-08-21 16:33:18.063 +05:30 [INF] Inserting 1 new books
+2025-08-21 16:33:18.252 +05:30 [INF] Executed DbCommand (53ms) [Parameters=[@p0='me' (Size = 50), @p1='LIB840ee846-9b52-410e-b13c-27a6cd2c9734' (Nullable = false) (Size = 50), @p2='1', @p3='788943230967' (Size = 50), @p4='9090' (Nullable = true), @p5='Heman;' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Book] ([Author], [BookSID], [BorrowedStatus], [ISBN], [PublishedYear], [Title])
+OUTPUT INSERTED.[BookID], INSERTED.[Status]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+2025-08-21 16:33:18.329 +05:30 [INF] Successfully inserted 1 books
+2025-08-21 16:33:18.555 +05:30 [INF] Book created successfully
+2025-08-21 16:33:18.556 +05:30 [INF] Executed action method EvaluationAPI.Controllers.BookController.InsertBook (EvaluationAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 495.0666ms.
+2025-08-21 16:33:18.556 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[EA.Model.ResponseModel.BookResponseModel, EA.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-08-21 16:33:18.558 +05:30 [INF] Executed action EvaluationAPI.Controllers.BookController.InsertBook (EvaluationAPI) in 505.7816ms
+2025-08-21 16:33:18.558 +05:30 [INF] Executed endpoint 'EvaluationAPI.Controllers.BookController.InsertBook (EvaluationAPI)'
+2025-08-21 16:33:18.558 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5188/api/Book/InsertBook - 200 null application/json; charset=utf-8 516.597ms
+2025-08-21 16:36:10.004 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5188/api/Book/InsertBook - application/json 133
+2025-08-21 16:36:10.010 +05:30 [INF] Executing endpoint 'EvaluationAPI.Controllers.BookController.InsertBook (EvaluationAPI)'
+2025-08-21 16:36:10.017 +05:30 [INF] Route matched with {action = "InsertBook", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[EA.Model.ResponseModel.BookResponseModel]]] InsertBook(System.Collections.Generic.List`1[EA.Model.RequestModel.BookRequestWithouSidModel]) on controller EvaluationAPI.Controllers.BookController (EvaluationAPI).
+2025-08-21 16:36:10.028 +05:30 [INF] Executing action method EvaluationAPI.Controllers.BookController.InsertBook (EvaluationAPI) - Validation state: "Valid"
+2025-08-21 16:36:10.032 +05:30 [INF] Inserting 1 new books
+2025-08-21 16:36:10.044 +05:30 [INF] Executed DbCommand (9ms) [Parameters=[@__book_Title_0='beman' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[BookID], [b].[Author], [b].[BookSID], [b].[BorrowedStatus], [b].[ISBN], [b].[PublishedYear], [b].[Status], [b].[Title]
+FROM [Book] AS [b]
+WHERE [b].[Title] = @__book_Title_0
+2025-08-21 16:36:10.044 +05:30 [WRN] Insert failed: Duplicate Title detected - beman
+2025-08-21 16:36:10.045 +05:30 [WRN] Known error occurred while inserting books: A book with the title 'beman' already exists.
+2025-08-21 16:36:10.045 +05:30 [INF] Executed action EvaluationAPI.Controllers.BookController.InsertBook (EvaluationAPI) in 27.8187ms
+2025-08-21 16:36:10.045 +05:30 [INF] Executed endpoint 'EvaluationAPI.Controllers.BookController.InsertBook (EvaluationAPI)'
+2025-08-21 16:36:10.046 +05:30 [ERR] Custom error occurred: A book with the title 'beman' already exists.
+EA.Common.HttpStatusCodeException: A book with the title 'beman' already exists.
+   at EA.Services.Repositories.Implementation.BookRepository.InsertBook(List`1 books)
+   at EvaluationAPI.Controllers.BookController.InsertBook(List`1 book) in /Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/WebApplication1/EvaluationAPI/Controllers/BookController.cs:line 66
+   at lambda_method198(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at EvaluationAPI.Helper.ExceptionHandlingMiddleware.InvokeAsync(HttpContext context) in /Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/WebApplication1/EvaluationAPI/Helper/ExceptionHandlingMiddleware.cs:line 23
+2025-08-21 16:36:10.047 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5188/api/Book/InsertBook - 409 null application/json 43.0176ms
+2025-08-21 16:37:12.997 +05:30 [INF] Application is shutting down...
+2025-08-21 16:37:39.246 +05:30 [INF] Now listening on: http://localhost:5188
+2025-08-21 16:37:39.281 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-21 16:37:39.282 +05:30 [INF] Hosting environment: Development
+2025-08-21 16:37:39.282 +05:30 [INF] Content root path: /Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/WebApplication1/EvaluationAPI
+2025-08-21 16:37:39.684 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5188/swagger - null null
+2025-08-21 16:37:39.735 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5188/swagger - 301 0 null 51.4892ms
+2025-08-21 16:37:39.743 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5188/swagger/index.html - null null
+2025-08-21 16:37:39.888 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5188/swagger/index.html - 200 null text/html;charset=utf-8 145.1818ms
+2025-08-21 16:37:40.052 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5188/swagger/v1/swagger.json - null null
+2025-08-21 16:37:40.159 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5188/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 107.325ms
+2025-08-21 16:38:12.705 +05:30 [INF] Now listening on: http://localhost:5188
+2025-08-21 16:38:12.737 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-21 16:38:12.737 +05:30 [INF] Hosting environment: Development
+2025-08-21 16:38:12.737 +05:30 [INF] Content root path: /Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/WebApplication1/EvaluationAPI
+2025-08-21 16:38:13.379 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5188/swagger - null null
+2025-08-21 16:38:13.418 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5188/swagger - 301 0 null 39.6523ms
+2025-08-21 16:38:13.421 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5188/swagger/index.html - null null
+2025-08-21 16:38:13.499 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5188/swagger/index.html - 200 null text/html;charset=utf-8 78.2982ms
+2025-08-21 16:38:13.597 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5188/swagger/v1/swagger.json - null null
+2025-08-21 16:38:13.666 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5188/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 68.9204ms
+2025-08-21 16:38:41.848 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5188/api/Book/InsertBook - application/json 167
+2025-08-21 16:38:41.855 +05:30 [INF] CORS policy execution failed.
+2025-08-21 16:38:41.856 +05:30 [INF] Request origin http://localhost:5188 does not have permission to access the resource.
+2025-08-21 16:38:41.866 +05:30 [WRN] Failed to determine the https port for redirect.
+2025-08-21 16:38:41.873 +05:30 [INF] Executing endpoint 'EvaluationAPI.Controllers.BookController.InsertBook (EvaluationAPI)'
+2025-08-21 16:38:41.891 +05:30 [INF] Route matched with {action = "InsertBook", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[EA.Model.ResponseModel.BookResponseModel]]] InsertBook(System.Collections.Generic.List`1[EA.Model.RequestModel.BookRequestWithouSidModel]) on controller EvaluationAPI.Controllers.BookController (EvaluationAPI).
+2025-08-21 16:38:42.073 +05:30 [INF] Executing action method EvaluationAPI.Controllers.BookController.InsertBook (EvaluationAPI) - Validation state: "Valid"
+2025-08-21 16:38:42.076 +05:30 [INF] Inserting 1 new books
+2025-08-21 16:38:57.088 +05:30 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2025-08-21 16:38:57.992 +05:30 [INF] Executed DbCommand (36ms) [Parameters=[@__book_Title_0='began' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[BookID], [b].[Author], [b].[BookSID], [b].[BorrowedStatus], [b].[ISBN], [b].[PublishedYear], [b].[Status], [b].[Title]
+FROM [Book] AS [b]
+WHERE [b].[Title] = @__book_Title_0
+2025-08-21 16:41:06.754 +05:30 [INF] Now listening on: http://localhost:5188
+2025-08-21 16:41:06.794 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-21 16:41:06.794 +05:30 [INF] Hosting environment: Development
+2025-08-21 16:41:06.795 +05:30 [INF] Content root path: /Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/WebApplication1/EvaluationAPI
+2025-08-21 16:41:07.167 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5188/swagger - null null
+2025-08-21 16:41:07.235 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5188/swagger - 301 0 null 67.9135ms
+2025-08-21 16:41:07.242 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5188/swagger/index.html - null null
+2025-08-21 16:41:07.428 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5188/swagger/index.html - 200 null text/html;charset=utf-8 186.5223ms
+2025-08-21 16:41:07.589 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5188/swagger/v1/swagger.json - null null
+2025-08-21 16:41:07.737 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5188/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 148.0102ms
+2025-08-21 16:41:56.996 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5188/api/Book/InsertBook - application/json 163
+2025-08-21 16:41:57.010 +05:30 [INF] CORS policy execution failed.
+2025-08-21 16:41:57.011 +05:30 [INF] Request origin http://localhost:5188 does not have permission to access the resource.
+2025-08-21 16:41:57.038 +05:30 [WRN] Failed to determine the https port for redirect.
+2025-08-21 16:41:57.048 +05:30 [INF] Executing endpoint 'EvaluationAPI.Controllers.BookController.InsertBook (EvaluationAPI)'
+2025-08-21 16:41:57.066 +05:30 [INF] Route matched with {action = "InsertBook", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[EA.Model.ResponseModel.BookResponseModel]]] InsertBook(System.Collections.Generic.List`1[EA.Model.RequestModel.BookRequestWithouSidModel]) on controller EvaluationAPI.Controllers.BookController (EvaluationAPI).
+2025-08-21 16:41:57.267 +05:30 [INF] Executing action method EvaluationAPI.Controllers.BookController.InsertBook (EvaluationAPI) - Validation state: "Valid"
+2025-08-21 16:41:57.270 +05:30 [INF] Inserting 1 new books
+2025-08-21 16:42:33.309 +05:30 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2025-08-21 16:42:34.090 +05:30 [INF] Executed DbCommand (34ms) [Parameters=[@__book_Title_0='beman' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[BookID], [b].[Author], [b].[BookSID], [b].[BorrowedStatus], [b].[ISBN], [b].[PublishedYear], [b].[Status], [b].[Title]
+FROM [Book] AS [b]
+WHERE [b].[Title] = @__book_Title_0
+2025-08-21 16:42:39.469 +05:30 [WRN] Insert failed: Duplicate Title detected - beman
+2025-08-21 16:42:39.504 +05:30 [WRN] Known error occurred while inserting books: A book with the title 'beman' already exists.
+2025-08-21 16:42:39.543 +05:30 [INF] Executed action EvaluationAPI.Controllers.BookController.InsertBook (EvaluationAPI) in 42469.3534ms
+2025-08-21 16:42:39.544 +05:30 [INF] Executed endpoint 'EvaluationAPI.Controllers.BookController.InsertBook (EvaluationAPI)'
+2025-08-21 16:42:39.577 +05:30 [ERR] Custom error occurred: A book with the title 'beman' already exists.
+EA.Common.HttpStatusCodeException: A book with the title 'beman' already exists.
+   at EA.Services.Repositories.Implementation.BookRepository.InsertBook(List`1 books) in /Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/WebApplication1/EA.Services/Repositories/Implementation/BookRepository.cs:line 140
+   at EvaluationAPI.Controllers.BookController.InsertBook(List`1 book) in /Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/WebApplication1/EvaluationAPI/Controllers/BookController.cs:line 66
+   at lambda_method6(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at EvaluationAPI.Helper.ExceptionHandlingMiddleware.InvokeAsync(HttpContext context) in /Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/WebApplication1/EvaluationAPI/Helper/ExceptionHandlingMiddleware.cs:line 23
+2025-08-21 16:42:39.703 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5188/api/Book/InsertBook - 409 null application/json 42703.2736ms
+2025-08-21 16:46:17.647 +05:30 [INF] Now listening on: http://localhost:5188
+2025-08-21 16:46:17.679 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-21 16:46:17.680 +05:30 [INF] Hosting environment: Development
+2025-08-21 16:46:17.680 +05:30 [INF] Content root path: /Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/WebApplication1/EvaluationAPI
+2025-08-21 16:46:18.125 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5188/swagger - null null
+2025-08-21 16:46:18.170 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5188/swagger - 301 0 null 46.5707ms
+2025-08-21 16:46:18.173 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5188/swagger/index.html - null null
+2025-08-21 16:46:18.254 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5188/swagger/index.html - 200 null text/html;charset=utf-8 80.7835ms
+2025-08-21 16:46:18.358 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5188/swagger/v1/swagger.json - null null
+2025-08-21 16:46:18.436 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5188/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 78.4386ms
+2025-08-21 16:46:39.077 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5188/api/Book/InsertBook - application/json 165
+2025-08-21 16:46:39.098 +05:30 [INF] CORS policy execution failed.
+2025-08-21 16:46:39.098 +05:30 [INF] Request origin http://localhost:5188 does not have permission to access the resource.
+2025-08-21 16:46:39.104 +05:30 [WRN] Failed to determine the https port for redirect.
+2025-08-21 16:46:39.109 +05:30 [INF] Executing endpoint 'EvaluationAPI.Controllers.BookController.InsertBook (EvaluationAPI)'
+2025-08-21 16:46:39.131 +05:30 [INF] Route matched with {action = "InsertBook", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[EA.Model.ResponseModel.BookResponseModel]]] InsertBook(System.Collections.Generic.List`1[EA.Model.RequestModel.BookRequestWithouSidModel]) on controller EvaluationAPI.Controllers.BookController (EvaluationAPI).
+2025-08-21 16:46:39.278 +05:30 [INF] Executing action method EvaluationAPI.Controllers.BookController.InsertBook (EvaluationAPI) - Validation state: "Valid"
+2025-08-21 16:46:39.281 +05:30 [INF] Inserting 1 new books
+2025-08-21 16:46:39.513 +05:30 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2025-08-21 16:46:39.992 +05:30 [INF] Executed DbCommand (31ms) [Parameters=[@__book_Title_0='beman' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[BookID], [b].[Author], [b].[BookSID], [b].[BorrowedStatus], [b].[ISBN], [b].[PublishedYear], [b].[Status], [b].[Title]
+FROM [Book] AS [b]
+WHERE [b].[Title] = @__book_Title_0
+2025-08-21 16:46:40.034 +05:30 [INF] Executed DbCommand (23ms) [Parameters=[@__book_Isbn_0='2340950128' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[BookID], [b].[Author], [b].[BookSID], [b].[BorrowedStatus], [b].[ISBN], [b].[PublishedYear], [b].[Status], [b].[Title]
+FROM [Book] AS [b]
+WHERE [b].[ISBN] = @__book_Isbn_0
+2025-08-21 16:46:40.145 +05:30 [INF] Executed DbCommand (8ms) [Parameters=[@p0='you' (Size = 50), @p1='LIBb52f7850-c9b6-452e-9e53-58db96588b39' (Nullable = false) (Size = 50), @p2='1', @p3='2340950128' (Size = 50), @p4='2025' (Nullable = true), @p5='beman' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Book] ([Author], [BookSID], [BorrowedStatus], [ISBN], [PublishedYear], [Title])
+OUTPUT INSERTED.[BookID], INSERTED.[Status]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+2025-08-21 16:46:40.165 +05:30 [INF] Successfully inserted 1 books
+2025-08-21 16:46:40.165 +05:30 [INF] Book created successfully
+2025-08-21 16:46:40.168 +05:30 [INF] Executed action method EvaluationAPI.Controllers.BookController.InsertBook (EvaluationAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 886.851ms.
+2025-08-21 16:46:40.174 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[EA.Model.ResponseModel.BookResponseModel, EA.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-08-21 16:46:40.190 +05:30 [INF] Executed action EvaluationAPI.Controllers.BookController.InsertBook (EvaluationAPI) in 1055.5057ms
+2025-08-21 16:46:40.190 +05:30 [INF] Executed endpoint 'EvaluationAPI.Controllers.BookController.InsertBook (EvaluationAPI)'
+2025-08-21 16:46:40.199 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5188/api/Book/InsertBook - 200 null application/json; charset=utf-8 1121.7625ms
+2025-08-21 16:46:49.470 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5188/api/Book/InsertBook - application/json 165
+2025-08-21 16:46:49.477 +05:30 [INF] CORS policy execution failed.
+2025-08-21 16:46:49.477 +05:30 [INF] Request origin http://localhost:5188 does not have permission to access the resource.
+2025-08-21 16:46:49.478 +05:30 [INF] Executing endpoint 'EvaluationAPI.Controllers.BookController.InsertBook (EvaluationAPI)'
+2025-08-21 16:46:49.480 +05:30 [INF] Route matched with {action = "InsertBook", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[EA.Model.ResponseModel.BookResponseModel]]] InsertBook(System.Collections.Generic.List`1[EA.Model.RequestModel.BookRequestWithouSidModel]) on controller EvaluationAPI.Controllers.BookController (EvaluationAPI).
+2025-08-21 16:46:49.494 +05:30 [INF] Executing action method EvaluationAPI.Controllers.BookController.InsertBook (EvaluationAPI) - Validation state: "Valid"
+2025-08-21 16:46:49.495 +05:30 [INF] Inserting 1 new books
+2025-08-21 16:46:49.543 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[@__book_Title_0='beman' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[BookID], [b].[Author], [b].[BookSID], [b].[BorrowedStatus], [b].[ISBN], [b].[PublishedYear], [b].[Status], [b].[Title]
+FROM [Book] AS [b]
+WHERE [b].[Title] = @__book_Title_0
+2025-08-21 16:46:49.545 +05:30 [WRN] Insert failed: Duplicate Title detected - beman
+2025-08-21 16:46:49.550 +05:30 [WRN] Known error occurred while inserting books: A book with the title 'beman' already exists.
+2025-08-21 16:46:49.550 +05:30 [INF] Executed action EvaluationAPI.Controllers.BookController.InsertBook (EvaluationAPI) in 69.6745ms
+2025-08-21 16:46:49.550 +05:30 [INF] Executed endpoint 'EvaluationAPI.Controllers.BookController.InsertBook (EvaluationAPI)'
+2025-08-21 16:46:49.551 +05:30 [ERR] Custom error occurred: A book with the title 'beman' already exists.
+EA.Common.HttpStatusCodeException: A book with the title 'beman' already exists.
+   at EA.Services.Repositories.Implementation.BookRepository.InsertBook(List`1 books) in /Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/WebApplication1/EA.Services/Repositories/Implementation/BookRepository.cs:line 140
+   at EvaluationAPI.Controllers.BookController.InsertBook(List`1 book) in /Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/WebApplication1/EvaluationAPI/Controllers/BookController.cs:line 66
+   at lambda_method6(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at EvaluationAPI.Helper.ExceptionHandlingMiddleware.InvokeAsync(HttpContext context) in /Users/nisargkaneriya/Documents/Nisarg/Training/dotnet_projects/WebApplication1/EvaluationAPI/Helper/ExceptionHandlingMiddleware.cs:line 23
+2025-08-21 16:46:49.638 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5188/api/Book/InsertBook - 409 null application/json 168.1237ms
+2025-08-21 16:47:04.495 +05:30 [INF] Application is shutting down...

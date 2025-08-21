@@ -40,7 +40,8 @@ public static class CommonHelper
         {
             foreach (KeyValuePair<string, object> pair in dic)
             {
-                strXMLResult += "<" + pair.Key + ">" + pair.Value + "</" + pair.Key + ">";
+                string safeValue = System.Security.SecurityElement.Escape(pair.Value?.ToString() ?? "");
+                strXMLResult += "<" + pair.Key + ">" + safeValue + "</" + pair.Key + ">";
             }
 
             strXMLResult = "<" + rootElement + ">" + strXMLResult + "</" + rootElement + ">";

@@ -16,6 +16,18 @@ public class Program
          var builder = WebApplication.CreateBuilder(args);
         builder.Logging.ClearProviders();
         
+        //Adding cors
+        builder.Services.AddCors(options =>
+        {
+            options.AddPolicy("AllowFrontend",
+                policy =>
+                {
+                    policy.WithOrigins("http://localhost:3000")
+                        .AllowAnyHeader()
+                        .AllowAnyMethod();
+                });
+        });
+        
         //Code for adding the log to the new file 
         Log.Logger = new LoggerConfiguration()
             .WriteTo.Console()
@@ -70,7 +82,11 @@ public class Program
         builder.Services.AddSwaggerGen();
 
         var app = builder.Build();
-
+        
+        
+        // Use CORS
+        app.UseCors("AllowFrontend");
+        
         // Configure the HTTP request pipeline.
         if (app.Environment.IsDevelopment())
         {

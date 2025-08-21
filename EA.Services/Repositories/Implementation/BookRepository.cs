@@ -133,8 +133,8 @@ public class BookRepository : IBookRepository
             }
             var existingTitle = await _unitOfWork.GetRepository<Book>()
                 .GetAllAsync(b => b.Title == book.Title);
-
-            if (existingTitle != null)
+            
+            if (existingTitle.Any())
             {
                 _logger.LogWarning("Insert failed: Duplicate Title detected - {Title}", book.Title);
                 throw new HttpStatusCodeException(409, $"A book with the title '{book.Title}' already exists.");
@@ -144,8 +144,8 @@ public class BookRepository : IBookRepository
             {
                 var existingIsbn = await _unitOfWork.GetRepository<Book>()
                     .GetAllAsync(b => b.Isbn == book.Isbn);
-
-                if (existingIsbn != null)
+            
+                if (existingIsbn.Any())
                 {
                     _logger.LogWarning("Insert failed: Duplicate ISBN detected - {Isbn}", book.Isbn);
                     throw new HttpStatusCodeException(409, $"A book with the ISBN '{book.Isbn}' already exists.");

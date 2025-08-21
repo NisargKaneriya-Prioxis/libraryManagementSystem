@@ -35,6 +35,7 @@ public class BaseController : ControllerBase
             list.Meta.Url = HttpContext.Request.HttpContext.AddOrReplaceQueryParameter("page", model.Page.ToString());
             list.Meta.Page = model.Page;
             list.Meta.PageSize = model.PageSize;
+            list.Meta.NextPageExists = true;
 
             if (list.Meta.TotalResults > 0)
             {
@@ -46,8 +47,15 @@ public class BaseController : ControllerBase
                 {
                     list.Meta.PreviousPageUrl = HttpContext.Request.HttpContext.AddOrReplaceQueryParameter("page", (model.Page - 1).ToString());
                 }
+                
 
                 list.Meta.TotalPages = (int)Math.Ceiling((double)list.Meta.TotalResults / model.PageSize);
+                if (list.Meta.Page >= list.Meta.TotalPages)
+                {
+                    list.Meta.NextPageExists = false;
+                }
+       
+                
             }
 
             list.Meta.Key = key;
